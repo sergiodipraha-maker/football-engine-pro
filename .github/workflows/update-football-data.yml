@@ -1,0 +1,34 @@
+name: Update football data
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Test The Odds API
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: |
+          mkdir -p data
+          curl --fail --silent --show-error \
+            "https://api.the-odds-api.com/v4/sports/?apiKey=${ODDS_API_KEY}" \
+            -o data/sports.json
+          python -c "import json; data=json.load(open('data/sports.json')); print('API WORKS. Sports found:', len(data))"
+
+      - name: Commit test data
+        run: |
+          git config user.name "football-engine-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/sports.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Test The Odds API connection"
+          git push
