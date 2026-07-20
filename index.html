@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07111f" />
+  <title>Football Betting Engine PRO v0.2</title>
+  <style>
+    :root{
+      --bg:#07111f;--panel:#0e1c30;--panel2:#0a1628;--text:#eaf0ff;
+      --muted:#9badc6;--green:#2ed573;--yellow:#ffd166;--red:#ff7b7b;
+      --blue:#62a8ff;--border:rgba(255,255,255,.09)
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);
+      background:radial-gradient(circle at top right,rgba(46,213,115,.12),transparent 30rem),
+      radial-gradient(circle at top left,rgba(52,152,219,.12),transparent 30rem),var(--bg)}
+    header{max-width:1400px;margin:auto;padding:2.2rem 1rem 1rem;display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}
+    h1{font-size:clamp(2rem,8vw,4.4rem);line-height:.96;margin:.4rem 0 1rem}
+    h2{margin:.2rem 0 1rem}
+    h3{margin:.2rem 0 .6rem}
+    .eyebrow{color:#5ee39b;font-size:.76rem;font-weight:900;letter-spacing:.12em}
+    .sub{max-width:760px;color:var(--muted);line-height:1.6}
+    .status{border:1px solid var(--border);background:rgba(14,28,48,.88);border-radius:16px;padding:.8rem 1rem;white-space:nowrap}
+    main{width:min(1400px,calc(100% - 1.2rem));margin:0 auto 3rem;display:grid;gap:1rem}
+    .panel,.metric{border:1px solid var(--border);background:rgba(14,28,48,.88);border-radius:20px;padding:1.1rem;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+    .controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+    label{display:grid;gap:.4rem;color:var(--muted);font-size:.86rem}
+    input,select{width:100%;padding:.75rem;border-radius:12px;border:1px solid var(--border);background:var(--panel2);color:white;font:inherit}
+    button{border:0;border-radius:12px;padding:.82rem 1rem;font:inherit;font-weight:900;cursor:pointer}
+    button:active{transform:scale(.985)}
+    .primary{background:var(--green);color:#06130d}.secondary{background:#192b45;color:white}.danger{background:#3a1d26;color:#ff9da7}
+    .actions{display:flex;gap:.7rem;margin-top:1rem;flex-wrap:wrap}
+    .metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem}
+    .metric{display:grid;gap:.35rem}.metric span{color:var(--muted);font-size:.82rem}.metric strong{font-size:1.5rem}
+    .head{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .pill{color:#5ee39b;background:rgba(46,213,115,.1);border-radius:999px;padding:.3rem .65rem;font-size:.75rem;font-weight:900}
+    .notice{display:none;padding:.9rem 1rem;border-radius:14px;border:1px solid rgba(46,213,115,.22);background:rgba(46,213,115,.1);color:#9af0bd;font-weight:800}
+    .notice.show{display:block}
+    .tablewrap{overflow-x:auto}
+    table{width:100%;border-collapse:collapse;min-width:1050px}
+    th,td{padding:.82rem .6rem;border-bottom:1px solid rgba(255,255,255,.07);text-align:left;font-size:.85rem}
+    th{color:#8193ae;text-transform:uppercase;font-size:.72rem}
+    .score{color:#5ee39b;font-weight:900}
+    .tag{border-radius:999px;padding:.28rem .55rem;font-size:.7rem;font-weight:900;white-space:nowrap}
+    .locked{color:#5ee39b;background:rgba(46,213,115,.12)}
+    .watch{color:var(--yellow);background:rgba(255,209,102,.12)}
+    .removed{color:#ff9da7;background:rgba(255,123,123,.12)}
+    .analysing{color:#9cc8ff;background:rgba(98,168,255,.12)}
+    .warning{padding:.8rem;border-radius:12px;background:var(--panel2);border:1px solid var(--border);margin:.5rem 0;color:#cdd8e8}
+    .empty{text-align:center;color:#8294ae;padding:2rem}
+    .legend{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+    .legend article{background:var(--panel2);border:1px solid var(--border);border-radius:14px;padding:.9rem}
+    .legend p{margin:.4rem 0 0;color:var(--muted);line-height:1.45;font-size:.86rem}
+    footer{text-align:center;color:#6f819c;padding:1rem;font-size:.78rem}
+    @media(max-width:950px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:800px){header{flex-direction:column}}
+    @media(max-width:520px){.controls,.metrics,.legend{grid-template-columns:1fr}.actions{flex-direction:column}.actions button{width:100%}}
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="eyebrow">FOOTBALL FINAL ENGINE v2.5 — v0.2</div>
+    <h1>Football Betting Engine PRO</h1>
+    <p class="sub">Multi-day ACCA Builder з режимами Safe, Balanced, Value та Aggressive. Високий коефіцієнт не відкидається автоматично, але кожний pick має пройти Evidence та risk gates.</p>
+  </div>
+  <div class="status">🟢 Engine: <strong id="engineState">READY</strong></div>
+</header>
+
+<main>
+  <div id="notice" class="notice"></div>
+
+  <section class="panel">
+    <h2>Налаштування ACCA</h2>
+    <div class="controls">
+      <label>Часове вікно
+        <select id="window"><option value="48">48 годин</option><option value="72" selected>72 години</option><option value="168">7 днів</option></select>
+      </label>
+      <label>Кількість матчів
+        <input id="legs" type="number" min="10" max="20" value="15">
+      </label>
+      <label>ACCA Strategy
+        <select id="strategy">
+          <option value="safe">Safe</option>
+          <option value="balanced" selected>Balanced</option>
+          <option value="value">Value</option>
+          <option value="aggressive">Aggressive</option>
+        </select>
+      </label>
+      <label>Мінімальний Evidence Score
+        <input id="minimum" type="number" min="50" max="100" value="85">
+      </label>
+      <label>Мінімальний pick odds
+        <input id="minOdds" type="number" min="1.01" max="5" step="0.01" value="1.35">
+      </label>
+      <label>Цільовий combined odds
+        <select id="targetOdds">
+          <option value="0">Без цілі</option>
+          <option value="25">25+</option>
+          <option value="50" selected>50+</option>
+          <option value="100">100+</option>
+          <option value="250">250+</option>
+        </select>
+      </label>
+      <label>Максимум з однієї ліги
+        <input id="leagueMax" type="number" min="1" max="10" value="4">
+      </label>
+      <label>WATCH у фінальному ACCA
+        <select id="allowWatch"><option value="yes">Дозволити</option><option value="no">Тільки LOCKED</option></select>
+      </label>
+      <label>Сортування
+        <select id="sortMode"><option value="quality">Evidence + Model</option><option value="odds">Вищі odds</option><option value="balanced">Quality + Odds</option></select>
+      </label>
+    </div>
+    <div class="actions">
+      <button class="primary" onclick="buildAcca()">Побудувати ACCA</button>
+      <button class="secondary" onclick="resetEngine()">Скинути налаштування</button>
+      <button class="danger" onclick="clearAcca()">Очистити ACCA</button>
+    </div>
+  </section>
+
+  <section class="metrics">
+    <article class="metric"><span>Selections</span><strong id="count">0</strong></article>
+    <article class="metric"><span>Combined odds</span><strong id="odds">—</strong></article>
+    <article class="metric"><span>Estimated probability</span><strong id="prob">—</strong></article>
+    <article class="metric"><span>Risk level</span><strong id="risk">—</strong></article>
+    <article class="metric"><span>Last update</span><strong id="updated">—</strong></article>
+  </section>
+
+  <section id="results" class="panel">
+    <div class="head"><div><div class="eyebrow">FINAL ACCA</div><h2>Відібрані матчі</h2></div><span class="pill" id="windowTag">72h window</span></div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>#</th><th>Дата</th><th>Матч</th><th>Ліга</th><th>Pick</th><th>Odds</th><th>Model</th><th>Evidence</th><th>Status</th></tr></thead>
+        <tbody id="rows"><tr><td colspan="9" class="empty">Натисни «Побудувати ACCA».</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="eyebrow">STATUS GUIDE</div>
+    <h2>Що означають статуси</h2>
+    <div class="legend">
+      <article><span class="tag analysing">ANALYSING</span><p>Engine ще збирає або перевіряє дані. Pick не готовий для фінального ACCA.</p></article>
+      <article><span class="tag watch">WATCH</span><p>Pick виглядає сильним, але потрібна повторна перевірка складу, травм, odds або джерел.</p></article>
+      <article><span class="tag locked">LOCKED</span><p>Основні перевірки пройдені. Pick готовий залишитися в ACCA, якщо не з’явиться критична новина.</p></article>
+      <article><span class="tag removed">REMOVED</span><p>Pick виключено через нові ризики, падіння Evidence, ротацію, перенесення або іншу проблему.</p></article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="eyebrow">QUALITY CONTROL</div>
+    <h2>Перевірки</h2>
+    <div id="warnings"><div class="warning">Це демонстраційна v0.2. Реальні fixtures і статистика будуть підключені наступним етапом.</div></div>
+  </section>
+</main>
+<footer>Football Betting Engine PRO v0.2 — Demo data only, not a betting recommendation.</footer>
+
+<script>
+const leagues=["Premier League","La Liga","Serie A","Bundesliga","Ligue 1","Eredivisie","Primeira Liga","Belgium Pro League","Scottish Premiership","Superliga","Championship","MLS"];
+const markets=[
+ ["Double Chance","1X",1.28,.86],["Goals","Over 1.5",1.34,.84],["Team to score","Home over 0.5",1.25,.90],
+ ["Draw No Bet","Home DNB",1.48,.77],["Goals","Under 4.5",1.22,.92],["Double Chance","X2",1.42,.81],
+ ["Match Result","Home Win",1.74,.69],["Asian Handicap","Home -0.25",1.82,.66],["Both Teams to Score","Yes",1.88,.64],
+ ["Team Goals","Away over 1.5",2.05,.58],["Match Result","Away Win",2.28,.51],["Correct Range","2-4 goals",2.10,.56]
+];
+const clubs=["United","City","Athletic","Sporting","Rovers","Dynamo","Olympic","Royal","Racing","Albion","Borough","Academy","County","Wanderers"];
+
+function demoMatches(){
+ const now=Date.now(), arr=[];
+ for(let i=0;i<52;i++){
+   const m=markets[i%markets.length], evidence=80+(i*7)%20;
+   const status=i%13===0?"REMOVED":i%7===0?"ANALYSING":i%5===0?"WATCH":"LOCKED";
+   arr.push({
+     id:i+1,kickoff:new Date(now+(3+i*2.2)*3600000),
+     home:clubs[i%clubs.length]+" "+String.fromCharCode(65+i%8),
+     away:clubs[(i+5)%clubs.length]+" "+String.fromCharCode(70+i%8),
+     league:leagues[i%leagues.length],market:m[0],pick:m[1],
+     odds:+(m[2]+((i%4)*.04)).toFixed(2),
+     model:Math.max(.44,Math.min(.94,m[3]-((i%5)*.006))),
+     evidence,status
+   });
+ }
+ return arr;
+}
+const matches=demoMatches();
+
+function strategyRange(strategy){
+ return {
+   safe:[1.10,1.45],
+   balanced:[1.30,1.90],
+   value:[1.55,2.40],
+   aggressive:[1.80,3.50]
+ }[strategy];
+}
+function quality(x){return x.evidence*.62+x.model*100*.38}
+function scoreCandidate(x,mode){
+ if(mode==="odds")return x.odds*30+quality(x);
+ if(mode==="balanced")return quality(x)+Math.min(x.odds,2.5)*9;
+ return quality(x);
+}
+function showNotice(text){
+ const el=document.getElementById("notice");
+ el.textContent=text;el.classList.add("show");
+ setTimeout(()=>el.classList.remove("show"),3500);
+}
+function buildAcca(){
+ document.getElementById("engineState").textContent="ANALYSING";
+ const hours=+document.getElementById("window").value;
+ const target=Math.max(10,Math.min(20,+document.getElementById("legs").value||15));
+ document.getElementById("legs").value=target;
+ const min=+document.getElementById("minimum").value;
+ const minOdds=+document.getElementById("minOdds").value;
+ const strategy=document.getElementById("strategy").value;
+ const targetCombined=+document.getElementById("targetOdds").value;
+ const maxLeague=+document.getElementById("leagueMax").value;
+ const allowWatch=document.getElementById("allowWatch").value==="yes";
+ const sortMode=document.getElementById("sortMode").value;
+ const range=strategyRange(strategy);
+ const cutoff=Date.now()+hours*3600000, counts={}, selected=[];
+ const candidates=matches.filter(x=>
+   x.kickoff.getTime()<=cutoff &&
+   x.evidence>=min &&
+   x.odds>=Math.max(minOdds,range[0]) &&
+   x.odds<=range[1] &&
+   x.status!=="REMOVED" &&
+   x.status!=="ANALYSING" &&
+   (allowWatch || x.status==="LOCKED")
+ ).sort((a,b)=>scoreCandidate(b,sortMode)-scoreCandidate(a,sortMode));
+
+ for(const x of candidates){
+   counts[x.league]=counts[x.league]||0;
+   if(counts[x.league]>=maxLeague)continue;
+   selected.push(x);counts[x.league]++;
+   if(selected.length>=target)break;
+ }
+
+ let combined=1,joint=1;
+ selected.forEach(x=>{combined*=x.odds;joint*=x.model});
+ document.getElementById("count").textContent=selected.length;
+ document.getElementById("odds").textContent=selected.length?combined.toFixed(2):"—";
+ document.getElementById("prob").textContent=selected.length?(joint*100).toFixed(2)+"%":"—";
+ document.getElementById("risk").textContent=!selected.length?"—":joint>.12?"HIGH":joint>.04?"VERY HIGH":"EXTREME";
+ document.getElementById("windowTag").textContent=hours+"h • "+strategy.toUpperCase();
+ document.getElementById("updated").textContent=new Date().toLocaleTimeString("uk-UA",{hour:"2-digit",minute:"2-digit"});
+
+ document.getElementById("rows").innerHTML=selected.length?selected.map((x,i)=>`
+ <tr><td>${i+1}</td><td>${x.kickoff.toLocaleString("uk-UA",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}</td>
+ <td><strong>${x.home} — ${x.away}</strong></td><td>${x.league}</td><td>${x.market}<br><strong>${x.pick}</strong></td>
+ <td>${x.odds.toFixed(2)}</td><td>${(x.model*100).toFixed(1)}%</td><td class="score">${x.evidence}</td>
+ <td><span class="tag ${x.status.toLowerCase()}">${x.status}</span></td></tr>`).join("")
+ :'<tr><td colspan="9" class="empty">Немає достатньо матчів, які відповідають усім фільтрам.</td></tr>';
+
+ const weak=[...selected].sort((a,b)=>quality(a)-quality(b))[0];
+ const watchCount=selected.filter(x=>x.status==="WATCH").length;
+ let warnings="";
+ if(weak)warnings+=`<div class="warning"><strong>Weakest leg:</strong> ${weak.home} — ${weak.away}, ${weak.pick}, odds ${weak.odds.toFixed(2)}, Evidence ${weak.evidence}.</div>`;
+ if(watchCount)warnings+=`<div class="warning"><strong>WATCH:</strong> ${watchCount} selection(s) потребують повторної перевірки перед фінальним LOCK.</div>`;
+ if(selected.length<target)warnings+=`<div class="warning"><strong>Incomplete ACCA:</strong> знайдено ${selected.length} із ${target}. Engine не додав слабші або невідповідні picks.</div>`;
+ if(targetCombined && combined<targetCombined)warnings+=`<div class="warning"><strong>Target odds not reached:</strong> ${combined.toFixed(2)} нижче цілі ${targetCombined}+. Підвищувати odds штучно за рахунок слабких picks заборонено.</div>`;
+ warnings+=`<div class="warning"><strong>Наступний етап:</strong> заміна demo data на real fixtures, odds, form, xG/xGA, injuries, lineups, motivation та source provenance.</div>`;
+ document.getElementById("warnings").innerHTML=warnings;
+ document.getElementById("engineState").textContent="READY";
+ showNotice(`✅ ACCA оновлено: ${selected.length} матчів, combined odds ${selected.length?combined.toFixed(2):"—"}`);
+ document.getElementById("results").scrollIntoView({behavior:"smooth",block:"start"});
+}
+function resetEngine(){
+ document.getElementById("window").value="72";
+ document.getElementById("legs").value="15";
+ document.getElementById("strategy").value="balanced";
+ document.getElementById("minimum").value="85";
+ document.getElementById("minOdds").value="1.35";
+ document.getElementById("targetOdds").value="50";
+ document.getElementById("leagueMax").value="4";
+ document.getElementById("allowWatch").value="yes";
+ document.getElementById("sortMode").value="quality";
+ buildAcca();
+}
+function clearAcca(){
+ document.getElementById("rows").innerHTML='<tr><td colspan="9" class="empty">ACCA очищено.</td></tr>';
+ ["count","odds","prob","risk"].forEach(id=>document.getElementById(id).textContent=id==="count"?"0":"—");
+ document.getElementById("updated").textContent=new Date().toLocaleTimeString("uk-UA",{hour:"2-digit",minute:"2-digit"});
+ document.getElementById("warnings").innerHTML='<div class="warning">ACCA очищено. Налаштування збережені.</div>';
+ showNotice("🧹 ACCA очищено");
+}
+buildAcca();
+</script>
+</body>
+</html>
