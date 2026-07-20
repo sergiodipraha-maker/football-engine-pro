@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Football Betting Engine PRO — multi-day ACCA decision engine." />
+  <title>Football Betting Engine PRO</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">FOOTBALL FINAL ENGINE v2.5 — WEB PROJECT</p>
+      <h1>Football Betting Engine PRO</h1>
+      <p class="subtitle">
+        Один оптимізований ACCA з матчів сьогодні, завтра та наступних днів.
+        Відбір за силою доказів, а не за розміром коефіцієнта.
+      </p>
+    </div>
+    <div class="status-card">
+      <span class="status-dot"></span>
+      <div>
+        <strong>Engine status</strong>
+        <span id="engineStatus">READY</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel controls">
+      <h2>Налаштування ACCA</h2>
+      <div class="control-grid">
+        <label>
+          Часове вікно
+          <select id="windowHours">
+            <option value="48">48 годин</option>
+            <option value="72" selected>72 години</option>
+            <option value="168">7 днів</option>
+          </select>
+        </label>
+
+        <label>
+          Кількість матчів
+          <input id="targetLegs" type="number" min="10" max="20" value="15" />
+        </label>
+
+        <label>
+          Мінімальний Evidence Score
+          <input id="minEvidence" type="number" min="50" max="100" value="85" />
+        </label>
+
+        <label>
+          Максимум з однієї ліги
+          <input id="maxPerLeague" type="number" min="1" max="10" value="4" />
+        </label>
+      </div>
+
+      <div class="button-row">
+        <button id="buildButton" class="primary">Побудувати ACCA</button>
+        <button id="resetButton" class="secondary">Скинути</button>
+      </div>
+    </section>
+
+    <section class="summary-grid">
+      <article class="metric">
+        <span>Selections</span>
+        <strong id="selectionCount">0</strong>
+      </article>
+      <article class="metric">
+        <span>Combined odds</span>
+        <strong id="combinedOdds">—</strong>
+      </article>
+      <article class="metric">
+        <span>Estimated probability</span>
+        <strong id="accaProbability">—</strong>
+      </article>
+      <article class="metric">
+        <span>Risk</span>
+        <strong id="riskLevel">—</strong>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FINAL ACCA</p>
+          <h2>Відібрані матчі</h2>
+        </div>
+        <span id="windowLabel" class="pill">72h window</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Дата</th>
+              <th>Матч</th>
+              <th>Ліга</th>
+              <th>Ринок / Pick</th>
+              <th>Odds</th>
+              <th>Model</th>
+              <th>Evidence</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="accaRows">
+            <tr><td colspan="9" class="empty">Натисни «Побудувати ACCA».</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">QUALITY CONTROL</p>
+          <h2>Слабке місце та попередження</h2>
+        </div>
+      </div>
+      <div id="warnings" class="warnings">
+        <p>Після побудови тут з’явиться weakest leg, market disagreement і data-quality warnings.</p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
