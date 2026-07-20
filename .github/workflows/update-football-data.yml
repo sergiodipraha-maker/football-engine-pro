@@ -1,0 +1,785 @@
+name: Update all football data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-football-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch active professional football leagues
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ROTATION_SEED: ${{ github.run_number }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import time
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          from urllib.error import HTTPError, URLError
+          from urllib.parse import urlencode
+          from urllib.request import Request, urlopen
+
+          API_HOST = "https://api.the-odds-api.com/v4"
+          API_KEY = os.environ.get("ODDS_API_KEY")
+          ROTATION_SEED = int(
+              os.environ.get("ROTATION_SEED", "1")
+          )
+
+          REGIONS = "uk"
+          MARKETS = "h2h"
+          LOOKAHEAD_DAYS = 8
+
+          # Free-plan protection.
+          # 1 market × 1 region = approximately
+          # 1 credit for each league requested.
+          DAILY_CORE_LIMIT = 10
+          ROTATING_LIMIT = 6
+          MAX_LEAGUES_PER_RUN = (
+              DAILY_CORE_LIMIT + ROTATING_LIMIT
+          )
+          CREDIT_RESERVE = 35
+
+          if not API_KEY:
+              raise RuntimeError(
+                  "ODDS_API_KEY secret is missing"
+              )
+
+          EXCLUDED_TERMS = (
+              "women",
+              "woman",
+              "female",
+              "u17",
+              "u18",
+              "u19",
+              "u20",
+              "u21",
+              "u22",
+              "u23",
+              "youth",
+              "junior",
+              "reserve",
+              "reserves",
+              "friendly",
+              "friendlies",
+              "club friendly",
+              "esports",
+              "e-sports",
+              "virtual",
+              "winner",
+              "outright",
+              "futures",
+          )
+
+          CORE_HINTS = (
+              "uefa_champs_league",
+              "uefa_europa_league",
+              "uefa_europa_conference_league",
+              "epl",
+              "efl_champ",
+              "scotland_premiership",
+              "ireland_premier_division",
+              "spain_la_liga",
+              "italy_serie_a",
+              "germany_bundesliga",
+              "france_ligue_one",
+              "netherlands_eredivisie",
+              "portugal_primeira_liga",
+              "belgium_first_div",
+          )
+
+          COUNTRY_PRIORITY = (
+              "uefa",
+              "england",
+              "scotland",
+              "ireland",
+              "spain",
+              "italy",
+              "germany",
+              "france",
+              "netherlands",
+              "portugal",
+              "belgium",
+              "denmark",
+              "sweden",
+              "norway",
+              "poland",
+              "austria",
+              "switzerland",
+              "czech",
+              "croatia",
+              "serbia",
+              "romania",
+              "turkey",
+              "greece",
+              "finland",
+              "iceland",
+              "bulgaria",
+              "slovakia",
+              "slovenia",
+              "hungary",
+              "cyprus",
+          )
+
+          def api_get(url):
+              request = Request(
+                  url,
+                  headers={
+                      "User-Agent":
+                      "FootballEnginePRO/2.0"
+                  },
+              )
+
+              with urlopen(
+                  request,
+                  timeout=45,
+              ) as response:
+                  data = json.loads(
+                      response.read().decode("utf-8")
+                  )
+
+                  headers = {
+                      key.lower(): value
+                      for key, value
+                      in response.headers.items()
+                  }
+
+                  return data, headers
+
+          def iso_z(value):
+              return (
+                  value
+                  .astimezone(timezone.utc)
+                  .replace(microsecond=0)
+                  .isoformat()
+                  .replace("+00:00", "Z")
+              )
+
+          def parse_iso(value):
+              return datetime.fromisoformat(
+                  value.replace("Z", "+00:00")
+              )
+
+          def median(values):
+              ordered = sorted(values)
+              size = len(ordered)
+
+              if not size:
+                  return None
+
+              if size % 2:
+                  return ordered[size // 2]
+
+              return (
+                  ordered[size // 2 - 1]
+                  + ordered[size // 2]
+              ) / 2
+
+          def excluded(sport):
+              text = (
+                  sport.get("key", "")
+                  + " "
+                  + sport.get("title", "")
+                  + " "
+                  + sport.get("description", "")
+              ).lower()
+
+              return (
+                  sport.get(
+                      "has_outrights",
+                      False,
+                  )
+                  or any(
+                      term in text
+                      for term in EXCLUDED_TERMS
+                  )
+              )
+
+          def priority_score(sport):
+              key = sport.get(
+                  "key",
+                  "",
+              ).lower()
+
+              title = sport.get(
+                  "title",
+                  "",
+              ).lower()
+
+              text = key + " " + title
+              score = 0
+
+              for index, hint in enumerate(
+                  CORE_HINTS
+              ):
+                  if hint in key:
+                      score += (
+                          1000 - index * 20
+                      )
+
+              for index, country in enumerate(
+                  COUNTRY_PRIORITY
+              ):
+                  if country in text:
+                      score += (
+                          400 - index * 8
+                      )
+                      break
+
+              if "cup" in text:
+                  score += 60
+
+              if "qualif" in text:
+                  score += 80
+
+              return score
+
+          now = datetime.now(
+              timezone.utc
+          )
+
+          window_end = (
+              now
+              + timedelta(
+                  days=LOOKAHEAD_DAYS
+              )
+          )
+
+          sports_url = (
+              f"{API_HOST}/sports/?"
+              + urlencode({
+                  "apiKey": API_KEY,
+              })
+          )
+
+          sports, sports_headers = api_get(
+              sports_url
+          )
+
+          remaining = int(
+              sports_headers.get(
+                  "x-requests-remaining",
+                  "0",
+              ) or 0
+          )
+
+          all_soccer = [
+              sport
+              for sport in sports
+              if sport.get("group") == "Soccer"
+              and sport.get("active")
+              and not excluded(sport)
+          ]
+
+          active_with_events = []
+
+          # /events is used first to find leagues
+          # that actually have fixtures soon.
+          for sport in all_soccer:
+              params = {
+                  "apiKey": API_KEY,
+                  "dateFormat": "iso",
+                  "commenceTimeFrom":
+                      iso_z(now),
+                  "commenceTimeTo":
+                      iso_z(window_end),
+              }
+
+              events_url = (
+                  f"{API_HOST}/sports/"
+                  f"{sport['key']}/events?"
+                  + urlencode(params)
+              )
+
+              try:
+                  event_rows, _ = api_get(
+                      events_url
+                  )
+
+              except (
+                  HTTPError,
+                  URLError,
+              ) as error:
+                  print(
+                      "Events check skipped for "
+                      f"{sport['key']}: "
+                      f"{error}"
+                  )
+                  continue
+
+              upcoming = [
+                  event
+                  for event in event_rows
+                  if (
+                      now
+                      <= parse_iso(
+                          event[
+                              "commence_time"
+                          ]
+                      )
+                      <= window_end
+                  )
+              ]
+
+              if upcoming:
+                  active_with_events.append({
+                      "sport": sport,
+                      "event_count":
+                          len(upcoming),
+                  })
+
+              time.sleep(0.05)
+
+          active_with_events.sort(
+              key=lambda item: (
+                  -priority_score(
+                      item["sport"]
+                  ),
+                  -item["event_count"],
+                  item["sport"].get(
+                      "title",
+                      "",
+                  ),
+              )
+          )
+
+          core = active_with_events[
+              :DAILY_CORE_LIMIT
+          ]
+
+          remaining_pool = (
+              active_with_events[
+                  DAILY_CORE_LIMIT:
+              ]
+          )
+
+          rotating = []
+
+          if remaining_pool:
+              start = (
+                  (
+                      ROTATION_SEED - 1
+                  )
+                  * ROTATING_LIMIT
+              ) % len(remaining_pool)
+
+              for offset in range(
+                  min(
+                      ROTATING_LIMIT,
+                      len(remaining_pool),
+                  )
+              ):
+                  rotating.append(
+                      remaining_pool[
+                          (
+                              start + offset
+                          )
+                          % len(
+                              remaining_pool
+                          )
+                      ]
+                  )
+
+          selected = core + rotating
+
+          affordable = max(
+              0,
+              remaining - CREDIT_RESERVE,
+          )
+
+          selected = selected[
+              :min(
+                  MAX_LEAGUES_PER_RUN,
+                  affordable,
+              )
+          ]
+
+          if not selected:
+              raise RuntimeError(
+                  "No leagues selected. "
+                  "API credits may be "
+                  "below reserve."
+              )
+
+          output_path = Path(
+              "data/live-matches.json"
+          )
+
+          old_payload = {}
+
+          if output_path.exists():
+              try:
+                  old_payload = json.loads(
+                      output_path.read_text(
+                          encoding="utf-8"
+                      )
+                  )
+              except Exception:
+                  old_payload = {}
+
+          queried_keys = {
+              item["sport"]["key"]
+              for item in selected
+          }
+
+          merged_by_id = {}
+
+          # Keep upcoming events from leagues
+          # that were fetched during earlier runs.
+          for event in old_payload.get(
+              "events",
+              [],
+          ):
+              try:
+                  kickoff = parse_iso(
+                      event["commence_time"]
+                  )
+              except Exception:
+                  continue
+
+              if (
+                  kickoff >= now
+                  and event.get(
+                      "sport_key"
+                  ) not in queried_keys
+              ):
+                  merged_by_id[
+                      event["id"]
+                  ] = event
+
+          quota = {
+              "remaining": remaining,
+              "used":
+                  sports_headers.get(
+                      "x-requests-used"
+                  ),
+              "last":
+                  sports_headers.get(
+                      "x-requests-last"
+                  ),
+          }
+
+          fetched_leagues = []
+          fetch_time = now.isoformat()
+
+          for item in selected:
+              sport = item["sport"]
+
+              params = {
+                  "apiKey": API_KEY,
+                  "regions": REGIONS,
+                  "markets": MARKETS,
+                  "oddsFormat": "decimal",
+                  "dateFormat": "iso",
+                  "commenceTimeFrom":
+                      iso_z(now),
+                  "commenceTimeTo":
+                      iso_z(window_end),
+              }
+
+              odds_url = (
+                  f"{API_HOST}/sports/"
+                  f"{sport['key']}/odds?"
+                  + urlencode(params)
+              )
+
+              try:
+                  rows, headers = api_get(
+                      odds_url
+                  )
+
+              except HTTPError as error:
+                  print(
+                      "Odds skipped for "
+                      f"{sport['key']}: "
+                      f"HTTP {error.code}"
+                  )
+                  continue
+
+              except URLError as error:
+                  print(
+                      "Odds skipped for "
+                      f"{sport['key']}: "
+                      f"{error.reason}"
+                  )
+                  continue
+
+              quota = {
+                  "remaining":
+                      headers.get(
+                          "x-requests-remaining"
+                      ),
+                  "used":
+                      headers.get(
+                          "x-requests-used"
+                      ),
+                  "last":
+                      headers.get(
+                          "x-requests-last"
+                      ),
+              }
+
+              fetched_leagues.append({
+                  "key": sport["key"],
+                  "title": sport.get(
+                      "title",
+                      sport["key"],
+                  ),
+                  "events_seen":
+                      len(rows),
+              })
+
+              for event in rows:
+                  kickoff = parse_iso(
+                      event[
+                          "commence_time"
+                      ]
+                  )
+
+                  if not (
+                      now
+                      <= kickoff
+                      <= window_end
+                  ):
+                      continue
+
+                  prices = {}
+
+                  for bookmaker in event.get(
+                      "bookmakers",
+                      [],
+                  ):
+                      market = next(
+                          (
+                              market
+                              for market
+                              in bookmaker.get(
+                                  "markets",
+                                  [],
+                              )
+                              if market.get(
+                                  "key"
+                              ) == "h2h"
+                          ),
+                          None,
+                      )
+
+                      if not market:
+                          continue
+
+                      for outcome in market.get(
+                          "outcomes",
+                          [],
+                      ):
+                          name = outcome.get(
+                              "name"
+                          )
+
+                          price = outcome.get(
+                              "price"
+                          )
+
+                          if (
+                              name
+                              and isinstance(
+                                  price,
+                                  (int, float),
+                              )
+                              and price > 1
+                          ):
+                              prices.setdefault(
+                                  name,
+                                  [],
+                              ).append(
+                                  float(price)
+                              )
+
+                  picks = []
+
+                  for name, values in (
+                      prices.items()
+                  ):
+                      middle = median(values)
+
+                      spread = (
+                          (
+                              max(values)
+                              - min(values)
+                          )
+                          / middle
+                          if (
+                              middle
+                              and len(values) > 1
+                          )
+                          else 0
+                      )
+
+                      if name == event.get(
+                          "home_team"
+                      ):
+                          selection_type = (
+                              "home"
+                          )
+
+                      elif name == event.get(
+                          "away_team"
+                      ):
+                          selection_type = (
+                              "away"
+                          )
+
+                      else:
+                          selection_type = (
+                              "draw"
+                          )
+
+                      picks.append({
+                          "selection": name,
+                          "selection_type":
+                              selection_type,
+                          "odds":
+                              round(
+                                  max(values),
+                                  3,
+                              ),
+                          "median_odds":
+                              round(
+                                  middle,
+                                  3,
+                              ),
+                          "bookmaker_count":
+                              len(values),
+                          "consensus_spread":
+                              round(
+                                  spread,
+                                  4,
+                              ),
+                      })
+
+                  if picks:
+                      merged_by_id[
+                          event["id"]
+                      ] = {
+                          "id":
+                              event["id"],
+                          "sport_key":
+                              sport["key"],
+                          "league":
+                              sport.get(
+                                  "title",
+                                  sport["key"],
+                              ),
+                          "commence_time":
+                              event[
+                                  "commence_time"
+                              ],
+                          "home_team":
+                              event[
+                                  "home_team"
+                              ],
+                          "away_team":
+                              event[
+                                  "away_team"
+                              ],
+                          "picks":
+                              picks,
+                          "fetched_at":
+                              fetch_time,
+                      }
+
+              time.sleep(0.15)
+
+          final_events = sorted(
+              merged_by_id.values(),
+              key=lambda event:
+                  event["commence_time"],
+          )
+
+          payload = {
+              "generated_at":
+                  now.isoformat(),
+              "provider":
+                  "The Odds API",
+              "regions":
+                  REGIONS,
+              "markets":
+                  [MARKETS],
+              "lookahead_days":
+                  LOOKAHEAD_DAYS,
+              "coverage_mode":
+                  "core-plus-rotation",
+              "active_professional_leagues_found":
+                  len(active_with_events),
+              "leagues_refreshed_this_run":
+                  fetched_leagues,
+              "event_count":
+                  len(final_events),
+              "events":
+                  final_events,
+              "quota":
+                  quota,
+              "excluded_categories":
+                  list(EXCLUDED_TERMS),
+              "error":
+                  None,
+          }
+
+          output_path.parent.mkdir(
+              parents=True,
+              exist_ok=True,
+          )
+
+          output_path.write_text(
+              json.dumps(
+                  payload,
+                  ensure_ascii=False,
+                  indent=2,
+              ),
+              encoding="utf-8",
+          )
+
+          print(
+              "Active professional leagues "
+              "with games: "
+              f"{len(active_with_events)}"
+          )
+
+          print(
+              "Leagues refreshed this run: "
+              f"{len(fetched_leagues)}"
+          )
+
+          print(
+              "Upcoming events saved: "
+              f"{len(final_events)}"
+          )
+
+          print(
+              f"Quota: {quota}"
+          )
+          PY
+
+      - name: Commit updated football data
+        run: |
+          git config user.name "football-engine-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/live-matches.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Expand football league coverage"
+          git push
