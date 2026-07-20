@@ -1,0 +1,2200 @@
+{
+  "generated_at": "2026-07-20T18:51:49.545304+00:00",
+  "provider": "The Odds API",
+  "regions": "uk",
+  "markets": [
+    "h2h"
+  ],
+  "leagues": [
+    "soccer_epl",
+    "soccer_efl_champ",
+    "soccer_spain_la_liga",
+    "soccer_italy_serie_a",
+    "soccer_germany_bundesliga"
+  ],
+  "event_count": 64,
+  "events": [
+    {
+      "id": "2b50ce61e415a3b3bd3f10ac39d0dbe3",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-14T19:00:00Z",
+      "home_team": "Wolverhampton Wanderers",
+      "away_team": "Blackburn Rovers",
+      "picks": [
+        {
+          "selection": "Blackburn Rovers",
+          "selection_type": "away",
+          "odds": 6.0,
+          "median_odds": 5.45,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.7743
+        },
+        {
+          "selection": "Wolverhampton Wanderers",
+          "selection_type": "home",
+          "odds": 1.58,
+          "median_odds": 1.53,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0588
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.2,
+          "median_odds": 4.0,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.075
+        }
+      ]
+    },
+    {
+      "id": "3fe7127e2d77a2b83d8fe3a9037a56f2",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T11:30:00Z",
+      "home_team": "Bolton Wanderers",
+      "away_team": "Preston North End",
+      "picks": [
+        {
+          "selection": "Bolton Wanderers",
+          "selection_type": "home",
+          "odds": 2.25,
+          "median_odds": 2.15,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0698
+        },
+        {
+          "selection": "Preston North End",
+          "selection_type": "away",
+          "odds": 3.25,
+          "median_odds": 3.11,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.164
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.2,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1094
+        }
+      ]
+    },
+    {
+      "id": "0518dd5358a1955d59561b30f702a651",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T14:00:00Z",
+      "home_team": "Bristol City",
+      "away_team": "Millwall",
+      "picks": [
+        {
+          "selection": "Bristol City",
+          "selection_type": "home",
+          "odds": 2.48,
+          "median_odds": 2.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0958
+        },
+        {
+          "selection": "Millwall",
+          "selection_type": "away",
+          "odds": 2.9,
+          "median_odds": 2.75,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1673
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.5,
+          "median_odds": 3.25,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1231
+        }
+      ]
+    },
+    {
+      "id": "d2e7e245e43705d3059b84dec8d007fe",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T14:00:00Z",
+      "home_team": "Charlton Athletic",
+      "away_team": "Derby County",
+      "picks": [
+        {
+          "selection": "Charlton Athletic",
+          "selection_type": "home",
+          "odds": 2.56,
+          "median_odds": 2.45,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0735
+        },
+        {
+          "selection": "Derby County",
+          "selection_type": "away",
+          "odds": 2.86,
+          "median_odds": 2.7,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0963
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.2,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.125
+        }
+      ]
+    },
+    {
+      "id": "04cd3d29e95a89f25a34447296856443",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T14:00:00Z",
+      "home_team": "Middlesbrough",
+      "away_team": "Lincoln City",
+      "picks": [
+        {
+          "selection": "Lincoln City",
+          "selection_type": "away",
+          "odds": 10.0,
+          "median_odds": 8.1,
+          "bookmaker_count": 20,
+          "consensus_spread": 1.0852
+        },
+        {
+          "selection": "Middlesbrough",
+          "selection_type": "home",
+          "odds": 1.33,
+          "median_odds": 1.29,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.062
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.5,
+          "median_odds": 5.1,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1471
+        }
+      ]
+    },
+    {
+      "id": "570a465b84ec706d58cc57f558ebf29b",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T14:00:00Z",
+      "home_team": "Norwich City",
+      "away_team": "West Bromwich Albion",
+      "picks": [
+        {
+          "selection": "Norwich City",
+          "selection_type": "home",
+          "odds": 2.05,
+          "median_odds": 2.0,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.07
+        },
+        {
+          "selection": "West Bromwich Albion",
+          "selection_type": "away",
+          "odds": 3.5,
+          "median_odds": 3.425,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1693
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.5,
+          "median_odds": 3.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1176
+        }
+      ]
+    },
+    {
+      "id": "c028d320a770bf1b99597c63a0a0fc55",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T14:00:00Z",
+      "home_team": "Portsmouth",
+      "away_team": "Queens Park Rangers",
+      "picks": [
+        {
+          "selection": "Portsmouth",
+          "selection_type": "home",
+          "odds": 2.18,
+          "median_odds": 2.1,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0857
+        },
+        {
+          "selection": "Queens Park Rangers",
+          "selection_type": "away",
+          "odds": 3.3,
+          "median_odds": 3.15,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1778
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.6,
+          "median_odds": 3.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1176
+        }
+      ]
+    },
+    {
+      "id": "779b9ecca0a96a9b638dcdc38bee85cd",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T14:00:00Z",
+      "home_team": "Stoke City",
+      "away_team": "Swansea City",
+      "picks": [
+        {
+          "selection": "Stoke City",
+          "selection_type": "home",
+          "odds": 2.5,
+          "median_odds": 2.38,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.105
+        },
+        {
+          "selection": "Swansea City",
+          "selection_type": "away",
+          "odds": 3.0,
+          "median_odds": 2.88,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.2639
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.3,
+          "median_odds": 3.135,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0957
+        }
+      ]
+    },
+    {
+      "id": "0cb1b113469e83f07b4593116cfa9339",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-15T16:30:00Z",
+      "home_team": "Sheffield United",
+      "away_team": "Birmingham City",
+      "picks": [
+        {
+          "selection": "Birmingham City",
+          "selection_type": "away",
+          "odds": 2.88,
+          "median_odds": 2.75,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1164
+        },
+        {
+          "selection": "Sheffield United",
+          "selection_type": "home",
+          "odds": 2.54,
+          "median_odds": 2.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.4042
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.2,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.125
+        }
+      ]
+    },
+    {
+      "id": "4b1211e0f448d01cf2b7fabd07aee49e",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-15T17:30:00Z",
+      "home_team": "Alavés",
+      "away_team": "Getafe",
+      "picks": [
+        {
+          "selection": "Alavés",
+          "selection_type": "home",
+          "odds": 2.42,
+          "median_odds": 2.3,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.0739
+        },
+        {
+          "selection": "Getafe",
+          "selection_type": "away",
+          "odds": 3.8,
+          "median_odds": 3.4,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.1471
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 2.9,
+          "median_odds": 2.8,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.1
+        }
+      ]
+    },
+    {
+      "id": "90a7c2b1668f47eaf38c10c7b49ac166",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-15T19:30:00Z",
+      "home_team": "Sevilla",
+      "away_team": "Rayo Vallecano",
+      "picks": [
+        {
+          "selection": "Rayo Vallecano",
+          "selection_type": "away",
+          "odds": 3.6,
+          "median_odds": 3.25,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1692
+        },
+        {
+          "selection": "Sevilla",
+          "selection_type": "home",
+          "odds": 2.3,
+          "median_odds": 2.2,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0909
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.25,
+          "median_odds": 3.1,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0968
+        }
+      ]
+    },
+    {
+      "id": "0e01068c7b15cd9fdddf8ad5237d2170",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-16T12:30:00Z",
+      "home_team": "Watford",
+      "away_team": "Southampton",
+      "picks": [
+        {
+          "selection": "Southampton",
+          "selection_type": "away",
+          "odds": 2.1,
+          "median_odds": 2.05,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0732
+        },
+        {
+          "selection": "Watford",
+          "selection_type": "home",
+          "odds": 3.25,
+          "median_odds": 3.2,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.2531
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.75,
+          "median_odds": 3.45,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1594
+        }
+      ]
+    },
+    {
+      "id": "fd2380fb0d0736468c7a58dfe8c1d6e2",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-16T15:00:00Z",
+      "home_team": "Burnley",
+      "away_team": "West Ham United",
+      "picks": [
+        {
+          "selection": "Burnley",
+          "selection_type": "home",
+          "odds": 2.87,
+          "median_odds": 2.75,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0982
+        },
+        {
+          "selection": "West Ham United",
+          "selection_type": "away",
+          "odds": 2.4,
+          "median_odds": 2.3,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.087
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.6,
+          "median_odds": 3.4,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1176
+        }
+      ]
+    },
+    {
+      "id": "f32c9c00fd77e4ec1abd5e34d67a6817",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T15:00:00Z",
+      "home_team": "Real Racing Club de Santander",
+      "away_team": "Villarreal",
+      "picks": [
+        {
+          "selection": "Real Racing Club de Santander",
+          "selection_type": "home",
+          "odds": 3.4,
+          "median_odds": 3.3,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1515
+        },
+        {
+          "selection": "Villarreal",
+          "selection_type": "away",
+          "odds": 2.16,
+          "median_odds": 2.1,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0762
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.65,
+          "median_odds": 3.4,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1176
+        }
+      ]
+    },
+    {
+      "id": "4e24891d0ee382bfda6305eabbc54754",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T17:00:00Z",
+      "home_team": "Espanyol",
+      "away_team": "Levante",
+      "picks": [
+        {
+          "selection": "Espanyol",
+          "selection_type": "home",
+          "odds": 2.05,
+          "median_odds": 2.0,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.07
+        },
+        {
+          "selection": "Levante",
+          "selection_type": "away",
+          "odds": 4.1,
+          "median_odds": 3.7,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1892
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.25,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0923
+        }
+      ]
+    },
+    {
+      "id": "619ee9924303c828089d78a1216299a3",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T19:00:00Z",
+      "home_team": "Alavés",
+      "away_team": "Getafe",
+      "picks": [
+        {
+          "selection": "Alavés",
+          "selection_type": "home",
+          "odds": 2.3,
+          "median_odds": 2.265,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0309
+        },
+        {
+          "selection": "Getafe",
+          "selection_type": "away",
+          "odds": 3.4,
+          "median_odds": 3.325,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0451
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 2.9,
+          "median_odds": 2.85,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0351
+        }
+      ]
+    },
+    {
+      "id": "cc046b0dcb624210df0aec3743c7c255",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T19:00:00Z",
+      "home_team": "Barcelona",
+      "away_team": "Athletic Bilbao",
+      "picks": [
+        {
+          "selection": "Athletic Bilbao",
+          "selection_type": "away",
+          "odds": 7.0,
+          "median_odds": 6.625,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.1132
+        },
+        {
+          "selection": "Barcelona",
+          "selection_type": "home",
+          "odds": 1.4,
+          "median_odds": 1.39,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0144
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.7,
+          "median_odds": 4.525,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0773
+        }
+      ]
+    },
+    {
+      "id": "c3346224e5e2d07b256fc33b5f941af6",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T19:00:00Z",
+      "home_team": "Atlético Madrid",
+      "away_team": "Málaga",
+      "picks": [
+        {
+          "selection": "Atlético Madrid",
+          "selection_type": "home",
+          "odds": 1.32,
+          "median_odds": 1.31,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0153
+        },
+        {
+          "selection": "Málaga",
+          "selection_type": "away",
+          "odds": 7.5,
+          "median_odds": 7.125,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.1053
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.6,
+          "median_odds": 5.35,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0935
+        }
+      ]
+    },
+    {
+      "id": "5bf64b707606b9102b4a2711fa9f18bc",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T19:00:00Z",
+      "home_team": "Valencia",
+      "away_team": "Real Betis",
+      "picks": [
+        {
+          "selection": "Real Betis",
+          "selection_type": "away",
+          "odds": 2.63,
+          "median_odds": 2.59,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0309
+        },
+        {
+          "selection": "Valencia",
+          "selection_type": "home",
+          "odds": 2.63,
+          "median_odds": 2.565,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0507
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.2,
+          "median_odds": 3.125,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.048
+        }
+      ]
+    },
+    {
+      "id": "25b944e1a0c2adb890dba6072f4b28b0",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T19:00:00Z",
+      "home_team": "Real Madrid",
+      "away_team": "Real Sociedad",
+      "picks": [
+        {
+          "selection": "Real Madrid",
+          "selection_type": "home",
+          "odds": 1.38,
+          "median_odds": 1.37,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0146
+        },
+        {
+          "selection": "Real Sociedad",
+          "selection_type": "away",
+          "odds": 8.0,
+          "median_odds": 7.5,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.1333
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.5,
+          "median_odds": 4.35,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.069
+        }
+      ]
+    },
+    {
+      "id": "a346e686f4189817440e64cbe596cabc",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-16T19:30:00Z",
+      "home_team": "Celta Vigo",
+      "away_team": "CA Osasuna",
+      "picks": [
+        {
+          "selection": "CA Osasuna",
+          "selection_type": "away",
+          "odds": 4.0,
+          "median_odds": 3.6,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1667
+        },
+        {
+          "selection": "Celta Vigo",
+          "selection_type": "home",
+          "odds": 2.05,
+          "median_odds": 2.0,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.055
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.25,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1292
+        }
+      ]
+    },
+    {
+      "id": "bb0f8db2a6c8fd7984342d6ad2dcf569",
+      "sport_key": "soccer_efl_champ",
+      "league": "Championship",
+      "commence_time": "2026-08-17T19:00:00Z",
+      "home_team": "Cardiff City",
+      "away_team": "Wrexham AFC",
+      "picks": [
+        {
+          "selection": "Cardiff City",
+          "selection_type": "home",
+          "odds": 2.45,
+          "median_odds": 2.35,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0851
+        },
+        {
+          "selection": "Wrexham AFC",
+          "selection_type": "away",
+          "odds": 2.75,
+          "median_odds": 2.65,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0943
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.6,
+          "median_odds": 3.45,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1159
+        }
+      ]
+    },
+    {
+      "id": "7b9f4d89d66c48e0c496aab1679e4ae4",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-17T19:00:00Z",
+      "home_team": "Deportivo La Coruña",
+      "away_team": "Elche CF",
+      "picks": [
+        {
+          "selection": "Deportivo La Coruña",
+          "selection_type": "home",
+          "odds": 2.36,
+          "median_odds": 2.25,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.0711
+        },
+        {
+          "selection": "Elche CF",
+          "selection_type": "away",
+          "odds": 3.5,
+          "median_odds": 3.15,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1429
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.25,
+          "median_odds": 3.1,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.0806
+        }
+      ]
+    },
+    {
+      "id": "857e387be2e9f73e825ad02a2ec74cc3",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-19T19:00:00Z",
+      "home_team": "Atlético Madrid",
+      "away_team": "Málaga",
+      "picks": [
+        {
+          "selection": "Atlético Madrid",
+          "selection_type": "home",
+          "odds": 1.3,
+          "median_odds": 1.28,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0625
+        },
+        {
+          "selection": "Málaga",
+          "selection_type": "away",
+          "odds": 13.5,
+          "median_odds": 10.25,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.4878
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.4,
+          "median_odds": 5.0,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.13
+        }
+      ]
+    },
+    {
+      "id": "eb2553d10d63dc912b99f8fd0d675721",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-21T19:00:00Z",
+      "home_team": "Arsenal",
+      "away_team": "Coventry City",
+      "picks": [
+        {
+          "selection": "Arsenal",
+          "selection_type": "home",
+          "odds": 1.2,
+          "median_odds": 1.155,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0779
+        },
+        {
+          "selection": "Coventry City",
+          "selection_type": "away",
+          "odds": 19.0,
+          "median_odds": 15.0,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.4667
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 8.4,
+          "median_odds": 7.25,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.4
+        }
+      ]
+    },
+    {
+      "id": "95bb16d19debff3ec39919f361f072a4",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-22T11:30:00Z",
+      "home_team": "Hull City",
+      "away_team": "Manchester United",
+      "picks": [
+        {
+          "selection": "Hull City",
+          "selection_type": "home",
+          "odds": 7.8,
+          "median_odds": 6.75,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.2667
+        },
+        {
+          "selection": "Manchester United",
+          "selection_type": "away",
+          "odds": 1.47,
+          "median_odds": 1.44,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0764
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.7,
+          "median_odds": 4.5,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1111
+        }
+      ]
+    },
+    {
+      "id": "e37906b7522f30dbf519e60e767de811",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T13:00:00Z",
+      "home_team": "Torino",
+      "away_team": "AC Milan",
+      "picks": [
+        {
+          "selection": "AC Milan",
+          "selection_type": "away",
+          "odds": 1.7,
+          "median_odds": 1.7,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Torino",
+          "selection_type": "home",
+          "odds": 4.2,
+          "median_odds": 4.2,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.55,
+          "median_odds": 3.55,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        }
+      ]
+    },
+    {
+      "id": "e4e88aada4f206a2cc82334dc6ffaee4",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T13:00:00Z",
+      "home_team": "AS Roma",
+      "away_team": "Fiorentina",
+      "picks": [
+        {
+          "selection": "AS Roma",
+          "selection_type": "home",
+          "odds": 1.44,
+          "median_odds": 1.435,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.007
+        },
+        {
+          "selection": "Fiorentina",
+          "selection_type": "away",
+          "odds": 6.1,
+          "median_odds": 6.1,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.95,
+          "median_odds": 3.95,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        }
+      ]
+    },
+    {
+      "id": "0a0f6982816e75d54caf976d288f6d15",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T13:00:00Z",
+      "home_team": "Atalanta BC",
+      "away_team": "Sassuolo",
+      "picks": [
+        {
+          "selection": "Atalanta BC",
+          "selection_type": "home",
+          "odds": 1.47,
+          "median_odds": 1.47,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Sassuolo",
+          "selection_type": "away",
+          "odds": 5.4,
+          "median_odds": 5.4,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.1,
+          "median_odds": 4.1,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        }
+      ]
+    },
+    {
+      "id": "4fe9bc44316cce0f1842180bd7fd42de",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T13:00:00Z",
+      "home_team": "Bologna",
+      "away_team": "Lazio",
+      "picks": [
+        {
+          "selection": "Bologna",
+          "selection_type": "home",
+          "odds": 1.98,
+          "median_odds": 1.975,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0051
+        },
+        {
+          "selection": "Lazio",
+          "selection_type": "away",
+          "odds": 3.5,
+          "median_odds": 3.5,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.1,
+          "median_odds": 3.1,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        }
+      ]
+    },
+    {
+      "id": "d551f2c1f25f8717dc938e74bcbcb128",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T13:00:00Z",
+      "home_team": "Frosinone",
+      "away_team": "Juventus",
+      "picks": [
+        {
+          "selection": "Frosinone",
+          "selection_type": "home",
+          "odds": 6.4,
+          "median_odds": 6.4,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Juventus",
+          "selection_type": "away",
+          "odds": 1.41,
+          "median_odds": 1.41,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.1,
+          "median_odds": 4.1,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        }
+      ]
+    },
+    {
+      "id": "8e0fd55f15fc0f40767b91218afee9a7",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T13:00:00Z",
+      "home_team": "Venezia",
+      "away_team": "Lecce",
+      "picks": [
+        {
+          "selection": "Lecce",
+          "selection_type": "away",
+          "odds": 3.05,
+          "median_odds": 3.05,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Venezia",
+          "selection_type": "home",
+          "odds": 2.23,
+          "median_odds": 2.23,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.05,
+          "median_odds": 3.05,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0
+        }
+      ]
+    },
+    {
+      "id": "cd1f0173ec061d9b8a8b22ab8f2f8393",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-22T14:00:00Z",
+      "home_team": "Everton",
+      "away_team": "Crystal Palace",
+      "picks": [
+        {
+          "selection": "Crystal Palace",
+          "selection_type": "away",
+          "odds": 3.5,
+          "median_odds": 3.3,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1212
+        },
+        {
+          "selection": "Everton",
+          "selection_type": "home",
+          "odds": 2.4,
+          "median_odds": 2.1,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.2
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.6,
+          "median_odds": 3.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0882
+        }
+      ]
+    },
+    {
+      "id": "01615d9573ef1e5aa8c09eb32a4a983b",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-22T14:00:00Z",
+      "home_team": "Ipswich Town",
+      "away_team": "Sunderland",
+      "picks": [
+        {
+          "selection": "Ipswich Town",
+          "selection_type": "home",
+          "odds": 2.78,
+          "median_odds": 2.62,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1145
+        },
+        {
+          "selection": "Sunderland",
+          "selection_type": "away",
+          "odds": 2.62,
+          "median_odds": 2.5,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.088
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.5,
+          "median_odds": 3.325,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0902
+        }
+      ]
+    },
+    {
+      "id": "ee99154f8db029efcf567c5f7f7a0c0b",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-22T14:00:00Z",
+      "home_team": "Nottingham Forest",
+      "away_team": "Leeds United",
+      "picks": [
+        {
+          "selection": "Leeds United",
+          "selection_type": "away",
+          "odds": 3.3,
+          "median_odds": 3.1,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1032
+        },
+        {
+          "selection": "Nottingham Forest",
+          "selection_type": "home",
+          "odds": 2.26,
+          "median_odds": 2.2,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0727
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.55,
+          "median_odds": 3.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1029
+        }
+      ]
+    },
+    {
+      "id": "8b4b033209bb204516cbd1f523614f25",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-22T16:30:00Z",
+      "home_team": "Brentford",
+      "away_team": "Tottenham Hotspur",
+      "picks": [
+        {
+          "selection": "Brentford",
+          "selection_type": "home",
+          "odds": 2.38,
+          "median_odds": 2.25,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1022
+        },
+        {
+          "selection": "Tottenham Hotspur",
+          "selection_type": "away",
+          "odds": 2.92,
+          "median_odds": 2.8,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0786
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.85,
+          "median_odds": 3.6,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0972
+        }
+      ]
+    },
+    {
+      "id": "ed57c6f67558fabe25c4634ca959ee01",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T16:30:00Z",
+      "home_team": "Udinese",
+      "away_team": "Como",
+      "picks": [
+        {
+          "selection": "Como",
+          "selection_type": "away",
+          "odds": 1.9,
+          "median_odds": 1.815,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0937
+        },
+        {
+          "selection": "Udinese",
+          "selection_type": "home",
+          "odds": 4.8,
+          "median_odds": 4.315,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1622
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.5,
+          "median_odds": 3.3,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0758
+        }
+      ]
+    },
+    {
+      "id": "ef8a47c3c8c0f71a251e2efcbf84854a",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T16:30:00Z",
+      "home_team": "Inter Milan",
+      "away_team": "Monza",
+      "picks": [
+        {
+          "selection": "Inter Milan",
+          "selection_type": "home",
+          "odds": 1.25,
+          "median_odds": 1.2,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0583
+        },
+        {
+          "selection": "Monza",
+          "selection_type": "away",
+          "odds": 18.0,
+          "median_odds": 12.5,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.64
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 6.5,
+          "median_odds": 5.675,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1938
+        }
+      ]
+    },
+    {
+      "id": "7d4101254957e46d6037bd1d8f268a0e",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T18:45:00Z",
+      "home_team": "Parma",
+      "away_team": "Cagliari",
+      "picks": [
+        {
+          "selection": "Cagliari",
+          "selection_type": "away",
+          "odds": 2.94,
+          "median_odds": 2.75,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0873
+        },
+        {
+          "selection": "Parma",
+          "selection_type": "home",
+          "odds": 2.7,
+          "median_odds": 2.55,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0784
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.2,
+          "median_odds": 3.025,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1058
+        }
+      ]
+    },
+    {
+      "id": "c123d013c16bf22279a1fdf1248c4afb",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-22T18:45:00Z",
+      "home_team": "Genoa",
+      "away_team": "Napoli",
+      "picks": [
+        {
+          "selection": "Genoa",
+          "selection_type": "home",
+          "odds": 5.0,
+          "median_odds": 4.45,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1798
+        },
+        {
+          "selection": "Napoli",
+          "selection_type": "away",
+          "odds": 1.9,
+          "median_odds": 1.83,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1475
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.3,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0909
+        }
+      ]
+    },
+    {
+      "id": "f5086c74d4a767e3ad7ea69bd4a66b76",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-23T13:00:00Z",
+      "home_team": "Brighton and Hove Albion",
+      "away_team": "Aston Villa",
+      "picks": [
+        {
+          "selection": "Aston Villa",
+          "selection_type": "away",
+          "odds": 2.98,
+          "median_odds": 2.86,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0909
+        },
+        {
+          "selection": "Brighton and Hove Albion",
+          "selection_type": "home",
+          "odds": 2.3,
+          "median_odds": 2.23,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0673
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.75,
+          "median_odds": 3.6,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0694
+        }
+      ]
+    },
+    {
+      "id": "87c7c9bfd5e3072bded20c702f553c63",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-23T13:00:00Z",
+      "home_team": "Manchester City",
+      "away_team": "Bournemouth",
+      "picks": [
+        {
+          "selection": "Bournemouth",
+          "selection_type": "away",
+          "odds": 6.5,
+          "median_odds": 6.25,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.16
+        },
+        {
+          "selection": "Manchester City",
+          "selection_type": "home",
+          "odds": 1.46,
+          "median_odds": 1.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0714
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.5,
+          "median_odds": 5.0,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.16
+        }
+      ]
+    },
+    {
+      "id": "ea0bacc4c23f813c6af97ec9b306a850",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-23T15:30:00Z",
+      "home_team": "Newcastle United",
+      "away_team": "Liverpool",
+      "picks": [
+        {
+          "selection": "Liverpool",
+          "selection_type": "away",
+          "odds": 2.25,
+          "median_odds": 2.2,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0682
+        },
+        {
+          "selection": "Newcastle United",
+          "selection_type": "home",
+          "odds": 3.1,
+          "median_odds": 2.75,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1818
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.0,
+          "median_odds": 3.8,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1316
+        }
+      ]
+    },
+    {
+      "id": "be3b0694068c114eda8d252c66210b11",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-23T16:30:00Z",
+      "home_team": "Frosinone",
+      "away_team": "Juventus",
+      "picks": [
+        {
+          "selection": "Frosinone",
+          "selection_type": "home",
+          "odds": 8.2,
+          "median_odds": 6.5,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.3385
+        },
+        {
+          "selection": "Juventus",
+          "selection_type": "away",
+          "odds": 1.48,
+          "median_odds": 1.44,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0556
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.4,
+          "median_odds": 4.3,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.093
+        }
+      ]
+    },
+    {
+      "id": "120c61563f0b7119d87522da76fcaa33",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-23T16:30:00Z",
+      "home_team": "Venezia",
+      "away_team": "Lecce",
+      "picks": [
+        {
+          "selection": "Lecce",
+          "selection_type": "away",
+          "odds": 3.25,
+          "median_odds": 3.05,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.1148
+        },
+        {
+          "selection": "Venezia",
+          "selection_type": "home",
+          "odds": 2.4,
+          "median_odds": 2.3,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.087
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.25,
+          "median_odds": 3.2,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0781
+        }
+      ]
+    },
+    {
+      "id": "fbea45a1e53e07faac0027ac5d233587",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-23T18:45:00Z",
+      "home_team": "Torino",
+      "away_team": "AC Milan",
+      "picks": [
+        {
+          "selection": "AC Milan",
+          "selection_type": "away",
+          "odds": 1.82,
+          "median_odds": 1.75,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0857
+        },
+        {
+          "selection": "Torino",
+          "selection_type": "home",
+          "odds": 4.6,
+          "median_odds": 4.4,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.1364
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.75,
+          "median_odds": 3.625,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.069
+        }
+      ]
+    },
+    {
+      "id": "d44b7b56dadba2e7606cdceec655e62f",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-23T18:45:00Z",
+      "home_team": "Atalanta BC",
+      "away_team": "Sassuolo",
+      "picks": [
+        {
+          "selection": "Atalanta BC",
+          "selection_type": "home",
+          "odds": 1.55,
+          "median_odds": 1.5,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0733
+        },
+        {
+          "selection": "Sassuolo",
+          "selection_type": "away",
+          "odds": 6.2,
+          "median_odds": 5.875,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.2043
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.33,
+          "median_odds": 4.2,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0905
+        }
+      ]
+    },
+    {
+      "id": "c23c70e25e6253ea30f33add6c73d299",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-24T16:30:00Z",
+      "home_team": "Bologna",
+      "away_team": "Lazio",
+      "picks": [
+        {
+          "selection": "Bologna",
+          "selection_type": "home",
+          "odds": 2.15,
+          "median_odds": 2.1,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0714
+        },
+        {
+          "selection": "Lazio",
+          "selection_type": "away",
+          "odds": 3.85,
+          "median_odds": 3.45,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.1884
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.3,
+          "median_odds": 3.2,
+          "bookmaker_count": 14,
+          "consensus_spread": 0.0937
+        }
+      ]
+    },
+    {
+      "id": "4164b325d120b7310921429a21496210",
+      "sport_key": "soccer_italy_serie_a",
+      "league": "Serie A - Italy",
+      "commence_time": "2026-08-24T18:45:00Z",
+      "home_team": "AS Roma",
+      "away_team": "Fiorentina",
+      "picks": [
+        {
+          "selection": "AS Roma",
+          "selection_type": "home",
+          "odds": 1.56,
+          "median_odds": 1.53,
+          "bookmaker_count": 13,
+          "consensus_spread": 0.0784
+        },
+        {
+          "selection": "Fiorentina",
+          "selection_type": "away",
+          "odds": 6.4,
+          "median_odds": 6.0,
+          "bookmaker_count": 13,
+          "consensus_spread": 0.15
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.2,
+          "median_odds": 4.0,
+          "bookmaker_count": 13,
+          "consensus_spread": 0.1
+        }
+      ]
+    },
+    {
+      "id": "4e4a813bf4218cc527e6f8ef2351170d",
+      "sport_key": "soccer_epl",
+      "league": "EPL",
+      "commence_time": "2026-08-24T19:00:00Z",
+      "home_team": "Fulham",
+      "away_team": "Chelsea",
+      "picks": [
+        {
+          "selection": "Chelsea",
+          "selection_type": "away",
+          "odds": 2.26,
+          "median_odds": 2.1,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1238
+        },
+        {
+          "selection": "Fulham",
+          "selection_type": "home",
+          "odds": 3.25,
+          "median_odds": 3.0,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1233
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.8,
+          "median_odds": 3.6,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0833
+        }
+      ]
+    },
+    {
+      "id": "86eee7d1c8e3dfb4e52cb45c875d4c4e",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-25T19:00:00Z",
+      "home_team": "Valencia",
+      "away_team": "Real Betis",
+      "picks": [
+        {
+          "selection": "Real Betis",
+          "selection_type": "away",
+          "odds": 2.66,
+          "median_odds": 2.6,
+          "bookmaker_count": 13,
+          "consensus_spread": 0.0615
+        },
+        {
+          "selection": "Valencia",
+          "selection_type": "home",
+          "odds": 2.7,
+          "median_odds": 2.62,
+          "bookmaker_count": 13,
+          "consensus_spread": 0.0763
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.25,
+          "bookmaker_count": 13,
+          "consensus_spread": 0.1415
+        }
+      ]
+    },
+    {
+      "id": "a979daf40170f19586fa4e8682ba698d",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-26T19:00:00Z",
+      "home_team": "Real Madrid",
+      "away_team": "Real Sociedad",
+      "picks": [
+        {
+          "selection": "Real Madrid",
+          "selection_type": "home",
+          "odds": 1.44,
+          "median_odds": 1.42,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.0563
+        },
+        {
+          "selection": "Real Sociedad",
+          "selection_type": "away",
+          "odds": 7.2,
+          "median_odds": 6.6,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.2197
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.0,
+          "median_odds": 4.8,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.1042
+        }
+      ]
+    },
+    {
+      "id": "4e67f40bc51c915154f04559a7ab692c",
+      "sport_key": "soccer_spain_la_liga",
+      "league": "La Liga - Spain",
+      "commence_time": "2026-08-27T19:00:00Z",
+      "home_team": "Barcelona",
+      "away_team": "Athletic Bilbao",
+      "picks": [
+        {
+          "selection": "Athletic Bilbao",
+          "selection_type": "away",
+          "odds": 7.2,
+          "median_odds": 6.5,
+          "bookmaker_count": 10,
+          "consensus_spread": 0.2154
+        },
+        {
+          "selection": "Barcelona",
+          "selection_type": "home",
+          "odds": 1.44,
+          "median_odds": 1.39,
+          "bookmaker_count": 10,
+          "consensus_spread": 0.0863
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.1,
+          "median_odds": 4.95,
+          "bookmaker_count": 10,
+          "consensus_spread": 0.1616
+        }
+      ]
+    },
+    {
+      "id": "a8ca30a4492261eb5094ef63ba7e80d8",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-28T18:30:00Z",
+      "home_team": "Bayern Munich",
+      "away_team": "VfB Stuttgart",
+      "picks": [
+        {
+          "selection": "Bayern Munich",
+          "selection_type": "home",
+          "odds": 1.33,
+          "median_odds": 1.25,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.088
+        },
+        {
+          "selection": "VfB Stuttgart",
+          "selection_type": "away",
+          "odds": 8.5,
+          "median_odds": 7.5,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.3333
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 6.5,
+          "median_odds": 6.0,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.2167
+        }
+      ]
+    },
+    {
+      "id": "22ed1aaf03ab3966d098f7049715aada",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "1. FC Köln",
+      "away_team": "TSG Hoffenheim",
+      "picks": [
+        {
+          "selection": "1. FC Köln",
+          "selection_type": "home",
+          "odds": 3.0,
+          "median_odds": 2.755,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1379
+        },
+        {
+          "selection": "TSG Hoffenheim",
+          "selection_type": "away",
+          "odds": 2.34,
+          "median_odds": 2.2,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1091
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.8,
+          "median_odds": 3.65,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1096
+        }
+      ]
+    },
+    {
+      "id": "c9bfe9c077e1bfb343a6e228b903c6d6",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "Augsburg",
+      "away_team": "FC Schalke 04",
+      "picks": [
+        {
+          "selection": "Augsburg",
+          "selection_type": "home",
+          "odds": 2.1,
+          "median_odds": 2.035,
+          "bookmaker_count": 12,
+          "consensus_spread": 0.3489
+        },
+        {
+          "selection": "FC Schalke 04",
+          "selection_type": "away",
+          "odds": 3.25,
+          "median_odds": 3.05,
+          "bookmaker_count": 12,
+          "consensus_spread": 0.6033
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.0,
+          "median_odds": 3.625,
+          "bookmaker_count": 12,
+          "consensus_spread": 0.8028
+        }
+      ]
+    },
+    {
+      "id": "bf5e00842d79a39d57b99fce07a1257e",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "Elversberg",
+      "away_team": "Bayer Leverkusen",
+      "picks": [
+        {
+          "selection": "Bayer Leverkusen",
+          "selection_type": "away",
+          "odds": 1.57,
+          "median_odds": 1.53,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0458
+        },
+        {
+          "selection": "Elversberg",
+          "selection_type": "home",
+          "odds": 5.5,
+          "median_odds": 5.0,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.22
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.6,
+          "median_odds": 4.45,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0899
+        }
+      ]
+    },
+    {
+      "id": "9d7f045126ec9185b73d9c67f881c6d2",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "Borussia Dortmund",
+      "away_team": "Hamburger SV",
+      "picks": [
+        {
+          "selection": "Borussia Dortmund",
+          "selection_type": "home",
+          "odds": 1.35,
+          "median_odds": 1.3,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0769
+        },
+        {
+          "selection": "Hamburger SV",
+          "selection_type": "away",
+          "odds": 9.5,
+          "median_odds": 8.0,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.3438
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.6,
+          "median_odds": 5.25,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1143
+        }
+      ]
+    },
+    {
+      "id": "831beb2ef9729a813b44d2a50dd19970",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "RB Leipzig",
+      "away_team": "Borussia Monchengladbach",
+      "picks": [
+        {
+          "selection": "Borussia Monchengladbach",
+          "selection_type": "away",
+          "odds": 5.75,
+          "median_odds": 5.125,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.2439
+        },
+        {
+          "selection": "RB Leipzig",
+          "selection_type": "home",
+          "odds": 1.57,
+          "median_odds": 1.5,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0733
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.7,
+          "median_odds": 4.425,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1808
+        }
+      ]
+    },
+    {
+      "id": "57a8a5da3b5c298d388f4415c37cdf45",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "Union Berlin",
+      "away_team": "Eintracht Frankfurt",
+      "picks": [
+        {
+          "selection": "Eintracht Frankfurt",
+          "selection_type": "away",
+          "odds": 2.87,
+          "median_odds": 2.7,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1148
+        },
+        {
+          "selection": "Union Berlin",
+          "selection_type": "home",
+          "odds": 2.44,
+          "median_odds": 2.3,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1043
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.6,
+          "median_odds": 3.5,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1286
+        }
+      ]
+    },
+    {
+      "id": "fa5bd7399799a6c451cc4e6ca6145f11",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "FSV Mainz 05",
+      "away_team": "SC Paderborn",
+      "picks": [
+        {
+          "selection": "FSV Mainz 05",
+          "selection_type": "home",
+          "odds": 1.73,
+          "median_odds": 1.65,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0848
+        },
+        {
+          "selection": "SC Paderborn",
+          "selection_type": "away",
+          "odds": 4.75,
+          "median_odds": 4.4,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1705
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.0,
+          "median_odds": 3.95,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1266
+        }
+      ]
+    },
+    {
+      "id": "66f7f9ce44fbbc1890035a3d68cfd3e5",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-29T13:30:00Z",
+      "home_team": "SC Freiburg",
+      "away_team": "Werder Bremen",
+      "picks": [
+        {
+          "selection": "SC Freiburg",
+          "selection_type": "home",
+          "odds": 2.05,
+          "median_odds": 1.97,
+          "bookmaker_count": 12,
+          "consensus_spread": 0.3604
+        },
+        {
+          "selection": "Werder Bremen",
+          "selection_type": "away",
+          "odds": 3.65,
+          "median_odds": 3.3,
+          "bookmaker_count": 12,
+          "consensus_spread": 0.7
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.75,
+          "median_odds": 3.45,
+          "bookmaker_count": 12,
+          "consensus_spread": 0.7913
+        }
+      ]
+    },
+    {
+      "id": "5d3afd8c18aec6fac47b3c1244bd9002",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-30T13:30:00Z",
+      "home_team": "SC Freiburg",
+      "away_team": "Werder Bremen",
+      "picks": [
+        {
+          "selection": "SC Freiburg",
+          "selection_type": "home",
+          "odds": 2.0,
+          "median_odds": 1.975,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0253
+        },
+        {
+          "selection": "Werder Bremen",
+          "selection_type": "away",
+          "odds": 3.4,
+          "median_odds": 3.275,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0611
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.6,
+          "median_odds": 3.55,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0282
+        }
+      ]
+    },
+    {
+      "id": "78ab183499784117d62a40821294d9fa",
+      "sport_key": "soccer_germany_bundesliga",
+      "league": "Bundesliga - Germany",
+      "commence_time": "2026-08-30T15:30:00Z",
+      "home_team": "Augsburg",
+      "away_team": "FC Schalke 04",
+      "picks": [
+        {
+          "selection": "Augsburg",
+          "selection_type": "home",
+          "odds": 2.08,
+          "median_odds": 2.05,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0634
+        },
+        {
+          "selection": "FC Schalke 04",
+          "selection_type": "away",
+          "odds": 3.0,
+          "median_odds": 3.0,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0333
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.75,
+          "median_odds": 3.7,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0405
+        }
+      ]
+    }
+  ],
+  "quota": {
+    "remaining": "495",
+    "used": "5",
+    "last": "1"
+  },
+  "error": null
+}
