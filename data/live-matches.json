@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T12:14:08.470846+00:00",
+  "generated_at": "2026-07-22T17:40:17.014700+00:00",
   "provider": "The Odds API",
   "regions": "uk",
   "markets": [
@@ -12,7 +12,7 @@
     {
       "key": "soccer_uefa_champs_league_qualification",
       "title": "UEFA Champions League Qualification",
-      "events_seen": 3
+      "events_seen": 1
     },
     {
       "key": "soccer_league_of_ireland",
@@ -37,7 +37,7 @@
     {
       "key": "soccer_norway_eliteserien",
       "title": "Eliteserien - Norway",
-      "events_seen": 9
+      "events_seen": 7
     },
     {
       "key": "soccer_poland_ekstraklasa",
@@ -60,6 +60,26 @@
       "events_seen": 30
     },
     {
+      "key": "soccer_argentina_primera_division",
+      "title": "Primera División - Argentina",
+      "events_seen": 23
+    },
+    {
+      "key": "soccer_brazil_campeonato",
+      "title": "Brazil Série A",
+      "events_seen": 19
+    },
+    {
+      "key": "soccer_brazil_serie_b",
+      "title": "Brazil Série B",
+      "events_seen": 17
+    },
+    {
+      "key": "soccer_conmebol_copa_sudamericana",
+      "title": "Copa Sudamericana",
+      "events_seen": 8
+    },
+    {
       "key": "soccer_russia_premier_league",
       "title": "Premier League - Russia",
       "events_seen": 8
@@ -68,170 +88,10 @@
       "key": "soccer_chile_campeonato",
       "title": "Primera División - Chile",
       "events_seen": 8
-    },
-    {
-      "key": "soccer_china_superleague",
-      "title": "Super League - China",
-      "events_seen": 8
-    },
-    {
-      "key": "soccer_conmebol_copa_sudamericana",
-      "title": "Copa Sudamericana",
-      "events_seen": 7
-    },
-    {
-      "key": "soccer_mexico_ligamx",
-      "title": "Liga MX",
-      "events_seen": 7
-    },
-    {
-      "key": "soccer_korea_kleague1",
-      "title": "K League 1",
-      "events_seen": 6
     }
   ],
-  "event_count": 174,
+  "event_count": 180,
   "events": [
-    {
-      "id": "1bf45ed7a22efa3b3787ba90ee393913",
-      "sport_key": "soccer_uefa_champs_league_qualification",
-      "league": "UEFA Champions League Qualification",
-      "commence_time": "2026-07-22T17:00:00Z",
-      "home_team": "Omonoia FC",
-      "away_team": "FC Kairat",
-      "picks": [
-        {
-          "selection": "FC Kairat",
-          "selection_type": "away",
-          "odds": 5.2,
-          "median_odds": 5.1,
-          "bookmaker_count": 9,
-          "consensus_spread": 0.1373
-        },
-        {
-          "selection": "Omonoia FC",
-          "selection_type": "home",
-          "odds": 1.82,
-          "median_odds": 1.67,
-          "bookmaker_count": 9,
-          "consensus_spread": 0.1437
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.8,
-          "median_odds": 3.65,
-          "bookmaker_count": 9,
-          "consensus_spread": 0.1096
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "05177ad94b06f61bce127443601d4a40",
-      "sport_key": "soccer_norway_eliteserien",
-      "league": "Eliteserien - Norway",
-      "commence_time": "2026-07-22T17:00:00Z",
-      "home_team": "Bodø/Glimt",
-      "away_team": "HamKam",
-      "picks": [
-        {
-          "selection": "Bodø/Glimt",
-          "selection_type": "home",
-          "odds": 1.12,
-          "median_odds": 1.09,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.0642
-        },
-        {
-          "selection": "HamKam",
-          "selection_type": "away",
-          "odds": 30.0,
-          "median_odds": 17.5,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.8571
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 13.5,
-          "median_odds": 9.5,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.5263
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "be00ba5973e5adb6895e39e42e310525",
-      "sport_key": "soccer_norway_eliteserien",
-      "league": "Eliteserien - Norway",
-      "commence_time": "2026-07-22T17:00:00Z",
-      "home_team": "Lillestrom",
-      "away_team": "Viking FK",
-      "picks": [
-        {
-          "selection": "Lillestrom",
-          "selection_type": "home",
-          "odds": 3.25,
-          "median_odds": 2.975,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.2118
-        },
-        {
-          "selection": "Viking FK",
-          "selection_type": "away",
-          "odds": 2.24,
-          "median_odds": 2.12,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.1132
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.95,
-          "median_odds": 3.6,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.1806
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "e82b9d6daf3a1b4e9922495ca59cfcc7",
-      "sport_key": "soccer_uefa_champs_league_qualification",
-      "league": "UEFA Champions League Qualification",
-      "commence_time": "2026-07-22T17:30:00Z",
-      "home_team": "PFC Levski Sofia",
-      "away_team": "Universitatea Craiova",
-      "picks": [
-        {
-          "selection": "PFC Levski Sofia",
-          "selection_type": "home",
-          "odds": 2.12,
-          "median_odds": 1.95,
-          "bookmaker_count": 9,
-          "consensus_spread": 0.1282
-        },
-        {
-          "selection": "Universitatea Craiova",
-          "selection_type": "away",
-          "odds": 4.1,
-          "median_odds": 3.7,
-          "bookmaker_count": 9,
-          "consensus_spread": 0.1351
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.45,
-          "median_odds": 3.2,
-          "bookmaker_count": 9,
-          "consensus_spread": 0.1094
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
     {
       "id": "57a59765e3e5c198db099aefaa1cf339",
       "sport_key": "soccer_uefa_champs_league_qualification",
@@ -243,29 +103,29 @@
         {
           "selection": "KF Egnatia",
           "selection_type": "home",
-          "odds": 4.2,
+          "odds": 4.0,
           "median_odds": 3.9,
           "bookmaker_count": 9,
-          "consensus_spread": 0.1538
+          "consensus_spread": 0.1282
         },
         {
           "selection": "NK Celje",
           "selection_type": "away",
-          "odds": 2.0,
-          "median_odds": 1.88,
+          "odds": 2.08,
+          "median_odds": 1.91,
           "bookmaker_count": 9,
-          "consensus_spread": 0.0904
+          "consensus_spread": 0.1099
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.7,
+          "odds": 3.65,
           "median_odds": 3.25,
           "bookmaker_count": 9,
-          "consensus_spread": 0.1692
+          "consensus_spread": 0.1385
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "04fd513adb50860e553553a771be0887",
@@ -278,29 +138,29 @@
         {
           "selection": "Independiente Medellín",
           "selection_type": "home",
-          "odds": 2.5,
-          "median_odds": 2.265,
+          "odds": 2.62,
+          "median_odds": 2.415,
           "bookmaker_count": 12,
           "consensus_spread": 0.1325
         },
         {
           "selection": "Vasco da Gama",
           "selection_type": "away",
-          "odds": 3.35,
-          "median_odds": 3.1,
+          "odds": 3.15,
+          "median_odds": 2.9,
           "bookmaker_count": 12,
-          "consensus_spread": 0.1452
+          "consensus_spread": 0.1207
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.25,
-          "median_odds": 3.125,
+          "median_odds": 3.0,
           "bookmaker_count": 12,
-          "consensus_spread": 0.1184
+          "consensus_spread": 0.1233
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "1564002429f60a7c9faba9a3789eeaad",
@@ -313,29 +173,29 @@
         {
           "selection": "Coritiba",
           "selection_type": "home",
-          "odds": 4.7,
-          "median_odds": 4.0,
+          "odds": 4.1,
+          "median_odds": 3.8,
           "bookmaker_count": 19,
-          "consensus_spread": 0.275
+          "consensus_spread": 0.1579
         },
         {
           "selection": "Palmeiras",
           "selection_type": "away",
-          "odds": 2.0,
-          "median_odds": 1.93,
+          "odds": 2.2,
+          "median_odds": 2.05,
           "bookmaker_count": 19,
-          "consensus_spread": 0.0674
+          "consensus_spread": 0.1415
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.45,
-          "median_odds": 3.3,
+          "odds": 3.25,
+          "median_odds": 3.2,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1061
+          "consensus_spread": 0.1094
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "c0cc7b3224134dee2bfe3b5acbbeaf20",
@@ -348,29 +208,29 @@
         {
           "selection": "Ceará",
           "selection_type": "home",
-          "odds": 2.22,
-          "median_odds": 2.1,
+          "odds": 2.36,
+          "median_odds": 2.18,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1048
+          "consensus_spread": 0.1468
         },
         {
           "selection": "Clube de Regatas Brasil",
           "selection_type": "away",
           "odds": 3.65,
-          "median_odds": 3.3,
+          "median_odds": 3.25,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1667
+          "consensus_spread": 0.1692
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.4,
-          "median_odds": 3.175,
+          "odds": 3.25,
+          "median_odds": 3.075,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1102
+          "consensus_spread": 0.0976
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "50da7304e542212cdbbf589d62987844",
@@ -383,64 +243,29 @@
         {
           "selection": "Operario PR",
           "selection_type": "home",
-          "odds": 1.43,
-          "median_odds": 1.36,
+          "odds": 1.38,
+          "median_odds": 1.33,
           "bookmaker_count": 20,
-          "consensus_spread": 0.0735
+          "consensus_spread": 0.0677
         },
         {
           "selection": "Ponte Preta",
           "selection_type": "away",
-          "odds": 10.5,
-          "median_odds": 7.8,
+          "odds": 11.5,
+          "median_odds": 8.5,
           "bookmaker_count": 20,
-          "consensus_spread": 0.5128
+          "consensus_spread": 0.5294
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.75,
-          "median_odds": 4.2,
+          "odds": 5.1,
+          "median_odds": 4.45,
           "bookmaker_count": 20,
-          "consensus_spread": 0.2024
+          "consensus_spread": 0.2022
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
-    },
-    {
-      "id": "d419bf8fe33f6751ca9ef9088f1ccc3f",
-      "sport_key": "soccer_brazil_serie_b",
-      "league": "Brazil Série B",
-      "commence_time": "2026-07-22T23:30:00Z",
-      "home_team": "Goiás",
-      "away_team": "Sport Recife",
-      "picks": [
-        {
-          "selection": "Goiás",
-          "selection_type": "home",
-          "odds": 2.25,
-          "median_odds": 2.18,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.0688
-        },
-        {
-          "selection": "Sport Recife",
-          "selection_type": "away",
-          "odds": 3.7,
-          "median_odds": 3.12,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.2564
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.35,
-          "median_odds": 3.1,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.1129
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e5f7bbee08fb7c01da63faaee4f83b38",
@@ -453,29 +278,29 @@
         {
           "selection": "Chicago Fire",
           "selection_type": "away",
-          "odds": 3.0,
-          "median_odds": 2.8,
+          "odds": 2.78,
+          "median_odds": 2.6,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1429
+          "consensus_spread": 0.1846
         },
         {
           "selection": "Inter Miami CF",
           "selection_type": "home",
-          "odds": 2.28,
-          "median_odds": 2.15,
+          "odds": 2.44,
+          "median_odds": 2.3,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1302
+          "consensus_spread": 0.1261
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.3,
-          "median_odds": 3.975,
+          "odds": 4.2,
+          "median_odds": 4.0,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1384
+          "consensus_spread": 0.1125
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "91e73da1636862fccf59fbf2e745e7cf",
@@ -488,29 +313,29 @@
         {
           "selection": "Columbus Crew SC",
           "selection_type": "home",
-          "odds": 2.04,
-          "median_odds": 1.93,
+          "odds": 1.95,
+          "median_odds": 1.865,
           "bookmaker_count": 20,
-          "consensus_spread": 0.0881
+          "consensus_spread": 0.0804
         },
         {
           "selection": "New York City FC",
           "selection_type": "away",
-          "odds": 3.95,
-          "median_odds": 3.5,
+          "odds": 4.2,
+          "median_odds": 3.725,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1857
+          "consensus_spread": 0.2148
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.8,
+          "odds": 3.85,
           "median_odds": 3.6,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1111
+          "consensus_spread": 0.125
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "144587319a3ab8cee3a02a28d815914e",
@@ -523,29 +348,29 @@
         {
           "selection": "FC Cincinnati",
           "selection_type": "home",
-          "odds": 4.0,
-          "median_odds": 3.65,
+          "odds": 3.9,
+          "median_odds": 3.6,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1644
+          "consensus_spread": 0.1667
         },
         {
           "selection": "Vancouver Whitecaps FC",
           "selection_type": "away",
-          "odds": 1.87,
-          "median_odds": 1.75,
+          "odds": 1.91,
+          "median_odds": 1.8,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1143
+          "consensus_spread": 0.1167
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.5,
+          "odds": 4.33,
           "median_odds": 4.15,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1446
+          "consensus_spread": 0.1036
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "f1915283c0febf8297dbb558666a4690",
@@ -558,29 +383,29 @@
         {
           "selection": "New England Revolution",
           "selection_type": "home",
-          "odds": 1.97,
-          "median_odds": 1.86,
+          "odds": 2.12,
+          "median_odds": 1.95,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1183
+          "consensus_spread": 0.1538
         },
         {
           "selection": "Toronto FC",
           "selection_type": "away",
-          "odds": 4.0,
-          "median_odds": 3.75,
+          "odds": 3.75,
+          "median_odds": 3.4,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1333
+          "consensus_spread": 0.1618
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.9,
-          "median_odds": 3.7,
+          "odds": 3.8,
+          "median_odds": 3.6,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1081
+          "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b453ea14d7c033045b51018b59635d39",
@@ -593,29 +418,64 @@
         {
           "selection": "New York Red Bulls",
           "selection_type": "away",
-          "odds": 4.6,
-          "median_odds": 4.2,
+          "odds": 4.4,
+          "median_odds": 4.0,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1429
+          "consensus_spread": 0.1125
         },
         {
           "selection": "Philadelphia Union",
           "selection_type": "home",
-          "odds": 1.76,
-          "median_odds": 1.67,
+          "odds": 1.81,
+          "median_odds": 1.7,
           "bookmaker_count": 20,
-          "consensus_spread": 0.0838
+          "consensus_spread": 0.1118
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.5,
-          "median_odds": 4.2,
+          "odds": 4.4,
+          "median_odds": 4.1,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1429
+          "consensus_spread": 0.122
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "d419bf8fe33f6751ca9ef9088f1ccc3f",
+      "sport_key": "soccer_brazil_serie_b",
+      "league": "Brazil Série B",
+      "commence_time": "2026-07-22T23:30:00Z",
+      "home_team": "Goiás",
+      "away_team": "Sport Recife",
+      "picks": [
+        {
+          "selection": "Goiás",
+          "selection_type": "home",
+          "odds": 2.18,
+          "median_odds": 2.05,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1122
+        },
+        {
+          "selection": "Sport Recife",
+          "selection_type": "away",
+          "odds": 4.0,
+          "median_odds": 3.4,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.2794
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.35,
+          "median_odds": 3.12,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1122
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "67b300e5936d7a5b4743101895dca07d",
@@ -628,10 +488,10 @@
         {
           "selection": "Atlanta United FC",
           "selection_type": "away",
-          "odds": 3.8,
-          "median_odds": 3.425,
+          "odds": 3.75,
+          "median_odds": 3.45,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1752
+          "consensus_spread": 0.1594
         },
         {
           "selection": "Charlotte FC",
@@ -650,147 +510,7 @@
           "consensus_spread": 0.1714
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "7b0cca084d7d16ef946532414fbbcb53",
-      "sport_key": "soccer_brazil_campeonato",
-      "league": "Brazil Série A",
-      "commence_time": "2026-07-23T00:30:00Z",
-      "home_team": "Sao Paulo",
-      "away_team": "Atletico Paranaense",
-      "picks": [
-        {
-          "selection": "Atletico Paranaense",
-          "selection_type": "away",
-          "odds": 4.1,
-          "median_odds": 3.8,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1579
-        },
-        {
-          "selection": "Sao Paulo",
-          "selection_type": "home",
-          "odds": 2.08,
-          "median_odds": 2.0,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.085
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.45,
-          "median_odds": 3.25,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1385
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
-    },
-    {
-      "id": "418b9adc21c20323f0b8311615c0cef4",
-      "sport_key": "soccer_brazil_campeonato",
-      "league": "Brazil Série A",
-      "commence_time": "2026-07-23T00:30:00Z",
-      "home_team": "Chapecoense",
-      "away_team": "Flamengo",
-      "picks": [
-        {
-          "selection": "Chapecoense",
-          "selection_type": "home",
-          "odds": 8.6,
-          "median_odds": 7.0,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.3357
-        },
-        {
-          "selection": "Flamengo",
-          "selection_type": "away",
-          "odds": 1.5,
-          "median_odds": 1.44,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.0833
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 4.6,
-          "median_odds": 4.3,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.1628
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
-    },
-    {
-      "id": "d171851925e119650345107d24591b4f",
-      "sport_key": "soccer_brazil_campeonato",
-      "league": "Brazil Série A",
-      "commence_time": "2026-07-23T00:30:00Z",
-      "home_team": "Internacional",
-      "away_team": "Cruzeiro",
-      "picks": [
-        {
-          "selection": "Cruzeiro",
-          "selection_type": "away",
-          "odds": 3.45,
-          "median_odds": 3.25,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.1385
-        },
-        {
-          "selection": "Internacional",
-          "selection_type": "home",
-          "odds": 2.28,
-          "median_odds": 2.2,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.0818
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.45,
-          "median_odds": 3.3,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.1061
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
-    },
-    {
-      "id": "20d1e1bef89238866a7f1231b5e27941",
-      "sport_key": "soccer_brazil_serie_b",
-      "league": "Brazil Série B",
-      "commence_time": "2026-07-23T00:30:00Z",
-      "home_team": "Nautico PE",
-      "away_team": "Londrina",
-      "picks": [
-        {
-          "selection": "Londrina",
-          "selection_type": "away",
-          "odds": 5.0,
-          "median_odds": 4.475,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.2235
-        },
-        {
-          "selection": "Nautico PE",
-          "selection_type": "home",
-          "odds": 1.83,
-          "median_odds": 1.73,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.0983
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.8,
-          "median_odds": 3.45,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1449
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "991b91d4b2ab8022fc2722cb806b93e3",
@@ -803,29 +523,29 @@
         {
           "selection": "CF Montreal",
           "selection_type": "away",
-          "odds": 6.8,
-          "median_odds": 6.0,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.2167
+          "odds": 6.75,
+          "median_odds": 5.75,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.2609
         },
         {
           "selection": "Nashville SC",
           "selection_type": "home",
-          "odds": 1.52,
-          "median_odds": 1.49,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.0604
+          "odds": 1.56,
+          "median_odds": 1.485,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0875
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.8,
-          "median_odds": 4.2,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.2024
+          "odds": 4.7,
+          "median_odds": 4.33,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1732
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "9b6e52d74e3e078185ecfd02e8198653",
@@ -838,10 +558,10 @@
         {
           "selection": "D.C. United",
           "selection_type": "away",
-          "odds": 4.8,
+          "odds": 4.6,
           "median_odds": 4.2,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1905
+          "consensus_spread": 0.1429
         },
         {
           "selection": "Houston Dynamo",
@@ -855,12 +575,12 @@
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.0,
-          "median_odds": 3.775,
+          "median_odds": 3.75,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1325
+          "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "9d65fa134ade9d1be96d983d26764ece",
@@ -873,7 +593,7 @@
         {
           "selection": "Minnesota United FC",
           "selection_type": "away",
-          "odds": 2.04,
+          "odds": 2.1,
           "median_odds": 1.95,
           "bookmaker_count": 20,
           "consensus_spread": 0.1333
@@ -881,21 +601,161 @@
         {
           "selection": "Sporting Kansas City",
           "selection_type": "home",
-          "odds": 3.7,
-          "median_odds": 3.4,
+          "odds": 3.55,
+          "median_odds": 3.3,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1765
+          "consensus_spread": 0.1364
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.0,
-          "median_odds": 3.8,
+          "median_odds": 3.75,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1316
+          "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "7b0cca084d7d16ef946532414fbbcb53",
+      "sport_key": "soccer_brazil_campeonato",
+      "league": "Brazil Série A",
+      "commence_time": "2026-07-23T00:30:00Z",
+      "home_team": "Sao Paulo",
+      "away_team": "Atletico Paranaense",
+      "picks": [
+        {
+          "selection": "Atletico Paranaense",
+          "selection_type": "away",
+          "odds": 4.4,
+          "median_odds": 3.95,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1646
+        },
+        {
+          "selection": "Sao Paulo",
+          "selection_type": "home",
+          "odds": 2.06,
+          "median_odds": 1.95,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.0769
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.35,
+          "median_odds": 3.2,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1094
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "418b9adc21c20323f0b8311615c0cef4",
+      "sport_key": "soccer_brazil_campeonato",
+      "league": "Brazil Série A",
+      "commence_time": "2026-07-23T00:30:00Z",
+      "home_team": "Chapecoense",
+      "away_team": "Flamengo",
+      "picks": [
+        {
+          "selection": "Chapecoense",
+          "selection_type": "home",
+          "odds": 8.6,
+          "median_odds": 7.5,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.2133
+        },
+        {
+          "selection": "Flamengo",
+          "selection_type": "away",
+          "odds": 1.48,
+          "median_odds": 1.4,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.0571
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.6,
+          "median_odds": 4.33,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1617
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "d171851925e119650345107d24591b4f",
+      "sport_key": "soccer_brazil_campeonato",
+      "league": "Brazil Série A",
+      "commence_time": "2026-07-23T00:30:00Z",
+      "home_team": "Internacional",
+      "away_team": "Cruzeiro",
+      "picks": [
+        {
+          "selection": "Cruzeiro",
+          "selection_type": "away",
+          "odds": 3.3,
+          "median_odds": 3.1,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.129
+        },
+        {
+          "selection": "Internacional",
+          "selection_type": "home",
+          "odds": 2.44,
+          "median_odds": 2.25,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1511
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.25,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1231
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "20d1e1bef89238866a7f1231b5e27941",
+      "sport_key": "soccer_brazil_serie_b",
+      "league": "Brazil Série B",
+      "commence_time": "2026-07-23T00:30:00Z",
+      "home_team": "Nautico PE",
+      "away_team": "Londrina",
+      "picks": [
+        {
+          "selection": "Londrina",
+          "selection_type": "away",
+          "odds": 4.75,
+          "median_odds": 4.29,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1748
+        },
+        {
+          "selection": "Nautico PE",
+          "selection_type": "home",
+          "odds": 1.91,
+          "median_odds": 1.785,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1569
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.7,
+          "median_odds": 3.4,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1029
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "9496a9a5346f72dd35cffb800eac7fb5",
@@ -909,28 +769,28 @@
           "selection": "Bragantino-SP",
           "selection_type": "away",
           "odds": 2.26,
-          "median_odds": 2.1,
+          "median_odds": 2.15,
           "bookmaker_count": 13,
-          "consensus_spread": 0.1238
+          "consensus_spread": 0.1209
         },
         {
           "selection": "Sporting Cristal",
           "selection_type": "home",
-          "odds": 3.6,
-          "median_odds": 3.25,
+          "odds": 3.55,
+          "median_odds": 3.3,
           "bookmaker_count": 13,
-          "consensus_spread": 0.1538
+          "consensus_spread": 0.1364
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.45,
-          "median_odds": 3.35,
+          "median_odds": 3.3,
           "bookmaker_count": 13,
-          "consensus_spread": 0.0746
+          "consensus_spread": 0.1061
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "ebf2e592382079b9c0f291241cb5acb3",
@@ -943,29 +803,29 @@
         {
           "selection": "Club Cienciano",
           "selection_type": "away",
-          "odds": 11.0,
+          "odds": 11.5,
           "median_odds": 9.0,
           "bookmaker_count": 13,
-          "consensus_spread": 0.3889
+          "consensus_spread": 0.4444
         },
         {
           "selection": "Lanus",
           "selection_type": "home",
-          "odds": 1.36,
-          "median_odds": 1.3,
+          "odds": 1.35,
+          "median_odds": 1.32,
           "bookmaker_count": 13,
-          "consensus_spread": 0.0615
+          "consensus_spread": 0.053
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 5.4,
+          "odds": 5.3,
           "median_odds": 4.8,
           "bookmaker_count": 13,
-          "consensus_spread": 0.1667
+          "consensus_spread": 0.1458
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "fe8b159820312a859ce06a8c062fb6d4",
@@ -978,29 +838,29 @@
         {
           "selection": "Austin FC",
           "selection_type": "home",
-          "odds": 3.4,
-          "median_odds": 3.1,
+          "odds": 3.15,
+          "median_odds": 2.9,
           "bookmaker_count": 19,
-          "consensus_spread": 0.129
+          "consensus_spread": 0.1207
         },
         {
           "selection": "Seattle Sounders FC",
           "selection_type": "away",
-          "odds": 2.24,
-          "median_odds": 2.1,
+          "odds": 2.38,
+          "median_odds": 2.2,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1143
+          "consensus_spread": 0.1636
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.75,
-          "median_odds": 3.6,
+          "odds": 3.7,
+          "median_odds": 3.55,
           "bookmaker_count": 19,
-          "consensus_spread": 0.0972
+          "consensus_spread": 0.1127
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "624a9c22aabb57ddf913177559b4c7b2",
@@ -1013,10 +873,10 @@
         {
           "selection": "Colorado Rapids",
           "selection_type": "home",
-          "odds": 2.02,
-          "median_odds": 1.93,
+          "odds": 2.04,
+          "median_odds": 1.95,
           "bookmaker_count": 19,
-          "consensus_spread": 0.0984
+          "consensus_spread": 0.1077
         },
         {
           "selection": "San Diego FC",
@@ -1029,13 +889,13 @@
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.2,
-          "median_odds": 3.9,
+          "odds": 4.1,
+          "median_odds": 3.8,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1282
+          "consensus_spread": 0.1316
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "d785780a494faac7a0e326e54a7d52d2",
@@ -1056,10 +916,10 @@
         {
           "selection": "Portland Timbers",
           "selection_type": "home",
-          "odds": 2.42,
-          "median_odds": 2.3,
+          "odds": 2.4,
+          "median_odds": 2.28,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1174
+          "consensus_spread": 0.1096
         },
         {
           "selection": "Draw",
@@ -1067,10 +927,10 @@
           "odds": 4.0,
           "median_odds": 3.75,
           "bookmaker_count": 19,
-          "consensus_spread": 0.16
+          "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "9e3e4c1bff938b8f5076f9aa9cf1dbcf",
@@ -1083,7 +943,7 @@
         {
           "selection": "LA Galaxy",
           "selection_type": "home",
-          "odds": 2.06,
+          "odds": 2.12,
           "median_odds": 1.95,
           "bookmaker_count": 19,
           "consensus_spread": 0.1385
@@ -1091,10 +951,10 @@
         {
           "selection": "St. Louis City SC",
           "selection_type": "away",
-          "odds": 3.65,
-          "median_odds": 3.4,
+          "odds": 3.5,
+          "median_odds": 3.3,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1618
+          "consensus_spread": 0.1212
         },
         {
           "selection": "Draw",
@@ -1105,7 +965,7 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "a86289ceba2168f9574ec8fccf0305b7",
@@ -1118,29 +978,29 @@
         {
           "selection": "Los Angeles FC",
           "selection_type": "home",
-          "odds": 1.76,
-          "median_odds": 1.67,
+          "odds": 1.8,
+          "median_odds": 1.7,
           "bookmaker_count": 19,
-          "consensus_spread": 0.0898
+          "consensus_spread": 0.1118
         },
         {
           "selection": "Real Salt Lake",
           "selection_type": "away",
-          "odds": 4.8,
-          "median_odds": 4.33,
+          "odds": 4.6,
+          "median_odds": 4.2,
           "bookmaker_count": 19,
-          "consensus_spread": 0.2309
+          "consensus_spread": 0.1905
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.33,
+          "odds": 4.3,
           "median_odds": 4.0,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1325
+          "consensus_spread": 0.125
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "28a1bc1c2796424dd61a92a695b07c3a",
@@ -1153,29 +1013,29 @@
         {
           "selection": "Orlando City SC",
           "selection_type": "away",
-          "odds": 5.4,
-          "median_odds": 4.9,
+          "odds": 4.6,
+          "median_odds": 4.3,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1633
+          "consensus_spread": 0.1628
         },
         {
           "selection": "San Jose Earthquakes",
           "selection_type": "home",
-          "odds": 1.59,
-          "median_odds": 1.51,
+          "odds": 1.71,
+          "median_odds": 1.62,
           "bookmaker_count": 19,
-          "consensus_spread": 0.0993
+          "consensus_spread": 0.1296
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 5.0,
-          "median_odds": 4.6,
+          "odds": 4.8,
+          "median_odds": 4.4,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1304
+          "consensus_spread": 0.1364
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "4934cf8f31416013ec91adee3a0f4794",
@@ -1188,99 +1048,29 @@
         {
           "selection": "Club Bolívar",
           "selection_type": "home",
-          "odds": 1.71,
-          "median_odds": 1.62,
+          "odds": 1.6,
+          "median_odds": 1.57,
           "bookmaker_count": 13,
-          "consensus_spread": 0.0679
+          "consensus_spread": 0.0637
         },
         {
           "selection": "Grêmio",
           "selection_type": "away",
-          "odds": 5.5,
-          "median_odds": 4.6,
+          "odds": 6.0,
+          "median_odds": 5.25,
           "bookmaker_count": 13,
-          "consensus_spread": 0.2543
+          "consensus_spread": 0.2286
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.1,
-          "median_odds": 3.8,
-          "bookmaker_count": 13,
-          "consensus_spread": 0.1316
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "6df3308f8f7f763bfbf6954ec73b0e94",
-      "sport_key": "soccer_brazil_campeonato",
-      "league": "Brazil Série A",
-      "commence_time": "2026-07-23T22:30:00Z",
-      "home_team": "Botafogo",
-      "away_team": "Vitoria",
-      "picks": [
-        {
-          "selection": "Botafogo",
-          "selection_type": "home",
-          "odds": 1.76,
-          "median_odds": 1.73,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.052
-        },
-        {
-          "selection": "Vitoria",
-          "selection_type": "away",
-          "odds": 5.1,
-          "median_odds": 4.5,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.2
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.8,
-          "median_odds": 3.7,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.1081
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
-    },
-    {
-      "id": "3035a6e6fd13fdd62f5b8445e795b2bf",
-      "sport_key": "soccer_brazil_campeonato",
-      "league": "Brazil Série A",
-      "commence_time": "2026-07-23T22:30:00Z",
-      "home_team": "Corinthians",
-      "away_team": "Remo",
-      "picks": [
-        {
-          "selection": "Corinthians",
-          "selection_type": "home",
-          "odds": 1.54,
-          "median_odds": 1.5,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.0667
-        },
-        {
-          "selection": "Remo",
-          "selection_type": "away",
-          "odds": 8.0,
-          "median_odds": 6.5,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.3077
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 4.2,
+          "odds": 4.3,
           "median_odds": 4.0,
-          "bookmaker_count": 21,
-          "consensus_spread": 0.1125
+          "bookmaker_count": 13,
+          "consensus_spread": 0.1375
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "9921813094aa28d1d044e6b3e1904daf",
@@ -1293,29 +1083,29 @@
         {
           "selection": "Argentinos Juniors",
           "selection_type": "away",
-          "odds": 2.05,
-          "median_odds": 2.0,
+          "odds": 2.06,
+          "median_odds": 1.95,
           "bookmaker_count": 12,
-          "consensus_spread": 0.05
+          "consensus_spread": 0.1077
         },
         {
           "selection": "Sarmiento de Junin",
           "selection_type": "home",
           "odds": 4.9,
-          "median_odds": 4.2,
+          "median_odds": 4.365,
           "bookmaker_count": 12,
-          "consensus_spread": 0.2619
+          "consensus_spread": 0.2062
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.0,
-          "median_odds": 2.91,
+          "odds": 3.05,
+          "median_odds": 3.0,
           "bookmaker_count": 12,
-          "consensus_spread": 0.0687
+          "consensus_spread": 0.0567
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "d638767591e974498d44fce3dbb8f004",
@@ -1328,18 +1118,18 @@
         {
           "selection": "Belgrano de Cordoba",
           "selection_type": "home",
-          "odds": 2.54,
-          "median_odds": 2.4,
+          "odds": 2.78,
+          "median_odds": 2.5,
           "bookmaker_count": 12,
-          "consensus_spread": 0.0667
+          "consensus_spread": 0.16
         },
         {
           "selection": "Rosario Central",
           "selection_type": "away",
-          "odds": 3.4,
-          "median_odds": 3.175,
+          "odds": 3.2,
+          "median_odds": 3.1,
           "bookmaker_count": 12,
-          "consensus_spread": 0.1575
+          "consensus_spread": 0.0968
         },
         {
           "selection": "Draw",
@@ -1350,7 +1140,77 @@
           "consensus_spread": 0.0464
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "6df3308f8f7f763bfbf6954ec73b0e94",
+      "sport_key": "soccer_brazil_campeonato",
+      "league": "Brazil Série A",
+      "commence_time": "2026-07-23T22:30:00Z",
+      "home_team": "Botafogo",
+      "away_team": "Vitoria",
+      "picks": [
+        {
+          "selection": "Botafogo",
+          "selection_type": "home",
+          "odds": 1.8,
+          "median_odds": 1.73,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.0809
+        },
+        {
+          "selection": "Vitoria",
+          "selection_type": "away",
+          "odds": 5.2,
+          "median_odds": 4.5,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.2222
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.9,
+          "median_odds": 3.7,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1081
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "3035a6e6fd13fdd62f5b8445e795b2bf",
+      "sport_key": "soccer_brazil_campeonato",
+      "league": "Brazil Série A",
+      "commence_time": "2026-07-23T22:30:00Z",
+      "home_team": "Corinthians",
+      "away_team": "Remo",
+      "picks": [
+        {
+          "selection": "Corinthians",
+          "selection_type": "home",
+          "odds": 1.56,
+          "median_odds": 1.5,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.08
+        },
+        {
+          "selection": "Remo",
+          "selection_type": "away",
+          "odds": 7.8,
+          "median_odds": 6.5,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.2769
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.2,
+          "median_odds": 4.0,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1125
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "46943e14fdf6209a8f857dd835f7c605",
@@ -1363,29 +1223,29 @@
         {
           "selection": "Athletic Club (MG)",
           "selection_type": "home",
-          "odds": 2.08,
-          "median_odds": 1.975,
-          "bookmaker_count": 14,
-          "consensus_spread": 0.1114
+          "odds": 2.1,
+          "median_odds": 2.0,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.095
         },
         {
           "selection": "São Bernardo",
           "selection_type": "away",
           "odds": 4.3,
-          "median_odds": 3.675,
-          "bookmaker_count": 14,
-          "consensus_spread": 0.2585
+          "median_odds": 3.75,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.2667
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.3,
           "median_odds": 3.1,
-          "bookmaker_count": 14,
-          "consensus_spread": 0.1355
+          "bookmaker_count": 15,
+          "consensus_spread": 0.1129
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "006fdedd126e098ea5f375661f52cae6",
@@ -1398,29 +1258,29 @@
         {
           "selection": "Atletico Goianiense",
           "selection_type": "away",
-          "odds": 4.3,
-          "median_odds": 3.85,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1688
+          "odds": 4.4,
+          "median_odds": 3.8,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.2105
         },
         {
           "selection": "Cuiabá",
           "selection_type": "home",
-          "odds": 2.0,
+          "odds": 2.16,
           "median_odds": 1.95,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.0667
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1538
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.15,
+          "odds": 3.2,
           "median_odds": 3.0,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1167
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "538ad83472464a3ce6edb96e9ec23597",
@@ -1433,29 +1293,29 @@
         {
           "selection": "Botafogo",
           "selection_type": "home",
-          "odds": 2.55,
-          "median_odds": 2.38,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1681
+          "odds": 2.58,
+          "median_odds": 2.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0875
         },
         {
           "selection": "Juventude",
           "selection_type": "away",
-          "odds": 3.2,
-          "median_odds": 3.0,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1667
+          "odds": 3.25,
+          "median_odds": 2.9,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1897
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.0,
-          "median_odds": 2.88,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1042
+          "odds": 3.05,
+          "median_odds": 2.9,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0862
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "0ff2c6af9633805cd92c4110a5a53430",
@@ -1468,10 +1328,10 @@
         {
           "selection": "Boca Juniors",
           "selection_type": "home",
-          "odds": 1.31,
+          "odds": 1.3,
           "median_odds": 1.25,
           "bookmaker_count": 13,
-          "consensus_spread": 0.088
+          "consensus_spread": 0.08
         },
         {
           "selection": "O'Higgins",
@@ -1479,18 +1339,18 @@
           "odds": 13.5,
           "median_odds": 11.0,
           "bookmaker_count": 13,
-          "consensus_spread": 0.3182
+          "consensus_spread": 0.4091
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 5.7,
+          "odds": 5.6,
           "median_odds": 5.25,
           "bookmaker_count": 13,
-          "consensus_spread": 0.1714
+          "consensus_spread": 0.1524
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "2cc99c17a93bc9858e4d834bb532ab4f",
@@ -1525,7 +1385,7 @@
           "consensus_spread": 0.1707
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "8e4ec8f2da7bfb28357f46ca3f94a6c9",
@@ -1538,29 +1398,29 @@
         {
           "selection": "Aldosivi Mar del Plata",
           "selection_type": "away",
-          "odds": 5.1,
+          "odds": 5.0,
           "median_odds": 4.5,
           "bookmaker_count": 11,
-          "consensus_spread": 0.1711
+          "consensus_spread": 0.2222
         },
         {
           "selection": "Defensa y Justicia",
           "selection_type": "home",
-          "odds": 1.91,
-          "median_odds": 1.85,
+          "odds": 1.95,
+          "median_odds": 1.91,
           "bookmaker_count": 11,
-          "consensus_spread": 0.0703
+          "consensus_spread": 0.089
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.2,
-          "median_odds": 3.1,
+          "median_odds": 3.15,
           "bookmaker_count": 11,
-          "consensus_spread": 0.0645
+          "consensus_spread": 0.0635
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "f14586f40f34754874e78212ad01e4df",
@@ -1595,7 +1455,7 @@
           "consensus_spread": 0.1203
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "0f38f26a1a53728519bdfdbc65c3264e",
@@ -1630,7 +1490,7 @@
           "consensus_spread": 0.1286
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "ca31bdd5793c2da6a331604146878c2e",
@@ -1643,29 +1503,29 @@
         {
           "selection": "OB Odense BK",
           "selection_type": "away",
-          "odds": 4.0,
-          "median_odds": 3.6,
+          "odds": 4.1,
+          "median_odds": 3.7,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1667
+          "consensus_spread": 0.1892
         },
         {
           "selection": "Viborg FF",
           "selection_type": "home",
-          "odds": 1.96,
-          "median_odds": 1.865,
+          "odds": 1.91,
+          "median_odds": 1.84,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1126
+          "consensus_spread": 0.087
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.8,
-          "median_odds": 3.6,
+          "odds": 3.85,
+          "median_odds": 3.625,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1111
+          "consensus_spread": 0.1241
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "80dbae8461497b97aa471f4d7a4c17a2",
@@ -1678,10 +1538,10 @@
         {
           "selection": "Västerås SK",
           "selection_type": "home",
-          "odds": 1.58,
+          "odds": 1.56,
           "median_odds": 1.5,
           "bookmaker_count": 17,
-          "consensus_spread": 0.12
+          "consensus_spread": 0.1067
         },
         {
           "selection": "Örgryte IS",
@@ -1695,12 +1555,12 @@
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.7,
-          "median_odds": 4.33,
+          "median_odds": 4.35,
           "bookmaker_count": 17,
-          "consensus_spread": 0.1386
+          "consensus_spread": 0.1379
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b9adf11268557ff688c88db3c7cf03d1",
@@ -1735,7 +1595,7 @@
           "consensus_spread": 0.1688
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "df63f77fd4c6f805519952afd1ce609a",
@@ -1748,29 +1608,29 @@
         {
           "selection": "Dundalk",
           "selection_type": "away",
-          "odds": 5.0,
-          "median_odds": 4.675,
+          "odds": 5.8,
+          "median_odds": 4.75,
           "bookmaker_count": 14,
-          "consensus_spread": 0.1283
+          "consensus_spread": 0.2947
         },
         {
           "selection": "St Patricks Athletic",
           "selection_type": "home",
           "odds": 1.68,
-          "median_odds": 1.56,
+          "median_odds": 1.57,
           "bookmaker_count": 14,
-          "consensus_spread": 0.1026
+          "consensus_spread": 0.0955
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.2,
-          "median_odds": 3.9,
+          "median_odds": 3.825,
           "bookmaker_count": 14,
-          "consensus_spread": 0.141
+          "consensus_spread": 0.1438
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "82132c1764937494ad3f92fe93329fe6",
@@ -1783,18 +1643,18 @@
         {
           "selection": "Central Córdoba",
           "selection_type": "away",
-          "odds": 5.25,
+          "odds": 6.0,
           "median_odds": 5.0,
           "bookmaker_count": 12,
-          "consensus_spread": 0.514
+          "consensus_spread": 0.25
         },
         {
           "selection": "Gimnasia Mendoza",
           "selection_type": "home",
-          "odds": 1.82,
-          "median_odds": 1.735,
+          "odds": 1.85,
+          "median_odds": 1.75,
           "bookmaker_count": 12,
-          "consensus_spread": 0.0865
+          "consensus_spread": 0.0857
         },
         {
           "selection": "Draw",
@@ -1802,10 +1662,10 @@
           "odds": 3.3,
           "median_odds": 3.15,
           "bookmaker_count": 12,
-          "consensus_spread": 0.1524
+          "consensus_spread": 0.0794
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "a780aadef9712643274b5be39d9ef098",
@@ -1818,29 +1678,29 @@
         {
           "selection": "Gimnasia La Plata",
           "selection_type": "away",
-          "odds": 5.2,
-          "median_odds": 4.675,
+          "odds": 5.4,
+          "median_odds": 4.775,
           "bookmaker_count": 12,
-          "consensus_spread": 0.5775
+          "consensus_spread": 0.2241
         },
         {
           "selection": "Racing Club",
           "selection_type": "home",
-          "odds": 1.81,
-          "median_odds": 1.76,
+          "odds": 1.82,
+          "median_odds": 1.785,
           "bookmaker_count": 12,
-          "consensus_spread": 0.1136
+          "consensus_spread": 0.0784
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.3,
-          "median_odds": 3.2,
+          "odds": 3.35,
+          "median_odds": 3.25,
           "bookmaker_count": 12,
-          "consensus_spread": 0.3
+          "consensus_spread": 0.0769
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "9628401b7d00130e5b6e6cab15959c04",
@@ -1853,29 +1713,29 @@
         {
           "selection": "Instituto de Córdoba",
           "selection_type": "away",
-          "odds": 3.9,
+          "odds": 4.1,
           "median_odds": 3.75,
           "bookmaker_count": 12,
-          "consensus_spread": 0.3253
+          "consensus_spread": 0.16
         },
         {
           "selection": "Velez Sarsfield BA",
           "selection_type": "home",
-          "odds": 2.24,
-          "median_odds": 2.05,
+          "odds": 2.18,
+          "median_odds": 2.075,
           "bookmaker_count": 12,
-          "consensus_spread": 0.1415
+          "consensus_spread": 0.0867
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.1,
-          "median_odds": 2.97,
+          "median_odds": 2.98,
           "bookmaker_count": 12,
-          "consensus_spread": 0.101
+          "consensus_spread": 0.0671
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "1ae166322d8d7dfa93216f4d25f46a35",
@@ -1890,27 +1750,27 @@
           "selection_type": "away",
           "odds": 2.94,
           "median_odds": 2.63,
-          "bookmaker_count": 15,
+          "bookmaker_count": 17,
           "consensus_spread": 0.1483
         },
         {
           "selection": "Union La Calera",
           "selection_type": "home",
           "odds": 2.6,
-          "median_odds": 2.5,
-          "bookmaker_count": 15,
-          "consensus_spread": 0.08
+          "median_odds": 2.45,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.0816
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.15,
           "median_odds": 3.1,
-          "bookmaker_count": 15,
+          "bookmaker_count": 17,
           "consensus_spread": 0.1129
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "8e214c11344257acad0aee498894c0b6",
@@ -1924,28 +1784,28 @@
           "selection": "Atlético Huracán",
           "selection_type": "home",
           "odds": 1.95,
-          "median_odds": 1.87,
+          "median_odds": 1.9,
           "bookmaker_count": 11,
-          "consensus_spread": 0.0856
+          "consensus_spread": 0.0632
         },
         {
           "selection": "Banfield",
           "selection_type": "away",
-          "odds": 4.75,
+          "odds": 5.3,
           "median_odds": 4.6,
           "bookmaker_count": 11,
-          "consensus_spread": 0.1848
+          "consensus_spread": 0.2109
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.05,
-          "median_odds": 2.9,
+          "odds": 3.0,
+          "median_odds": 2.94,
           "bookmaker_count": 11,
-          "consensus_spread": 0.2103
+          "consensus_spread": 0.0408
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "40c8ae2b4ebc393c954f62a3621ea377",
@@ -1958,18 +1818,18 @@
         {
           "selection": "Platense",
           "selection_type": "home",
-          "odds": 2.8,
+          "odds": 2.86,
           "median_odds": 2.75,
           "bookmaker_count": 12,
-          "consensus_spread": 0.3164
+          "consensus_spread": 0.0836
         },
         {
           "selection": "Union Santa Fe",
           "selection_type": "away",
-          "odds": 2.94,
-          "median_odds": 2.8,
+          "odds": 3.05,
+          "median_odds": 2.84,
           "bookmaker_count": 12,
-          "consensus_spread": 0.1107
+          "consensus_spread": 0.1232
         },
         {
           "selection": "Draw",
@@ -1977,10 +1837,10 @@
           "odds": 2.8,
           "median_odds": 2.75,
           "bookmaker_count": 12,
-          "consensus_spread": 0.0945
+          "consensus_spread": 0.0582
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "7400688202f939d3c6bd54e0243e85a4",
@@ -1995,27 +1855,27 @@
           "selection_type": "home",
           "odds": 1.47,
           "median_odds": 1.44,
-          "bookmaker_count": 16,
+          "bookmaker_count": 18,
           "consensus_spread": 0.0764
         },
         {
           "selection": "Deportes Limache",
           "selection_type": "away",
           "odds": 6.6,
-          "median_odds": 5.8,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.2759
+          "median_odds": 5.9,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.2712
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.8,
-          "median_odds": 4.35,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1379
+          "median_odds": 4.34,
+          "bookmaker_count": 18,
+          "consensus_spread": 0.1382
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "ce98719a96856625554c0cb8e22eddec",
@@ -2311,7 +2171,7 @@
           "odds": 2.0,
           "median_odds": 1.93,
           "bookmaker_count": 17,
-          "consensus_spread": 0.4922
+          "consensus_spread": 0.0881
         },
         {
           "selection": "Korona Kielce",
@@ -2319,18 +2179,18 @@
           "odds": 3.75,
           "median_odds": 3.6,
           "bookmaker_count": 17,
-          "consensus_spread": 0.4028
+          "consensus_spread": 0.0972
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.4,
-          "median_odds": 3.3,
+          "odds": 3.5,
+          "median_odds": 3.35,
           "bookmaker_count": 17,
-          "consensus_spread": 0.4273
+          "consensus_spread": 0.0746
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "2f04a67783c8dbaa97f0e391f71db684",
@@ -2345,27 +2205,27 @@
           "selection_type": "home",
           "odds": 4.7,
           "median_odds": 4.33,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.1848
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1617
         },
         {
           "selection": "Djurgardens IF",
           "selection_type": "away",
-          "odds": 1.76,
-          "median_odds": 1.69,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.0828
+          "odds": 1.77,
+          "median_odds": 1.67,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.0898
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.0,
-          "median_odds": 3.7,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.1351
+          "median_odds": 3.75,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.12
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "c249bb7cb07dc80c2968d2d06f590ee6",
@@ -2380,7 +2240,7 @@
           "selection_type": "home",
           "odds": 2.18,
           "median_odds": 2.1,
-          "bookmaker_count": 15,
+          "bookmaker_count": 17,
           "consensus_spread": 0.0857
         },
         {
@@ -2388,7 +2248,7 @@
           "selection_type": "away",
           "odds": 3.05,
           "median_odds": 2.9,
-          "bookmaker_count": 15,
+          "bookmaker_count": 17,
           "consensus_spread": 0.1207
         },
         {
@@ -2396,11 +2256,11 @@
           "selection_type": "draw",
           "odds": 3.8,
           "median_odds": 3.55,
-          "bookmaker_count": 15,
+          "bookmaker_count": 17,
           "consensus_spread": 0.1408
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "51fe310c7841e15219321a7b670cad69",
@@ -2413,29 +2273,29 @@
         {
           "selection": "AC Oulu",
           "selection_type": "away",
-          "odds": 1.62,
-          "median_odds": 1.6,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.0563
+          "odds": 1.61,
+          "median_odds": 1.57,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0382
         },
         {
           "selection": "IFK Mariehamn",
           "selection_type": "home",
           "odds": 5.4,
-          "median_odds": 4.75,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.2253
+          "median_odds": 4.9,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.2184
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.0,
-          "median_odds": 3.8,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1053
+          "odds": 4.1,
+          "median_odds": 3.85,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0909
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e79e7b872a3d50b36ba5d9674ec9e19f",
@@ -2451,7 +2311,7 @@
           "odds": 3.15,
           "median_odds": 2.95,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1525
+          "consensus_spread": 0.1186
         },
         {
           "selection": "Kristiansund BK",
@@ -2467,10 +2327,10 @@
           "odds": 3.65,
           "median_odds": 3.45,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1159
+          "consensus_spread": 0.1014
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "a2dc662704a8e4c6f3fcccbe50f083d6",
@@ -2483,29 +2343,29 @@
         {
           "selection": "KuPS Kuopio",
           "selection_type": "home",
-          "odds": 1.95,
-          "median_odds": 1.87,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.0802
+          "odds": 1.97,
+          "median_odds": 1.88,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0904
         },
         {
           "selection": "VPS Vaasa",
           "selection_type": "away",
-          "odds": 3.75,
+          "odds": 3.7,
           "median_odds": 3.5,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1286
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1143
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.6,
-          "median_odds": 3.45,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.087
+          "odds": 3.75,
+          "median_odds": 3.5,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "fe13d0efe9e5969044656039ea124f4d",
@@ -2520,27 +2380,27 @@
           "selection_type": "home",
           "odds": 2.4,
           "median_odds": 2.3,
-          "bookmaker_count": 20,
+          "bookmaker_count": 21,
           "consensus_spread": 0.087
         },
         {
           "selection": "Mjällby AIF",
           "selection_type": "away",
-          "odds": 2.9,
-          "median_odds": 2.775,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.1081
+          "odds": 2.96,
+          "median_odds": 2.8,
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1214
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.5,
+          "odds": 3.6,
           "median_odds": 3.4,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.0882
+          "bookmaker_count": 21,
+          "consensus_spread": 0.1176
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "50a5b31709bc8c3754a5f138d759c15d",
@@ -2554,17 +2414,17 @@
           "selection": "Górnik Zabrze",
           "selection_type": "home",
           "odds": 1.76,
-          "median_odds": 1.73,
+          "median_odds": 1.72,
           "bookmaker_count": 17,
-          "consensus_spread": 0.0578
+          "consensus_spread": 0.0581
         },
         {
           "selection": "Śląsk Wrocław",
           "selection_type": "away",
           "odds": 4.7,
-          "median_odds": 4.2,
+          "median_odds": 4.33,
           "bookmaker_count": 17,
-          "consensus_spread": 0.1905
+          "consensus_spread": 0.1617
         },
         {
           "selection": "Draw",
@@ -2572,10 +2432,10 @@
           "odds": 3.75,
           "median_odds": 3.6,
           "bookmaker_count": 17,
-          "consensus_spread": 0.125
+          "consensus_spread": 0.0972
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "f2db41d940dd008bd6b76f0c758c7fba",
@@ -2589,28 +2449,28 @@
           "selection": "Galway United",
           "selection_type": "home",
           "odds": 1.89,
-          "median_odds": 1.82,
-          "bookmaker_count": 12,
-          "consensus_spread": 0.0769
+          "median_odds": 1.8,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.0944
         },
         {
           "selection": "Waterford FC",
           "selection_type": "away",
-          "odds": 3.85,
-          "median_odds": 3.525,
-          "bookmaker_count": 12,
-          "consensus_spread": 0.1702
+          "odds": 3.95,
+          "median_odds": 3.5,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.1571
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.0,
-          "median_odds": 3.725,
-          "bookmaker_count": 12,
-          "consensus_spread": 0.1342
+          "median_odds": 3.75,
+          "bookmaker_count": 15,
+          "consensus_spread": 0.1067
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "86867dca7b9b803fe664681be0a00b01",
@@ -2625,27 +2485,27 @@
           "selection_type": "home",
           "odds": 2.46,
           "median_odds": 2.25,
-          "bookmaker_count": 18,
+          "bookmaker_count": 20,
           "consensus_spread": 0.16
         },
         {
           "selection": "Brondby IF",
           "selection_type": "away",
-          "odds": 2.92,
+          "odds": 3.0,
           "median_odds": 2.8,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1143
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1429
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.7,
-          "median_odds": 3.525,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1135
+          "odds": 3.75,
+          "median_odds": 3.5,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "ae0fa84044b18819fd1bd22f708f651d",
@@ -2658,10 +2518,10 @@
         {
           "selection": "FC Basel",
           "selection_type": "away",
-          "odds": 2.7,
-          "median_odds": 2.55,
+          "odds": 2.74,
+          "median_odds": 2.6,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1255
+          "consensus_spread": 0.1385
         },
         {
           "selection": "Servette",
@@ -2674,13 +2534,13 @@
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.1,
+          "odds": 4.0,
           "median_odds": 3.75,
           "bookmaker_count": 16,
-          "consensus_spread": 0.16
+          "consensus_spread": 0.1067
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "7c80d07c72b6905f359ab637b313b120",
@@ -2693,29 +2553,29 @@
         {
           "selection": "FC Lausanne-Sport",
           "selection_type": "home",
-          "odds": 1.91,
-          "median_odds": 1.87,
+          "odds": 1.93,
+          "median_odds": 1.865,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1283
+          "consensus_spread": 0.0697
         },
         {
           "selection": "Grasshopper Zürich",
           "selection_type": "away",
-          "odds": 3.65,
-          "median_odds": 3.4,
+          "odds": 3.75,
+          "median_odds": 3.5,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1618
+          "consensus_spread": 0.1857
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.9,
-          "median_odds": 3.6,
+          "median_odds": 3.7,
           "bookmaker_count": 16,
-          "consensus_spread": 0.25
+          "consensus_spread": 0.1081
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "14d541b1fe6b71b99254037172ba461e",
@@ -2728,29 +2588,29 @@
         {
           "selection": "CA Tigre BA",
           "selection_type": "away",
-          "odds": 2.22,
-          "median_odds": 2.05,
+          "odds": 2.32,
+          "median_odds": 2.1,
           "bookmaker_count": 12,
-          "consensus_spread": 0.161
+          "consensus_spread": 0.1619
         },
         {
           "selection": "Estudiantes de Río Cuarto",
           "selection_type": "home",
           "odds": 4.2,
-          "median_odds": 4.0,
+          "median_odds": 3.925,
           "bookmaker_count": 12,
-          "consensus_spread": 0.47
+          "consensus_spread": 0.1783
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 2.9,
-          "median_odds": 2.84,
+          "median_odds": 2.83,
           "bookmaker_count": 12,
-          "consensus_spread": 0.2887
+          "consensus_spread": 0.0954
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "4601942d0ddf15ef733303ade4b28efd",
@@ -2785,7 +2645,7 @@
           "consensus_spread": 0.1667
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "5b93a87a89559b47c82d146bd93bbfed",
@@ -2798,18 +2658,18 @@
         {
           "selection": "FC Luzern",
           "selection_type": "home",
-          "odds": 2.06,
-          "median_odds": 1.99,
+          "odds": 2.05,
+          "median_odds": 2.0,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1055
+          "consensus_spread": 0.09
         },
         {
           "selection": "FC Thun",
           "selection_type": "away",
-          "odds": 3.25,
-          "median_odds": 3.1,
+          "odds": 3.2,
+          "median_odds": 3.0,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1613
+          "consensus_spread": 0.15
         },
         {
           "selection": "Draw",
@@ -2817,10 +2677,10 @@
           "odds": 4.3,
           "median_odds": 3.8,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1579
+          "consensus_spread": 0.1974
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "13815a9f86118ad93643600c56739d87",
@@ -2855,7 +2715,7 @@
           "consensus_spread": 0.0923
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "56014b92a6ff7b352dabb179d9db1ea4",
@@ -2871,7 +2731,7 @@
           "odds": 1.41,
           "median_odds": 1.36,
           "bookmaker_count": 16,
-          "consensus_spread": 0.0662
+          "consensus_spread": 0.0588
         },
         {
           "selection": "Universidad de Concepción",
@@ -2879,18 +2739,18 @@
           "odds": 8.2,
           "median_odds": 7.0,
           "bookmaker_count": 16,
-          "consensus_spread": 0.3143
+          "consensus_spread": 0.2786
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.75,
-          "median_odds": 4.4,
+          "median_odds": 4.425,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1705
+          "consensus_spread": 0.1695
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "2c4fe97ca7225792318c1df8578a0821",
@@ -2903,29 +2763,29 @@
         {
           "selection": "Newells Old Boys",
           "selection_type": "home",
-          "odds": 2.8,
-          "median_odds": 2.62,
+          "odds": 2.84,
+          "median_odds": 2.7,
           "bookmaker_count": 9,
-          "consensus_spread": 0.2443
+          "consensus_spread": 0.1259
         },
         {
           "selection": "Talleres",
           "selection_type": "away",
-          "odds": 2.9,
+          "odds": 2.88,
           "median_odds": 2.7,
           "bookmaker_count": 9,
-          "consensus_spread": 0.2444
+          "consensus_spread": 0.1037
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.1,
-          "median_odds": 2.8,
+          "median_odds": 2.82,
           "bookmaker_count": 9,
-          "consensus_spread": 0.2571
+          "consensus_spread": 0.1241
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "7cd00c0a66e3927513670c87e3389471",
@@ -2946,21 +2806,21 @@
         {
           "selection": "Internacional",
           "selection_type": "away",
-          "odds": 4.25,
+          "odds": 4.2,
           "median_odds": 3.85,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1948
+          "consensus_spread": 0.1818
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.3,
+          "odds": 3.35,
           "median_odds": 3.2,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1
+          "consensus_spread": 0.1156
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "14d2db5f981081ec6d0541ee47bbbabb",
@@ -2982,20 +2842,20 @@
           "selection": "Santos",
           "selection_type": "home",
           "odds": 1.4,
-          "median_odds": 1.36,
+          "median_odds": 1.38,
           "bookmaker_count": 19,
-          "consensus_spread": 0.0515
+          "consensus_spread": 0.0507
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.8,
+          "odds": 4.75,
           "median_odds": 4.5,
           "bookmaker_count": 19,
-          "consensus_spread": 0.1778
+          "consensus_spread": 0.1667
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "c3d3d5022656c380fff749e85ea8d62f",
@@ -3008,10 +2868,10 @@
         {
           "selection": "Cobresal",
           "selection_type": "away",
-          "odds": 5.6,
+          "odds": 5.5,
           "median_odds": 4.625,
           "bookmaker_count": 16,
-          "consensus_spread": 0.2595
+          "consensus_spread": 0.2378
         },
         {
           "selection": "Huachipato",
@@ -3024,13 +2884,13 @@
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.2,
+          "odds": 4.1,
           "median_odds": 3.8,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1711
+          "consensus_spread": 0.1447
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "fc75af22ab986f3c515b9462745a1135",
@@ -3043,29 +2903,29 @@
         {
           "selection": "Barracas Central",
           "selection_type": "away",
-          "odds": 9.5,
-          "median_odds": 8.5,
+          "odds": 11.5,
+          "median_odds": 9.0,
           "bookmaker_count": 11,
-          "consensus_spread": 0.9682
+          "consensus_spread": 0.5
         },
         {
           "selection": "River Plate",
           "selection_type": "home",
-          "odds": 1.44,
-          "median_odds": 1.4,
+          "odds": 1.42,
+          "median_odds": 1.37,
           "bookmaker_count": 11,
-          "consensus_spread": 0.1
+          "consensus_spread": 0.073
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.35,
-          "median_odds": 4.0,
+          "odds": 4.33,
+          "median_odds": 4.2,
           "bookmaker_count": 11,
-          "consensus_spread": 0.2625
+          "consensus_spread": 0.1381
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "58579f47c46b44d5baef9dd961b78d3f",
@@ -3100,7 +2960,7 @@
           "consensus_spread": 0.7562
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "3e291f2777b2fb12abacf8b3dbe3c981",
@@ -3170,42 +3030,7 @@
           "consensus_spread": 0.8049
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "804d263820352f697b38f35c8c9286d0",
-      "sport_key": "soccer_brazil_campeonato",
-      "league": "Brazil Série A",
-      "commence_time": "2026-07-25T23:30:00Z",
-      "home_team": "Vasco da Gama",
-      "away_team": "Mirassol",
-      "picks": [
-        {
-          "selection": "Mirassol",
-          "selection_type": "away",
-          "odds": 3.75,
-          "median_odds": 3.5,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1571
-        },
-        {
-          "selection": "Vasco da Gama",
-          "selection_type": "home",
-          "odds": 2.1,
-          "median_odds": 2.0,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.4,
-          "median_odds": 3.3,
-          "bookmaker_count": 18,
-          "consensus_spread": 0.1061
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "9ecd14ec9b83dfd4e0e6e2d18e88e1f8",
@@ -3235,12 +3060,12 @@
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.65,
-          "median_odds": 3.45,
+          "median_odds": 3.5,
           "bookmaker_count": 16,
-          "consensus_spread": 0.7594
+          "consensus_spread": 0.7486
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b7738cc4de1ac068864d1c3091aac8a6",
@@ -3256,7 +3081,7 @@
           "odds": 3.25,
           "median_odds": 2.89,
           "bookmaker_count": 18,
-          "consensus_spread": 0.3772
+          "consensus_spread": 0.4187
         },
         {
           "selection": "Inter Miami CF",
@@ -3264,18 +3089,18 @@
           "odds": 2.16,
           "median_odds": 2.05,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1171
+          "consensus_spread": 0.1024
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.0,
-          "median_odds": 3.775,
+          "median_odds": 3.75,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1325
+          "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "adcaf9aca5c21e35cc10e87edaa670c6",
@@ -3288,18 +3113,18 @@
         {
           "selection": "Chicago Fire",
           "selection_type": "away",
-          "odds": 2.75,
+          "odds": 2.8,
           "median_odds": 2.62,
           "bookmaker_count": 18,
-          "consensus_spread": 0.5954
+          "consensus_spread": 0.6145
         },
         {
           "selection": "New York City FC",
           "selection_type": "home",
-          "odds": 2.35,
-          "median_odds": 2.275,
+          "odds": 2.33,
+          "median_odds": 2.3,
           "bookmaker_count": 18,
-          "consensus_spread": 0.5099
+          "consensus_spread": 0.4957
         },
         {
           "selection": "Draw",
@@ -3310,7 +3135,7 @@
           "consensus_spread": 0.76
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e42d0064f1184cf7b6fb023420e6d6ef",
@@ -3326,7 +3151,7 @@
           "odds": 1.91,
           "median_odds": 1.83,
           "bookmaker_count": 18,
-          "consensus_spread": 0.2623
+          "consensus_spread": 0.2186
         },
         {
           "selection": "Toronto FC",
@@ -3334,18 +3159,18 @@
           "odds": 3.8,
           "median_odds": 3.65,
           "bookmaker_count": 18,
-          "consensus_spread": 0.6849
+          "consensus_spread": 0.663
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.7,
-          "median_odds": 3.55,
+          "median_odds": 3.5,
           "bookmaker_count": 18,
-          "consensus_spread": 0.6732
+          "consensus_spread": 0.66
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "30205c4070997541340bcb1cf407d90f",
@@ -3380,7 +3205,7 @@
           "consensus_spread": 0.7562
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "a461507fd4059bf3dfbf17a17728c8ab",
@@ -3401,21 +3226,56 @@
         {
           "selection": "Seattle Sounders FC",
           "selection_type": "away",
-          "odds": 3.1,
+          "odds": 3.05,
           "median_odds": 2.88,
           "bookmaker_count": 18,
-          "consensus_spread": 0.6563
+          "consensus_spread": 0.6389
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.6,
-          "median_odds": 3.45,
+          "median_odds": 3.475,
           "bookmaker_count": 18,
-          "consensus_spread": 0.7449
+          "consensus_spread": 0.7396
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "804d263820352f697b38f35c8c9286d0",
+      "sport_key": "soccer_brazil_campeonato",
+      "league": "Brazil Série A",
+      "commence_time": "2026-07-25T23:30:00Z",
+      "home_team": "Vasco da Gama",
+      "away_team": "Mirassol",
+      "picks": [
+        {
+          "selection": "Mirassol",
+          "selection_type": "away",
+          "odds": 3.7,
+          "median_odds": 3.5,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1429
+        },
+        {
+          "selection": "Vasco da Gama",
+          "selection_type": "home",
+          "odds": 2.07,
+          "median_odds": 2.0,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.06
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.4,
+          "median_odds": 3.3,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1061
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b9fe00438a6b095c30c26b8ca882f9eb",
@@ -3450,42 +3310,7 @@
           "consensus_spread": 0.142
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "548228868edea882febc372bf2906a7d",
-      "sport_key": "soccer_argentina_primera_division",
-      "league": "Primera División - Argentina",
-      "commence_time": "2026-07-26T00:30:00Z",
-      "home_team": "Lanus",
-      "away_team": "San Lorenzo",
-      "picks": [
-        {
-          "selection": "Lanus",
-          "selection_type": "home",
-          "odds": 1.98,
-          "median_odds": 1.91,
-          "bookmaker_count": 11,
-          "consensus_spread": 0.1571
-        },
-        {
-          "selection": "San Lorenzo",
-          "selection_type": "away",
-          "odds": 4.9,
-          "median_odds": 4.75,
-          "bookmaker_count": 11,
-          "consensus_spread": 0.4926
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 2.9,
-          "median_odds": 2.87,
-          "bookmaker_count": 11,
-          "consensus_spread": 0.2997
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e0e1e45371a0635e6da904554043eaed",
@@ -3515,12 +3340,12 @@
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.35,
-          "median_odds": 4.125,
+          "median_odds": 4.15,
           "bookmaker_count": 18,
-          "consensus_spread": 0.8073
+          "consensus_spread": 0.8024
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "5758151189675892207fb9eda1f5eea0",
@@ -3555,7 +3380,7 @@
           "consensus_spread": 0.7703
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "03ebfb01dd29de67db39a5f05669cb32",
@@ -3587,10 +3412,45 @@
           "odds": 3.8,
           "median_odds": 3.6,
           "bookmaker_count": 18,
-          "consensus_spread": 0.7639
+          "consensus_spread": 0.7694
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "548228868edea882febc372bf2906a7d",
+      "sport_key": "soccer_argentina_primera_division",
+      "league": "Primera División - Argentina",
+      "commence_time": "2026-07-26T00:30:00Z",
+      "home_team": "Lanus",
+      "away_team": "San Lorenzo",
+      "picks": [
+        {
+          "selection": "Lanus",
+          "selection_type": "home",
+          "odds": 2.04,
+          "median_odds": 2.0,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.095
+        },
+        {
+          "selection": "San Lorenzo",
+          "selection_type": "away",
+          "odds": 4.8,
+          "median_odds": 4.6,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.1957
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 2.88,
+          "median_odds": 2.8,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.0643
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "c2a65b891ad25522b6ddb9de1805f623",
@@ -3625,7 +3485,7 @@
           "consensus_spread": 0.7789
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "931f88cfa0011414d79e8b8650c5a6cd",
@@ -3639,9 +3499,9 @@
           "selection": "LA Galaxy",
           "selection_type": "away",
           "odds": 4.5,
-          "median_odds": 4.15,
+          "median_odds": 4.125,
           "bookmaker_count": 18,
-          "consensus_spread": 0.8337
+          "consensus_spread": 0.8388
         },
         {
           "selection": "San Jose Earthquakes",
@@ -3660,7 +3520,7 @@
           "consensus_spread": 0.8073
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "f9ea52ac17cc20c4cfc387a17d007331",
@@ -3695,7 +3555,7 @@
           "consensus_spread": 0.9391
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b70bcc6c53a4d635cd0b419d4699a649",
@@ -3725,12 +3585,12 @@
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.8,
-          "median_odds": 3.7,
+          "median_odds": 3.675,
           "bookmaker_count": 18,
-          "consensus_spread": 0.7459
+          "consensus_spread": 0.751
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "eea306786d5de484f74b922fb511a042",
@@ -3943,41 +3803,6 @@
       "fetched_at": "2026-07-22T12:14:08.470846+00:00"
     },
     {
-      "id": "79b872089c527297cba2f368e53d5f66",
-      "sport_key": "soccer_sweden_superettan",
-      "league": "Superettan - Sweden",
-      "commence_time": "2026-07-26T11:00:00Z",
-      "home_team": "GIF Sundsvall",
-      "away_team": "Falkenbergs FF",
-      "picks": [
-        {
-          "selection": "Falkenbergs FF",
-          "selection_type": "away",
-          "odds": 2.08,
-          "median_odds": 2.0,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.065
-        },
-        {
-          "selection": "GIF Sundsvall",
-          "selection_type": "home",
-          "odds": 3.3,
-          "median_odds": 3.2,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.125
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.8,
-          "median_odds": 3.4,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.2824
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
       "id": "4a30ff683e400a1559b6c80e8eee9aa2",
       "sport_key": "soccer_china_superleague",
       "league": "Super League - China",
@@ -4011,6 +3836,41 @@
         }
       ],
       "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+    },
+    {
+      "id": "79b872089c527297cba2f368e53d5f66",
+      "sport_key": "soccer_sweden_superettan",
+      "league": "Superettan - Sweden",
+      "commence_time": "2026-07-26T11:00:00Z",
+      "home_team": "GIF Sundsvall",
+      "away_team": "Falkenbergs FF",
+      "picks": [
+        {
+          "selection": "Falkenbergs FF",
+          "selection_type": "away",
+          "odds": 2.08,
+          "median_odds": 2.0,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.065
+        },
+        {
+          "selection": "GIF Sundsvall",
+          "selection_type": "home",
+          "odds": 3.35,
+          "median_odds": 3.25,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1385
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.8,
+          "median_odds": 3.4,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1618
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "d010a40219f8686887964dfddefd9e08",
@@ -4083,216 +3943,6 @@
       "fetched_at": "2026-07-22T12:14:08.470846+00:00"
     },
     {
-      "id": "28acd824b3948ef8e0c130967d0bf3c3",
-      "sport_key": "soccer_denmark_superliga",
-      "league": "Denmark Superliga",
-      "commence_time": "2026-07-26T12:00:00Z",
-      "home_team": "SonderjyskE",
-      "away_team": "FC Midtjylland",
-      "picks": [
-        {
-          "selection": "FC Midtjylland",
-          "selection_type": "away",
-          "odds": 1.58,
-          "median_odds": 1.53,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.0523
-        },
-        {
-          "selection": "SonderjyskE",
-          "selection_type": "home",
-          "odds": 5.6,
-          "median_odds": 5.0,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.254
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 4.5,
-          "median_odds": 4.2,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.1429
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "3188c1f26adf0f064976fc766e3922d3",
-      "sport_key": "soccer_sweden_allsvenskan",
-      "league": "Allsvenskan - Sweden",
-      "commence_time": "2026-07-26T12:00:00Z",
-      "home_team": "IF Brommapojkarna",
-      "away_team": "Hammarby IF",
-      "picks": [
-        {
-          "selection": "Hammarby IF",
-          "selection_type": "away",
-          "odds": 1.45,
-          "median_odds": 1.4,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.0857
-        },
-        {
-          "selection": "IF Brommapojkarna",
-          "selection_type": "home",
-          "odds": 6.75,
-          "median_odds": 6.0,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.2083
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 5.0,
-          "median_odds": 4.6,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.1457
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "9a15519b05f7ec514d35ca4677815355",
-      "sport_key": "soccer_sweden_allsvenskan",
-      "league": "Allsvenskan - Sweden",
-      "commence_time": "2026-07-26T12:00:00Z",
-      "home_team": "IK Sirius",
-      "away_team": "IFK Goteborg",
-      "picks": [
-        {
-          "selection": "IFK Goteborg",
-          "selection_type": "away",
-          "odds": 7.0,
-          "median_odds": 5.5,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.4091
-        },
-        {
-          "selection": "IK Sirius",
-          "selection_type": "home",
-          "odds": 1.5,
-          "median_odds": 1.44,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.0833
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 4.8,
-          "median_odds": 4.5,
-          "bookmaker_count": 20,
-          "consensus_spread": 0.1333
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "2fc44001bdc29ab13a5763f88eb89043",
-      "sport_key": "soccer_switzerland_superleague",
-      "league": "Swiss Superleague",
-      "commence_time": "2026-07-26T12:00:00Z",
-      "home_team": "BSC Young Boys",
-      "away_team": "FC Sion",
-      "picks": [
-        {
-          "selection": "BSC Young Boys",
-          "selection_type": "home",
-          "odds": 1.88,
-          "median_odds": 1.85,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.0811
-        },
-        {
-          "selection": "FC Sion",
-          "selection_type": "away",
-          "odds": 3.65,
-          "median_odds": 3.4,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1618
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 4.1,
-          "median_odds": 3.85,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1299
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "e0849aa475b6a85b53431dcc6d9bd4bf",
-      "sport_key": "soccer_finland_veikkausliiga",
-      "league": "Veikkausliiga - Finland",
-      "commence_time": "2026-07-26T12:00:00Z",
-      "home_team": "FC Inter Turku",
-      "away_team": "IF Gnistan",
-      "picks": [
-        {
-          "selection": "FC Inter Turku",
-          "selection_type": "home",
-          "odds": 1.75,
-          "median_odds": 1.7,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.0471
-        },
-        {
-          "selection": "IF Gnistan",
-          "selection_type": "away",
-          "odds": 4.8,
-          "median_odds": 4.25,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.2353
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.8,
-          "median_odds": 3.6,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1528
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
-      "id": "48caf88ee3194e479dcb867e1af80004",
-      "sport_key": "soccer_finland_veikkausliiga",
-      "league": "Veikkausliiga - Finland",
-      "commence_time": "2026-07-26T12:00:00Z",
-      "home_team": "Ilves Tampere",
-      "away_team": "FC Lahti",
-      "picks": [
-        {
-          "selection": "FC Lahti",
-          "selection_type": "away",
-          "odds": 3.0,
-          "median_odds": 2.88,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.0868
-        },
-        {
-          "selection": "Ilves Tampere",
-          "selection_type": "home",
-          "odds": 2.26,
-          "median_odds": 2.12,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1226
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 3.6,
-          "median_odds": 3.5,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1143
-        }
-      ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
-    },
-    {
       "id": "20e991dc3fcbd43781dd25de5a920798",
       "sport_key": "soccer_china_superleague",
       "league": "Super League - China",
@@ -4328,6 +3978,216 @@
       "fetched_at": "2026-07-22T12:14:08.470846+00:00"
     },
     {
+      "id": "28acd824b3948ef8e0c130967d0bf3c3",
+      "sport_key": "soccer_denmark_superliga",
+      "league": "Denmark Superliga",
+      "commence_time": "2026-07-26T12:00:00Z",
+      "home_team": "SonderjyskE",
+      "away_team": "FC Midtjylland",
+      "picks": [
+        {
+          "selection": "FC Midtjylland",
+          "selection_type": "away",
+          "odds": 1.58,
+          "median_odds": 1.53,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.0523
+        },
+        {
+          "selection": "SonderjyskE",
+          "selection_type": "home",
+          "odds": 5.5,
+          "median_odds": 5.0,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.234
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.5,
+          "median_odds": 4.2,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1429
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "3188c1f26adf0f064976fc766e3922d3",
+      "sport_key": "soccer_sweden_allsvenskan",
+      "league": "Allsvenskan - Sweden",
+      "commence_time": "2026-07-26T12:00:00Z",
+      "home_team": "IF Brommapojkarna",
+      "away_team": "Hammarby IF",
+      "picks": [
+        {
+          "selection": "Hammarby IF",
+          "selection_type": "away",
+          "odds": 1.45,
+          "median_odds": 1.4,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0857
+        },
+        {
+          "selection": "IF Brommapojkarna",
+          "selection_type": "home",
+          "odds": 6.75,
+          "median_odds": 6.0,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.2083
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 5.0,
+          "median_odds": 4.6,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1457
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "9a15519b05f7ec514d35ca4677815355",
+      "sport_key": "soccer_sweden_allsvenskan",
+      "league": "Allsvenskan - Sweden",
+      "commence_time": "2026-07-26T12:00:00Z",
+      "home_team": "IK Sirius",
+      "away_team": "IFK Goteborg",
+      "picks": [
+        {
+          "selection": "IFK Goteborg",
+          "selection_type": "away",
+          "odds": 7.0,
+          "median_odds": 5.5,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.4091
+        },
+        {
+          "selection": "IK Sirius",
+          "selection_type": "home",
+          "odds": 1.5,
+          "median_odds": 1.44,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.0833
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.8,
+          "median_odds": 4.5,
+          "bookmaker_count": 20,
+          "consensus_spread": 0.1333
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "2fc44001bdc29ab13a5763f88eb89043",
+      "sport_key": "soccer_switzerland_superleague",
+      "league": "Swiss Superleague",
+      "commence_time": "2026-07-26T12:00:00Z",
+      "home_team": "BSC Young Boys",
+      "away_team": "FC Sion",
+      "picks": [
+        {
+          "selection": "BSC Young Boys",
+          "selection_type": "home",
+          "odds": 1.88,
+          "median_odds": 1.85,
+          "bookmaker_count": 16,
+          "consensus_spread": 0.0811
+        },
+        {
+          "selection": "FC Sion",
+          "selection_type": "away",
+          "odds": 3.65,
+          "median_odds": 3.4,
+          "bookmaker_count": 16,
+          "consensus_spread": 0.1618
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 4.1,
+          "median_odds": 3.825,
+          "bookmaker_count": 16,
+          "consensus_spread": 0.1307
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "e0849aa475b6a85b53431dcc6d9bd4bf",
+      "sport_key": "soccer_finland_veikkausliiga",
+      "league": "Veikkausliiga - Finland",
+      "commence_time": "2026-07-26T12:00:00Z",
+      "home_team": "FC Inter Turku",
+      "away_team": "IF Gnistan",
+      "picks": [
+        {
+          "selection": "FC Inter Turku",
+          "selection_type": "home",
+          "odds": 1.75,
+          "median_odds": 1.7,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.0471
+        },
+        {
+          "selection": "IF Gnistan",
+          "selection_type": "away",
+          "odds": 4.8,
+          "median_odds": 4.2,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.2381
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.8,
+          "median_odds": 3.6,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1111
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "48caf88ee3194e479dcb867e1af80004",
+      "sport_key": "soccer_finland_veikkausliiga",
+      "league": "Veikkausliiga - Finland",
+      "commence_time": "2026-07-26T12:00:00Z",
+      "home_team": "Ilves Tampere",
+      "away_team": "FC Lahti",
+      "picks": [
+        {
+          "selection": "FC Lahti",
+          "selection_type": "away",
+          "odds": 3.0,
+          "median_odds": 2.88,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1042
+        },
+        {
+          "selection": "Ilves Tampere",
+          "selection_type": "home",
+          "odds": 2.26,
+          "median_odds": 2.12,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1226
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.6,
+          "median_odds": 3.5,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1143
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
       "id": "b47cf822e1c8db4bdc8fa30352303f76",
       "sport_key": "soccer_norway_eliteserien",
       "league": "Eliteserien - Norway",
@@ -4360,7 +4220,7 @@
           "consensus_spread": 0.1184
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "99bbeeaaac7f1975b9ce36be8cea5b96",
@@ -4373,29 +4233,29 @@
         {
           "selection": "Raków Częstochowa",
           "selection_type": "home",
-          "odds": 1.61,
+          "odds": 1.6,
           "median_odds": 1.57,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.051
+          "bookmaker_count": 17,
+          "consensus_spread": 0.0446
         },
         {
           "selection": "Wisła Płock",
           "selection_type": "away",
-          "odds": 5.5,
-          "median_odds": 5.225,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1531
+          "odds": 6.2,
+          "median_odds": 5.4,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.2685
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.8,
-          "median_odds": 3.675,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1088
+          "median_odds": 3.7,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1216
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "50d5b7167268186e8ab0b1bbae40a2a8",
@@ -4416,21 +4276,21 @@
         {
           "selection": "Sandvikens IF",
           "selection_type": "away",
-          "odds": 3.3,
-          "median_odds": 3.15,
+          "odds": 3.5,
+          "median_odds": 3.2,
           "bookmaker_count": 17,
-          "consensus_spread": 0.127
+          "consensus_spread": 0.1562
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.8,
-          "median_odds": 3.5,
+          "median_odds": 3.55,
           "bookmaker_count": 17,
-          "consensus_spread": 0.2457
+          "consensus_spread": 0.1127
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "dc215efeff9db813ba8f8d11159d3ea8",
@@ -4459,13 +4319,13 @@
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 5.4,
+          "odds": 5.5,
           "median_odds": 4.8,
           "bookmaker_count": 20,
-          "consensus_spread": 0.2229
+          "consensus_spread": 0.2437
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b39e59c7c62c8fb8681aa810182fdfc5",
@@ -4500,7 +4360,7 @@
           "consensus_spread": 0.093
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "224bc92fe86ad8067517f264c3773ad5",
@@ -4535,7 +4395,7 @@
           "consensus_spread": 0.2854
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "ec5608b8d60dcae86a5b1bf36aea2acd",
@@ -4570,7 +4430,7 @@
           "consensus_spread": 0.125
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "48c3e84a5db7053d3afdfc4dc75940dd",
@@ -4583,29 +4443,29 @@
         {
           "selection": "FC Lugano",
           "selection_type": "home",
-          "odds": 1.49,
+          "odds": 1.5,
           "median_odds": 1.44,
           "bookmaker_count": 16,
-          "consensus_spread": 0.0903
+          "consensus_spread": 0.0972
         },
         {
           "selection": "FC Vaduz",
           "selection_type": "away",
           "odds": 6.5,
-          "median_odds": 5.75,
+          "median_odds": 5.625,
           "bookmaker_count": 16,
-          "consensus_spread": 0.5739
+          "consensus_spread": 0.32
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.75,
-          "median_odds": 4.365,
+          "median_odds": 4.4,
           "bookmaker_count": 16,
-          "consensus_spread": 0.1718
+          "consensus_spread": 0.1705
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b22cc136768a48957b7fe3819a40d0c6",
@@ -4640,7 +4500,7 @@
           "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "4bf1c419efdf3bdf04dee0b85381957b",
@@ -4672,10 +4532,10 @@
           "odds": 3.5,
           "median_odds": 3.3,
           "bookmaker_count": 17,
-          "consensus_spread": 0.1364
+          "consensus_spread": 0.1212
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "902d11044a9ae03d6301dde7c4886d5f",
@@ -4689,28 +4549,28 @@
           "selection": "Bodø/Glimt",
           "selection_type": "away",
           "odds": 1.48,
-          "median_odds": 1.4,
+          "median_odds": 1.36,
           "bookmaker_count": 19,
-          "consensus_spread": 0.3143
+          "consensus_spread": 0.1103
         },
         {
           "selection": "Sandefjord",
           "selection_type": "home",
-          "odds": 6.5,
-          "median_odds": 5.75,
+          "odds": 7.0,
+          "median_odds": 6.0,
           "bookmaker_count": 19,
-          "consensus_spread": 0.9496
+          "consensus_spread": 0.2917
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 5.0,
-          "median_odds": 4.6,
+          "odds": 5.25,
+          "median_odds": 4.8,
           "bookmaker_count": 19,
-          "consensus_spread": 0.8652
+          "consensus_spread": 0.6979
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "a7d222492041d1b3793328aa919fcd9b",
@@ -4723,29 +4583,29 @@
         {
           "selection": "HamKam",
           "selection_type": "away",
-          "odds": 3.8,
-          "median_odds": 3.5,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.7886
+          "odds": 4.0,
+          "median_odds": 3.8,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.7421
         },
         {
           "selection": "Sarpsborg FK",
           "selection_type": "home",
-          "odds": 1.9,
-          "median_odds": 1.83,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.4699
+          "odds": 1.88,
+          "median_odds": 1.75,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.3829
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.9,
-          "median_odds": 3.65,
-          "bookmaker_count": 19,
-          "consensus_spread": 0.789
+          "odds": 4.0,
+          "median_odds": 3.7,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.6514
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e3d09c1e4d1ae587b400b1e42aa80a2e",
@@ -4759,17 +4619,17 @@
           "selection": "KFUM",
           "selection_type": "home",
           "odds": 3.1,
-          "median_odds": 3.0,
+          "median_odds": 2.9,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1167
+          "consensus_spread": 0.1207
         },
         {
           "selection": "Molde",
           "selection_type": "away",
           "odds": 2.22,
-          "median_odds": 2.1,
+          "median_odds": 2.135,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1048
+          "consensus_spread": 0.103
         },
         {
           "selection": "Draw",
@@ -4780,7 +4640,7 @@
           "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "919761958d8832cadc2def6f25bb3294",
@@ -4793,29 +4653,29 @@
         {
           "selection": "Motor Lublin",
           "selection_type": "away",
-          "odds": 5.0,
-          "median_odds": 4.6,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1739
+          "odds": 5.2,
+          "median_odds": 4.75,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.2105
         },
         {
           "selection": "Widzew Łódź",
           "selection_type": "home",
           "odds": 1.67,
           "median_odds": 1.65,
-          "bookmaker_count": 16,
+          "bookmaker_count": 17,
           "consensus_spread": 0.0424
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.8,
-          "median_odds": 3.65,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1096
+          "median_odds": 3.6,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "6c19a93fdd28dadb649474ee55d807ae",
@@ -4828,10 +4688,10 @@
         {
           "selection": "AC Horsens",
           "selection_type": "home",
-          "odds": 3.75,
+          "odds": 3.95,
           "median_odds": 3.5,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1857
+          "consensus_spread": 0.2429
         },
         {
           "selection": "FC Nordsjaelland",
@@ -4850,7 +4710,7 @@
           "consensus_spread": 0.1528
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "29b77c1ae7595af1187647542f384b23",
@@ -4864,9 +4724,9 @@
           "selection": "Aalesund",
           "selection_type": "home",
           "odds": 6.0,
-          "median_odds": 5.5,
+          "median_odds": 5.4,
           "bookmaker_count": 19,
-          "consensus_spread": 0.8764
+          "consensus_spread": 0.5593
         },
         {
           "selection": "Viking FK",
@@ -4874,18 +4734,18 @@
           "odds": 1.5,
           "median_odds": 1.44,
           "bookmaker_count": 19,
-          "consensus_spread": 0.2222
+          "consensus_spread": 0.0972
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.75,
-          "median_odds": 4.35,
+          "odds": 5.0,
+          "median_odds": 4.4,
           "bookmaker_count": 19,
-          "consensus_spread": 0.8529
+          "consensus_spread": 0.3068
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "406cf355ea6f8b55927d829e8dffc622",
@@ -4898,29 +4758,29 @@
         {
           "selection": "Atlético Tucuman",
           "selection_type": "home",
-          "odds": 2.6,
-          "median_odds": 2.5,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.08
+          "odds": 2.7,
+          "median_odds": 2.55,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.1176
         },
         {
           "selection": "Independiente Rivadavia",
           "selection_type": "away",
-          "odds": 2.8,
+          "odds": 2.9,
           "median_odds": 2.7,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.0889
+          "bookmaker_count": 11,
+          "consensus_spread": 0.1111
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.1,
           "median_odds": 3.0,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.1067
+          "bookmaker_count": 11,
+          "consensus_spread": 0.0667
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "862dd9c7ae3fd990780936b8c1e2ade9",
@@ -4955,7 +4815,7 @@
           "consensus_spread": 0.1221
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b903ef5fcbe8814d380f20f4b02a14f2",
@@ -4969,28 +4829,28 @@
           "selection": "Bahia",
           "selection_type": "home",
           "odds": 2.1,
-          "median_odds": 2.08,
+          "median_odds": 2.075,
           "bookmaker_count": 18,
-          "consensus_spread": 0.0529
+          "consensus_spread": 0.053
         },
         {
           "selection": "Corinthians",
           "selection_type": "away",
           "odds": 3.5,
-          "median_odds": 3.4,
+          "median_odds": 3.35,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1471
+          "consensus_spread": 0.1493
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.4,
+          "odds": 3.45,
           "median_odds": 3.3,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1212
+          "consensus_spread": 0.1364
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "6fa9d933a99ec76e420b435e1c7ae86b",
@@ -5004,9 +4864,9 @@
           "selection": "Botafogo",
           "selection_type": "away",
           "odds": 4.5,
-          "median_odds": 4.3,
+          "median_odds": 4.25,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1744
+          "consensus_spread": 0.1765
         },
         {
           "selection": "Cruzeiro",
@@ -5020,12 +4880,12 @@
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.6,
-          "median_odds": 3.5,
+          "median_odds": 3.55,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1
+          "consensus_spread": 0.0986
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "8f3c01ba922c61e86421261b940ea949",
@@ -5038,29 +4898,29 @@
         {
           "selection": "Ceará",
           "selection_type": "away",
-          "odds": 2.88,
-          "median_odds": 2.725,
+          "odds": 2.9,
+          "median_odds": 2.775,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0661
+          "consensus_spread": 0.0541
         },
         {
           "selection": "São Bernardo",
           "selection_type": "home",
-          "odds": 2.45,
-          "median_odds": 2.335,
+          "odds": 2.48,
+          "median_odds": 2.355,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0557
+          "consensus_spread": 0.0637
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.15,
-          "median_odds": 2.975,
+          "odds": 3.1,
+          "median_odds": 2.915,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0672
+          "consensus_spread": 0.0755
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "ffa775c13bd1fc1e79040c61f2969d6e",
@@ -5073,29 +4933,29 @@
         {
           "selection": "Criciuma",
           "selection_type": "home",
-          "odds": 1.92,
+          "odds": 1.93,
           "median_odds": 1.835,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0545
+          "consensus_spread": 0.0599
         },
         {
           "selection": "Nautico PE",
           "selection_type": "away",
           "odds": 3.95,
-          "median_odds": 3.725,
+          "median_odds": 3.75,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0671
+          "consensus_spread": 0.0667
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.35,
-          "median_odds": 3.175,
+          "odds": 3.3,
+          "median_odds": 3.125,
           "bookmaker_count": 4,
-          "consensus_spread": 0.063
+          "consensus_spread": 0.064
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e5fd8b6164731da6e7f3a1f252673e29",
@@ -5111,7 +4971,7 @@
           "odds": 3.25,
           "median_odds": 3.1,
           "bookmaker_count": 16,
-          "consensus_spread": 0.7129
+          "consensus_spread": 0.6935
         },
         {
           "selection": "Ñublense",
@@ -5119,7 +4979,7 @@
           "odds": 2.2,
           "median_odds": 2.125,
           "bookmaker_count": 16,
-          "consensus_spread": 0.5412
+          "consensus_spread": 0.5224
         },
         {
           "selection": "Draw",
@@ -5127,10 +4987,10 @@
           "odds": 3.25,
           "median_odds": 3.1,
           "bookmaker_count": 16,
-          "consensus_spread": 0.7129
+          "consensus_spread": 0.7194
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "53848ad999255023d153784e0a936f3b",
@@ -5143,29 +5003,29 @@
         {
           "selection": "Estudiantes",
           "selection_type": "home",
-          "odds": 2.15,
+          "odds": 2.22,
           "median_odds": 2.1,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.0714
+          "bookmaker_count": 11,
+          "consensus_spread": 0.0857
         },
         {
           "selection": "Independiente",
           "selection_type": "away",
-          "odds": 3.8,
-          "median_odds": 3.6,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.1111
+          "odds": 3.95,
+          "median_odds": 3.75,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.1467
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.0,
           "median_odds": 2.9,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.1241
+          "bookmaker_count": 11,
+          "consensus_spread": 0.1034
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "d9d1726d183975de80ce176cd8e4a6ab",
@@ -5179,28 +5039,28 @@
           "selection": "Bragantino-SP",
           "selection_type": "home",
           "odds": 1.67,
-          "median_odds": 1.62,
+          "median_odds": 1.615,
           "bookmaker_count": 18,
-          "consensus_spread": 0.0741
+          "consensus_spread": 0.0743
         },
         {
           "selection": "Coritiba",
           "selection_type": "away",
-          "odds": 5.25,
+          "odds": 5.3,
           "median_odds": 5.0,
           "bookmaker_count": 18,
-          "consensus_spread": 0.15
+          "consensus_spread": 0.16
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.85,
+          "odds": 3.9,
           "median_odds": 3.75,
           "bookmaker_count": 18,
           "consensus_spread": 0.1067
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "19fc51f8fad955615b5d08db4ec89e1f",
@@ -5214,28 +5074,28 @@
           "selection": "Flamengo",
           "selection_type": "home",
           "odds": 1.53,
-          "median_odds": 1.5,
+          "median_odds": 1.48,
           "bookmaker_count": 18,
-          "consensus_spread": 0.06
+          "consensus_spread": 0.0676
         },
         {
           "selection": "Sao Paulo",
           "selection_type": "away",
-          "odds": 6.5,
-          "median_odds": 6.0,
+          "odds": 6.75,
+          "median_odds": 6.25,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1667
+          "consensus_spread": 0.2
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 4.2,
+          "odds": 4.3,
           "median_odds": 4.0,
           "bookmaker_count": 18,
-          "consensus_spread": 0.15
+          "consensus_spread": 0.175
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "b2ae0c5388431d8a811f3ead9312fed1",
@@ -5248,10 +5108,10 @@
         {
           "selection": "Fluminense",
           "selection_type": "away",
-          "odds": 2.65,
+          "odds": 2.7,
           "median_odds": 2.6,
           "bookmaker_count": 17,
-          "consensus_spread": 0.0962
+          "consensus_spread": 0.0769
         },
         {
           "selection": "Grêmio",
@@ -5259,18 +5119,18 @@
           "odds": 2.6,
           "median_odds": 2.5,
           "bookmaker_count": 17,
-          "consensus_spread": 0.112
+          "consensus_spread": 0.08
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.3,
+          "odds": 3.4,
           "median_odds": 3.25,
           "bookmaker_count": 17,
-          "consensus_spread": 0.0923
+          "consensus_spread": 0.1538
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "599e46b4b9f36136b2723c825e0fc82f",
@@ -5305,7 +5165,7 @@
           "consensus_spread": 0.0684
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "2dae7a8cf20814f1e7b206f5e44b7751",
@@ -5318,10 +5178,10 @@
         {
           "selection": "Grêmio Novorizontino",
           "selection_type": "away",
-          "odds": 2.43,
-          "median_odds": 2.305,
+          "odds": 2.4,
+          "median_odds": 2.285,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0651
+          "consensus_spread": 0.0656
         },
         {
           "selection": "Londrina",
@@ -5334,13 +5194,13 @@
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.2,
-          "median_odds": 3.025,
+          "odds": 3.25,
+          "median_odds": 3.075,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0661
+          "consensus_spread": 0.065
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e8eba7fd4f171ac5ee39d426c1b762d2",
@@ -5375,7 +5235,42 @@
           "consensus_spread": 0.1065
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "67c7319c34b7d0b5c96e4d6613321d0d",
+      "sport_key": "soccer_argentina_primera_division",
+      "league": "Primera División - Argentina",
+      "commence_time": "2026-07-26T22:30:00Z",
+      "home_team": "Deportivo Riestra",
+      "away_team": "Boca Juniors",
+      "picks": [
+        {
+          "selection": "Boca Juniors",
+          "selection_type": "away",
+          "odds": 2.05,
+          "median_odds": 2.0,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.07
+        },
+        {
+          "selection": "Deportivo Riestra",
+          "selection_type": "home",
+          "odds": 4.8,
+          "median_odds": 4.2,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.1905
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 2.95,
+          "median_odds": 2.88,
+          "bookmaker_count": 11,
+          "consensus_spread": 0.0868
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "51474caaaca9d0664acc4c445caf0c64",
@@ -5388,10 +5283,10 @@
         {
           "selection": "Atletico Mineiro",
           "selection_type": "away",
-          "odds": 6.25,
-          "median_odds": 5.5,
+          "odds": 6.4,
+          "median_odds": 5.625,
           "bookmaker_count": 18,
-          "consensus_spread": 0.2273
+          "consensus_spread": 0.2489
         },
         {
           "selection": "Palmeiras",
@@ -5404,13 +5299,13 @@
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.95,
+          "odds": 3.9,
           "median_odds": 3.75,
           "bookmaker_count": 18,
-          "consensus_spread": 0.12
+          "consensus_spread": 0.1067
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "810fefc2bf0eca7d894291b573377b4e",
@@ -5426,61 +5321,26 @@
           "odds": 2.2,
           "median_odds": 2.15,
           "bookmaker_count": 18,
-          "consensus_spread": 0.093
+          "consensus_spread": 0.1023
         },
         {
           "selection": "Vitoria",
           "selection_type": "away",
-          "odds": 3.5,
-          "median_odds": 3.225,
+          "odds": 3.55,
+          "median_odds": 3.275,
           "bookmaker_count": 18,
-          "consensus_spread": 0.155
+          "consensus_spread": 0.1679
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.4,
-          "median_odds": 3.25,
+          "median_odds": 3.3,
           "bookmaker_count": 18,
-          "consensus_spread": 0.1231
+          "consensus_spread": 0.1212
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
-    },
-    {
-      "id": "67c7319c34b7d0b5c96e4d6613321d0d",
-      "sport_key": "soccer_argentina_primera_division",
-      "league": "Primera División - Argentina",
-      "commence_time": "2026-07-26T22:30:00Z",
-      "home_team": "Deportivo Riestra",
-      "away_team": "Boca Juniors",
-      "picks": [
-        {
-          "selection": "Boca Juniors",
-          "selection_type": "away",
-          "odds": 2.05,
-          "median_odds": 1.975,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.0709
-        },
-        {
-          "selection": "Deportivo Riestra",
-          "selection_type": "home",
-          "odds": 4.33,
-          "median_odds": 4.05,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.1432
-        },
-        {
-          "selection": "Draw",
-          "selection_type": "draw",
-          "odds": 2.95,
-          "median_odds": 2.875,
-          "bookmaker_count": 10,
-          "consensus_spread": 0.1078
-        }
-      ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "6c4afed1c376e65b1551ccff489c3574",
@@ -5550,7 +5410,7 @@
           "consensus_spread": 0.0769
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "84cfc92f937672371f54a59d970e6295",
@@ -5620,7 +5480,7 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "35e5441b0004bc8a8b8eb128c0d54996",
@@ -5633,18 +5493,18 @@
         {
           "selection": "AIK",
           "selection_type": "away",
-          "odds": 3.6,
+          "odds": 3.7,
           "median_odds": 3.5,
           "bookmaker_count": 20,
-          "consensus_spread": 0.1
+          "consensus_spread": 0.1286
         },
         {
           "selection": "BK Hacken",
           "selection_type": "home",
           "odds": 1.93,
-          "median_odds": 1.825,
+          "median_odds": 1.82,
           "bookmaker_count": 20,
-          "consensus_spread": 0.126
+          "consensus_spread": 0.1264
         },
         {
           "selection": "Draw",
@@ -5655,7 +5515,7 @@
           "consensus_spread": 0.1579
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "71c22903218a4dd0f1939615b93c6705",
@@ -5668,29 +5528,29 @@
         {
           "selection": "IK Oddevold",
           "selection_type": "away",
-          "odds": 2.3,
-          "median_odds": 2.225,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.5663
+          "odds": 2.35,
+          "median_odds": 2.25,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.5511
         },
         {
           "selection": "Örebro SK",
           "selection_type": "home",
           "odds": 3.05,
-          "median_odds": 2.775,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.7243
+          "median_odds": 2.75,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.7055
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.6,
           "median_odds": 3.4,
-          "bookmaker_count": 16,
+          "bookmaker_count": 17,
           "consensus_spread": 0.7529
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "421873ca92aa69cf48d234352f40f7a5",
@@ -5705,27 +5565,27 @@
           "selection_type": "away",
           "odds": 4.9,
           "median_odds": 4.33,
-          "bookmaker_count": 17,
+          "bookmaker_count": 19,
           "consensus_spread": 0.2309
         },
         {
           "selection": "Rosenborg",
           "selection_type": "home",
           "odds": 1.79,
-          "median_odds": 1.67,
-          "bookmaker_count": 17,
-          "consensus_spread": 0.1018
+          "median_odds": 1.7,
+          "bookmaker_count": 19,
+          "consensus_spread": 0.1
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.8,
           "median_odds": 3.6,
-          "bookmaker_count": 17,
+          "bookmaker_count": 19,
           "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "8f397399f10216bc9a1d9831a54550ad",
@@ -5740,7 +5600,7 @@
           "selection_type": "away",
           "odds": 2.48,
           "median_odds": 2.4,
-          "bookmaker_count": 13,
+          "bookmaker_count": 15,
           "consensus_spread": 0.0958
         },
         {
@@ -5748,7 +5608,7 @@
           "selection_type": "home",
           "odds": 2.88,
           "median_odds": 2.8,
-          "bookmaker_count": 13,
+          "bookmaker_count": 15,
           "consensus_spread": 0.0929
         },
         {
@@ -5756,11 +5616,11 @@
           "selection_type": "draw",
           "odds": 3.25,
           "median_odds": 3.05,
-          "bookmaker_count": 13,
+          "bookmaker_count": 15,
           "consensus_spread": 0.0984
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "18f1c54fb917081f98c14e910081bc78",
@@ -5775,7 +5635,7 @@
           "selection_type": "away",
           "odds": 2.32,
           "median_odds": 2.25,
-          "bookmaker_count": 16,
+          "bookmaker_count": 17,
           "consensus_spread": 0.12
         },
         {
@@ -5783,19 +5643,19 @@
           "selection_type": "home",
           "odds": 2.8,
           "median_odds": 2.75,
-          "bookmaker_count": 16,
+          "bookmaker_count": 17,
           "consensus_spread": 0.1091
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.8,
-          "median_odds": 3.45,
-          "bookmaker_count": 16,
-          "consensus_spread": 0.1449
+          "median_odds": 3.5,
+          "bookmaker_count": 17,
+          "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e51972466047219c9d643949ee0c5a2c",
@@ -5808,18 +5668,18 @@
         {
           "selection": "Atletico Goianiense",
           "selection_type": "home",
-          "odds": 2.1,
-          "median_odds": 2.02,
+          "odds": 2.14,
+          "median_odds": 2.04,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0495
+          "consensus_spread": 0.0588
         },
         {
           "selection": "Operario PR",
           "selection_type": "away",
-          "odds": 3.5,
-          "median_odds": 3.3,
+          "odds": 3.45,
+          "median_odds": 3.25,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0758
+          "consensus_spread": 0.0769
         },
         {
           "selection": "Draw",
@@ -5830,7 +5690,7 @@
           "consensus_spread": 0.0661
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "849046b2ceb8f919b038362706280ddb",
@@ -5865,7 +5725,7 @@
           "consensus_spread": 0.0725
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "6ba941f951c71b5e0530f92fc18c48b3",
@@ -5879,17 +5739,17 @@
           "selection": "Cuiabá",
           "selection_type": "away",
           "odds": 4.0,
-          "median_odds": 3.75,
+          "median_odds": 3.775,
           "bookmaker_count": 4,
-          "consensus_spread": 0.08
+          "consensus_spread": 0.0662
         },
         {
           "selection": "Sport Recife",
           "selection_type": "home",
-          "odds": 1.96,
-          "median_odds": 1.875,
+          "odds": 1.94,
+          "median_odds": 1.865,
           "bookmaker_count": 4,
-          "consensus_spread": 0.0533
+          "consensus_spread": 0.0483
         },
         {
           "selection": "Draw",
@@ -5900,7 +5760,7 @@
           "consensus_spread": 0.0661
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "16da0ac17df035ef762b98ba1a3b3bf9",
@@ -5935,7 +5795,7 @@
           "consensus_spread": 0.1176
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "e2c5099df1e9688c5ff6b99ae4077f6c",
@@ -5949,17 +5809,17 @@
           "selection": "IFK Norrkoping",
           "selection_type": "away",
           "odds": 2.2,
-          "median_odds": 2.1,
+          "median_odds": 2.05,
           "bookmaker_count": 14,
-          "consensus_spread": 0.0952
+          "consensus_spread": 0.122
         },
         {
           "selection": "Landskrona BoIS",
           "selection_type": "home",
-          "odds": 3.1,
-          "median_odds": 2.88,
+          "odds": 3.25,
+          "median_odds": 3.0,
           "bookmaker_count": 14,
-          "consensus_spread": 0.1389
+          "consensus_spread": 0.15
         },
         {
           "selection": "Draw",
@@ -5967,10 +5827,10 @@
           "odds": 3.7,
           "median_odds": 3.425,
           "bookmaker_count": 14,
-          "consensus_spread": 0.3036
+          "consensus_spread": 0.146
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "5746af78ef429ff259802e90e744590b",
@@ -5985,27 +5845,27 @@
           "selection_type": "home",
           "odds": 2.15,
           "median_odds": 2.1,
-          "bookmaker_count": 5,
+          "bookmaker_count": 6,
           "consensus_spread": 0.0476
         },
         {
           "selection": "Sarmiento de Junin",
           "selection_type": "away",
-          "odds": 3.75,
+          "odds": 3.9,
           "median_odds": 3.6,
-          "bookmaker_count": 5,
-          "consensus_spread": 0.125
+          "bookmaker_count": 6,
+          "consensus_spread": 0.1667
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 3.0,
-          "median_odds": 2.9,
-          "bookmaker_count": 5,
-          "consensus_spread": 0.0862
+          "median_odds": 2.89,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.0865
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "1fd6cc9bf9409f76d065bd414aefdf26",
@@ -6040,7 +5900,77 @@
           "consensus_spread": 0.1212
         }
       ],
-      "fetched_at": "2026-07-22T12:14:08.470846+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "7f97e1ad452a6c39dab72ee7a0c99130",
+      "sport_key": "soccer_brazil_serie_b",
+      "league": "Brazil Série B",
+      "commence_time": "2026-07-28T22:30:00Z",
+      "home_team": "Ponte Preta",
+      "away_team": "Athletic Club (MG)",
+      "picks": [
+        {
+          "selection": "Athletic Club (MG)",
+          "selection_type": "away",
+          "odds": 2.02,
+          "median_odds": 1.93,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.057
+        },
+        {
+          "selection": "Ponte Preta",
+          "selection_type": "home",
+          "odds": 3.7,
+          "median_odds": 3.5,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0714
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.25,
+          "median_odds": 3.075,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.065
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "d0ca4f99112815692d640d0e30b15331",
+      "sport_key": "soccer_brazil_serie_b",
+      "league": "Brazil Série B",
+      "commence_time": "2026-07-28T22:30:00Z",
+      "home_team": "Juventude",
+      "away_team": "Avai",
+      "picks": [
+        {
+          "selection": "Avai",
+          "selection_type": "away",
+          "odds": 5.1,
+          "median_odds": 4.75,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0842
+        },
+        {
+          "selection": "Juventude",
+          "selection_type": "home",
+          "odds": 1.68,
+          "median_odds": 1.615,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0495
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.55,
+          "median_odds": 3.35,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0746
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "c4b8a047d67a1eeb3d99a2074755de53",
@@ -6061,21 +5991,21 @@
         {
           "selection": "Grêmio",
           "selection_type": "away",
-          "odds": 4.5,
+          "odds": 4.4,
           "median_odds": 4.3,
           "bookmaker_count": 5,
-          "consensus_spread": 0.0465
+          "consensus_spread": 0.0349
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.85,
-          "median_odds": 3.75,
+          "odds": 3.9,
+          "median_odds": 3.8,
           "bookmaker_count": 5,
-          "consensus_spread": 0.04
+          "consensus_spread": 0.0263
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "64e7056726d64e1e5acc3e2d2a654678",
@@ -6088,29 +6018,29 @@
         {
           "selection": "Chapecoense",
           "selection_type": "home",
-          "odds": 2.7,
+          "odds": 2.75,
           "median_odds": 2.65,
           "bookmaker_count": 5,
-          "consensus_spread": 0.0264
+          "consensus_spread": 0.0377
         },
         {
           "selection": "Vasco da Gama",
           "selection_type": "away",
-          "odds": 2.45,
+          "odds": 2.43,
           "median_odds": 2.4,
           "bookmaker_count": 5,
-          "consensus_spread": 0.0292
+          "consensus_spread": 0.0333
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
-          "odds": 3.45,
+          "odds": 3.5,
           "median_odds": 3.4,
           "bookmaker_count": 5,
-          "consensus_spread": 0.0294
+          "consensus_spread": 0.0441
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "c1f9244cffaf20099df91a637da5f744",
@@ -6124,28 +6054,28 @@
           "selection": "Argentinos Juniors",
           "selection_type": "home",
           "odds": 1.4,
-          "median_odds": 1.345,
-          "bookmaker_count": 6,
-          "consensus_spread": 0.0669
+          "median_odds": 1.36,
+          "bookmaker_count": 7,
+          "consensus_spread": 0.0662
         },
         {
           "selection": "Estudiantes de Río Cuarto",
           "selection_type": "away",
           "odds": 10.0,
-          "median_odds": 9.75,
-          "bookmaker_count": 6,
-          "consensus_spread": 0.2051
+          "median_odds": 10.0,
+          "bookmaker_count": 7,
+          "consensus_spread": 0.2
         },
         {
           "selection": "Draw",
           "selection_type": "draw",
           "odds": 4.0,
-          "median_odds": 3.9,
-          "bookmaker_count": 6,
-          "consensus_spread": 0.1154
+          "median_odds": 4.0,
+          "bookmaker_count": 7,
+          "consensus_spread": 0.1125
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     },
     {
       "id": "a3e52d844b8ee93cb2fbaac1d2bdb966",
@@ -6160,7 +6090,7 @@
           "selection_type": "away",
           "odds": 3.5,
           "median_odds": 3.4,
-          "bookmaker_count": 5,
+          "bookmaker_count": 6,
           "consensus_spread": 0.0882
         },
         {
@@ -6168,7 +6098,7 @@
           "selection_type": "home",
           "odds": 2.3,
           "median_odds": 2.2,
-          "bookmaker_count": 5,
+          "bookmaker_count": 6,
           "consensus_spread": 0.0682
         },
         {
@@ -6176,16 +6106,296 @@
           "selection_type": "draw",
           "odds": 2.9,
           "median_odds": 2.88,
-          "bookmaker_count": 5,
+          "bookmaker_count": 6,
           "consensus_spread": 0.0694
         }
       ],
-      "fetched_at": "2026-07-21T12:10:47.732494+00:00"
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "3f85f2fb6ebdec0986b515d32b8f30cd",
+      "sport_key": "soccer_conmebol_copa_sudamericana",
+      "league": "Copa Sudamericana",
+      "commence_time": "2026-07-29T00:30:00Z",
+      "home_team": "Santos",
+      "away_team": "UCV FC",
+      "picks": [
+        {
+          "selection": "Santos",
+          "selection_type": "home",
+          "odds": 1.22,
+          "median_odds": 1.22,
+          "bookmaker_count": 7,
+          "consensus_spread": 0.0164
+        },
+        {
+          "selection": "UCV FC",
+          "selection_type": "away",
+          "odds": 12.0,
+          "median_odds": 10.5,
+          "bookmaker_count": 7,
+          "consensus_spread": 0.4286
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 6.2,
+          "median_odds": 6.0,
+          "bookmaker_count": 7,
+          "consensus_spread": 0.1583
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "00f0f6a84cc40dfe5b1f42285ec4875f",
+      "sport_key": "soccer_brazil_serie_b",
+      "league": "Brazil Série B",
+      "commence_time": "2026-07-29T00:35:00Z",
+      "home_team": "Fortaleza",
+      "away_team": "Botafogo",
+      "picks": [
+        {
+          "selection": "Botafogo",
+          "selection_type": "away",
+          "odds": 4.1,
+          "median_odds": 3.825,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0784
+        },
+        {
+          "selection": "Fortaleza",
+          "selection_type": "home",
+          "odds": 1.88,
+          "median_odds": 1.81,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.0497
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.35,
+          "median_odds": 3.175,
+          "bookmaker_count": 4,
+          "consensus_spread": 0.063
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "0506b4013ba38a55326f6eb05eaa1acf",
+      "sport_key": "soccer_argentina_primera_division",
+      "league": "Primera División - Argentina",
+      "commence_time": "2026-07-29T17:30:00Z",
+      "home_team": "Barracas Central",
+      "away_team": "Aldosivi Mar del Plata",
+      "picks": [
+        {
+          "selection": "Aldosivi Mar del Plata",
+          "selection_type": "away",
+          "odds": 3.5,
+          "median_odds": 3.275,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.1527
+        },
+        {
+          "selection": "Barracas Central",
+          "selection_type": "home",
+          "odds": 2.3,
+          "median_odds": 2.275,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.0879
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 2.9,
+          "median_odds": 2.84,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.0915
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "4e3e1685317d5e99b4551c16848d126e",
+      "sport_key": "soccer_argentina_primera_division",
+      "league": "Primera División - Argentina",
+      "commence_time": "2026-07-29T20:00:00Z",
+      "home_team": "Defensa y Justicia",
+      "away_team": "Deportivo Riestra",
+      "picks": [
+        {
+          "selection": "Defensa y Justicia",
+          "selection_type": "home",
+          "odds": 2.15,
+          "median_odds": 2.1,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.0714
+        },
+        {
+          "selection": "Deportivo Riestra",
+          "selection_type": "away",
+          "odds": 3.9,
+          "median_odds": 3.6,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.1389
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 2.9,
+          "median_odds": 2.835,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.0917
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "d76fbce4908a1f1eb91618c8895b43a2",
+      "sport_key": "soccer_argentina_primera_division",
+      "league": "Primera División - Argentina",
+      "commence_time": "2026-07-29T20:00:00Z",
+      "home_team": "San Lorenzo",
+      "away_team": "Gimnasia Mendoza",
+      "picks": [
+        {
+          "selection": "Gimnasia Mendoza",
+          "selection_type": "away",
+          "odds": 3.9,
+          "median_odds": 3.75,
+          "bookmaker_count": 5,
+          "consensus_spread": 0.1333
+        },
+        {
+          "selection": "San Lorenzo",
+          "selection_type": "home",
+          "odds": 2.15,
+          "median_odds": 2.1,
+          "bookmaker_count": 5,
+          "consensus_spread": 0.0476
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 2.9,
+          "median_odds": 2.8,
+          "bookmaker_count": 5,
+          "consensus_spread": 0.0714
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "45031d060fac9fea2ac8b49457a6b298",
+      "sport_key": "soccer_argentina_primera_division",
+      "league": "Primera División - Argentina",
+      "commence_time": "2026-07-29T22:15:00Z",
+      "home_team": "Gimnasia La Plata",
+      "away_team": "River Plate",
+      "picks": [
+        {
+          "selection": "Gimnasia La Plata",
+          "selection_type": "home",
+          "odds": 3.8,
+          "median_odds": 3.6,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.1389
+        },
+        {
+          "selection": "River Plate",
+          "selection_type": "away",
+          "odds": 2.1,
+          "median_odds": 2.05,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.078
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.1,
+          "median_odds": 2.95,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.1085
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "b2d74f84da79d6faacbaab1776eb39c1",
+      "sport_key": "soccer_argentina_primera_division",
+      "league": "Primera División - Argentina",
+      "commence_time": "2026-07-30T00:30:00Z",
+      "home_team": "Instituto de Córdoba",
+      "away_team": "Platense",
+      "picks": [
+        {
+          "selection": "Instituto de Córdoba",
+          "selection_type": "home",
+          "odds": 1.83,
+          "median_odds": 1.75,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.0971
+        },
+        {
+          "selection": "Platense",
+          "selection_type": "away",
+          "odds": 5.25,
+          "median_odds": 5.0,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.15
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.1,
+          "median_odds": 3.0,
+          "bookmaker_count": 6,
+          "consensus_spread": 0.1
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
+    },
+    {
+      "id": "0c616d7c1ac3c60aa0d87b53ecdb76eb",
+      "sport_key": "soccer_brazil_campeonato",
+      "league": "Brazil Série A",
+      "commence_time": "2026-07-30T00:30:00Z",
+      "home_team": "Fluminense",
+      "away_team": "Bahia",
+      "picks": [
+        {
+          "selection": "Bahia",
+          "selection_type": "away",
+          "odds": 4.1,
+          "median_odds": 3.95,
+          "bookmaker_count": 5,
+          "consensus_spread": 0.0506
+        },
+        {
+          "selection": "Fluminense",
+          "selection_type": "home",
+          "odds": 1.83,
+          "median_odds": 1.8,
+          "bookmaker_count": 5,
+          "consensus_spread": 0.0278
+        },
+        {
+          "selection": "Draw",
+          "selection_type": "draw",
+          "odds": 3.65,
+          "median_odds": 3.6,
+          "bookmaker_count": 5,
+          "consensus_spread": 0.0278
+        }
+      ],
+      "fetched_at": "2026-07-22T17:40:17.014700+00:00"
     }
   ],
   "quota": {
-    "remaining": "447",
-    "used": "53",
+    "remaining": "431",
+    "used": "69",
     "last": "1"
   },
   "excluded_categories": [
