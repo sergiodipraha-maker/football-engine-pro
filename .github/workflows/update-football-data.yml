@@ -1,0 +1,1677 @@
+name: Update and enrich all football data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-football-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Update odds and enrich football data
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+          ROTATION_SEED: ${{ github.run_number }}
+
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import time
+
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+          from urllib.parse import urlencode
+          from urllib.request import Request, urlopen
+
+
+          ODDS_HOST = "https://api.the-odds-api.com/v4"
+          FOOTBALL_HOST = "https://v3.football.api-sports.io"
+
+          ODDS_KEY = os.environ.get("ODDS_API_KEY")
+          FOOTBALL_KEY = os.environ.get("API_FOOTBALL_KEY")
+
+          ROTATION_SEED = int(
+              os.environ.get("ROTATION_SEED", "1")
+          )
+
+          if not ODDS_KEY:
+              raise RuntimeError(
+                  "ODDS_API_KEY secret is missing"
+              )
+
+
+          REGIONS = "uk"
+          MARKETS = "h2h"
+
+          LOOKAHEAD_DAYS = 8
+
+          DAILY_CORE_LIMIT = 10
+          ROTATING_LIMIT = 6
+          CREDIT_RESERVE = 35
+
+          # API-Football Free plan protection.
+          TEAM_LIMIT_PER_RUN = 60
+
+
+          EXCLUDED_TERMS = (
+              "women",
+              "woman",
+              "female",
+              "u17",
+              "u18",
+              "u19",
+              "u20",
+              "u21",
+              "u22",
+              "u23",
+              "youth",
+              "junior",
+              "reserve",
+              "reserves",
+              "friendly",
+              "friendlies",
+              "club friendly",
+              "esports",
+              "e-sports",
+              "virtual",
+              "winner",
+              "outright",
+              "futures",
+          )
+
+
+          CORE_HINTS = (
+              "uefa_champs_league",
+              "uefa_europa_league",
+              "uefa_europa_conference_league",
+              "epl",
+              "efl_champ",
+              "scotland_premiership",
+              "ireland_premier_division",
+              "spain_la_liga",
+              "italy_serie_a",
+              "germany_bundesliga",
+              "france_ligue_one",
+              "netherlands_eredivisie",
+              "portugal_primeira_liga",
+              "belgium_first_div",
+          )
+
+
+          COUNTRY_PRIORITY = (
+              "uefa",
+              "england",
+              "scotland",
+              "ireland",
+              "spain",
+              "italy",
+              "germany",
+              "france",
+              "netherlands",
+              "portugal",
+              "belgium",
+              "denmark",
+              "sweden",
+              "norway",
+              "poland",
+              "austria",
+              "switzerland",
+              "czech",
+              "croatia",
+              "serbia",
+              "romania",
+              "turkey",
+              "greece",
+              "finland",
+              "iceland",
+              "bulgaria",
+              "slovakia",
+              "slovenia",
+              "hungary",
+              "cyprus",
+          )
+
+
+          def json_get(url, headers=None):
+              request = Request(
+                  url,
+                  headers=(
+                      headers
+                      or {
+                          "User-Agent":
+                              "FootballEnginePRO/4.0"
+                      }
+                  ),
+              )
+
+              with urlopen(
+                  request,
+                  timeout=45,
+              ) as response:
+                  data = json.loads(
+                      response.read().decode("utf-8")
+                  )
+
+                  response_headers = {
+                      key.lower(): value
+                      for key, value
+                      in response.headers.items()
+                  }
+
+                  return data, response_headers
+
+
+          def odds_get(path, params):
+              query = {
+                  **params,
+                  "apiKey": ODDS_KEY,
+              }
+
+              return json_get(
+                  f"{ODDS_HOST}{path}?"
+                  + urlencode(query)
+              )
+
+
+          def football_get(path, params):
+              data, _ = json_get(
+                  f"{FOOTBALL_HOST}{path}?"
+                  + urlencode(params),
+                  {
+                      "x-apisports-key":
+                          FOOTBALL_KEY,
+                      "User-Agent":
+                          "FootballEnginePRO/4.0",
+                  },
+              )
+
+              return data
+
+
+          def iso_z(value):
+              return (
+                  value
+                  .astimezone(timezone.utc)
+                  .replace(microsecond=0)
+                  .isoformat()
+                  .replace("+00:00", "Z")
+              )
+
+
+          def parse_iso(value):
+              return datetime.fromisoformat(
+                  value.replace("Z", "+00:00")
+              )
+
+
+          def median(values):
+              values = sorted(values)
+
+              if not values:
+                  return None
+
+              middle = len(values) // 2
+
+              if len(values) % 2:
+                  return values[middle]
+
+              return (
+                  values[middle - 1]
+                  + values[middle]
+              ) / 2
+
+
+          def excluded(sport):
+              text = " ".join(
+                  [
+                      sport.get("key", ""),
+                      sport.get("title", ""),
+                      sport.get("description", ""),
+                  ]
+              ).lower()
+
+              return (
+                  sport.get(
+                      "has_outrights",
+                      False,
+                  )
+                  or any(
+                      term in text
+                      for term in EXCLUDED_TERMS
+                  )
+              )
+
+
+          def priority_score(sport):
+              key = sport.get(
+                  "key",
+                  "",
+              ).lower()
+
+              title = sport.get(
+                  "title",
+                  "",
+              ).lower()
+
+              text = f"{key} {title}"
+
+              score = 0
+
+              for index, hint in enumerate(
+                  CORE_HINTS
+              ):
+                  if hint in key:
+                      score += (
+                          1000
+                          - index * 20
+                      )
+
+              for index, country in enumerate(
+                  COUNTRY_PRIORITY
+              ):
+                  if country in text:
+                      score += (
+                          400
+                          - index * 8
+                      )
+                      break
+
+              if "cup" in text:
+                  score += 60
+
+              if "qualif" in text:
+                  score += 80
+
+              return score
+
+
+          now = datetime.now(
+              timezone.utc
+          )
+
+          window_end = (
+              now
+              + timedelta(
+                  days=LOOKAHEAD_DAYS
+              )
+          )
+
+
+          # =====================================
+          # PART 1 — ODDS COLLECTION
+          # =====================================
+
+          sports, sports_headers = odds_get(
+              "/sports/",
+              {},
+          )
+
+          remaining = int(
+              sports_headers.get(
+                  "x-requests-remaining",
+                  "0",
+              )
+              or 0
+          )
+
+
+          all_soccer = [
+              sport
+              for sport in sports
+              if sport.get("group") == "Soccer"
+              and sport.get("active")
+              and not excluded(sport)
+          ]
+
+
+          active_with_events = []
+
+
+          for sport in all_soccer:
+              try:
+                  rows, _ = odds_get(
+                      f"/sports/"
+                      f"{sport['key']}/events",
+                      {
+                          "dateFormat":
+                              "iso",
+                          "commenceTimeFrom":
+                              iso_z(now),
+                          "commenceTimeTo":
+                              iso_z(window_end),
+                      },
+                  )
+
+              except Exception as error:
+                  print(
+                      "Event discovery skipped:",
+                      sport["key"],
+                      error,
+                  )
+                  continue
+
+
+              upcoming = [
+                  event
+                  for event in rows
+                  if (
+                      now
+                      <= parse_iso(
+                          event["commence_time"]
+                      )
+                      <= window_end
+                  )
+              ]
+
+
+              if upcoming:
+                  active_with_events.append({
+                      "sport": sport,
+                      "event_count":
+                          len(upcoming),
+                  })
+
+
+              time.sleep(0.04)
+
+
+          active_with_events.sort(
+              key=lambda item: (
+                  -priority_score(
+                      item["sport"]
+                  ),
+                  -item["event_count"],
+                  item["sport"].get(
+                      "title",
+                      "",
+                  ),
+              )
+          )
+
+
+          core = active_with_events[
+              :DAILY_CORE_LIMIT
+          ]
+
+          remaining_pool = active_with_events[
+              DAILY_CORE_LIMIT:
+          ]
+
+          rotating = []
+
+
+          if remaining_pool:
+              start = (
+                  (
+                      ROTATION_SEED - 1
+                  )
+                  * ROTATING_LIMIT
+              ) % len(remaining_pool)
+
+
+              for offset in range(
+                  min(
+                      ROTATING_LIMIT,
+                      len(remaining_pool),
+                  )
+              ):
+                  rotating.append(
+                      remaining_pool[
+                          (
+                              start + offset
+                          )
+                          % len(remaining_pool)
+                      ]
+                  )
+
+
+          affordable = max(
+              0,
+              remaining - CREDIT_RESERVE,
+          )
+
+
+          selected = (
+              core + rotating
+          )[
+              :min(
+                  16,
+                  affordable,
+              )
+          ]
+
+
+          if not selected:
+              raise RuntimeError(
+                  "No leagues selected. "
+                  "Odds API credits may be low."
+              )
+
+
+          live_path = Path(
+              "data/live-matches.json"
+          )
+
+          old_payload = {}
+
+
+          if live_path.exists():
+              try:
+                  old_payload = json.loads(
+                      live_path.read_text(
+                          encoding="utf-8"
+                      )
+                  )
+
+              except Exception:
+                  old_payload = {}
+
+
+          selected_keys = {
+              item["sport"]["key"]
+              for item in selected
+          }
+
+
+          merged = {}
+
+
+          # Keep future events from leagues
+          # not refreshed during this run.
+          for event in old_payload.get(
+              "events",
+              [],
+          ):
+              try:
+                  kickoff = parse_iso(
+                      event["commence_time"]
+                  )
+
+              except Exception:
+                  continue
+
+
+              if (
+                  kickoff >= now
+                  and event.get(
+                      "sport_key"
+                  ) not in selected_keys
+              ):
+                  merged[
+                      event["id"]
+                  ] = event
+
+
+          fetched_leagues = []
+
+          quota = {}
+
+          fetch_time = now.isoformat()
+
+
+          for item in selected:
+              sport = item["sport"]
+
+
+              try:
+                  rows, headers = odds_get(
+                      f"/sports/"
+                      f"{sport['key']}/odds",
+                      {
+                          "regions":
+                              REGIONS,
+                          "markets":
+                              MARKETS,
+                          "oddsFormat":
+                              "decimal",
+                          "dateFormat":
+                              "iso",
+                          "commenceTimeFrom":
+                              iso_z(now),
+                          "commenceTimeTo":
+                              iso_z(window_end),
+                      },
+                  )
+
+              except Exception as error:
+                  print(
+                      "Odds skipped:",
+                      sport["key"],
+                      error,
+                  )
+                  continue
+
+
+              quota = {
+                  "remaining":
+                      headers.get(
+                          "x-requests-remaining"
+                      ),
+                  "used":
+                      headers.get(
+                          "x-requests-used"
+                      ),
+                  "last":
+                      headers.get(
+                          "x-requests-last"
+                      ),
+              }
+
+
+              fetched_leagues.append({
+                  "key":
+                      sport["key"],
+                  "title":
+                      sport.get(
+                          "title",
+                          sport["key"],
+                      ),
+                  "events_seen":
+                      len(rows),
+              })
+
+
+              for event in rows:
+                  kickoff = parse_iso(
+                      event["commence_time"]
+                  )
+
+
+                  if not (
+                      now
+                      <= kickoff
+                      <= window_end
+                  ):
+                      continue
+
+
+                  prices = {}
+
+
+                  for bookmaker in event.get(
+                      "bookmakers",
+                      [],
+                  ):
+                      market = next(
+                          (
+                              market
+                              for market
+                              in bookmaker.get(
+                                  "markets",
+                                  [],
+                              )
+                              if market.get(
+                                  "key"
+                              ) == "h2h"
+                          ),
+                          None,
+                      )
+
+
+                      if not market:
+                          continue
+
+
+                      for outcome in market.get(
+                          "outcomes",
+                          [],
+                      ):
+                          name = outcome.get(
+                              "name"
+                          )
+
+                          price = outcome.get(
+                              "price"
+                          )
+
+
+                          if (
+                              name
+                              and isinstance(
+                                  price,
+                                  (int, float),
+                              )
+                              and price > 1
+                          ):
+                              prices.setdefault(
+                                  name,
+                                  [],
+                              ).append(
+                                  float(price)
+                              )
+
+
+                  picks = []
+
+
+                  for name, values in prices.items():
+                      middle = median(values)
+
+
+                      spread = (
+                          (
+                              max(values)
+                              - min(values)
+                          )
+                          / middle
+                          if (
+                              middle
+                              and len(values) > 1
+                          )
+                          else 0
+                      )
+
+
+                      if name == event.get(
+                          "home_team"
+                      ):
+                          selection_type = "home"
+
+                      elif name == event.get(
+                          "away_team"
+                      ):
+                          selection_type = "away"
+
+                      else:
+                          selection_type = "draw"
+
+
+                      picks.append({
+                          "selection":
+                              name,
+                          "selection_type":
+                              selection_type,
+                          "odds":
+                              round(
+                                  max(values),
+                                  3,
+                              ),
+                          "median_odds":
+                              round(
+                                  middle,
+                                  3,
+                              ),
+                          "bookmaker_count":
+                              len(values),
+                          "consensus_spread":
+                              round(
+                                  spread,
+                                  4,
+                              ),
+                      })
+
+
+                  if picks:
+                      merged[
+                          event["id"]
+                      ] = {
+                          "id":
+                              event["id"],
+                          "sport_key":
+                              sport["key"],
+                          "league":
+                              sport.get(
+                                  "title",
+                                  sport["key"],
+                              ),
+                          "commence_time":
+                              event[
+                                  "commence_time"
+                              ],
+                          "home_team":
+                              event[
+                                  "home_team"
+                              ],
+                          "away_team":
+                              event[
+                                  "away_team"
+                              ],
+                          "picks":
+                              picks,
+                          "fetched_at":
+                              fetch_time,
+                      }
+
+
+              time.sleep(0.12)
+
+
+          events = sorted(
+              merged.values(),
+              key=lambda event:
+                  event["commence_time"],
+          )
+
+
+          live = {
+              "generated_at":
+                  now.isoformat(),
+              "provider":
+                  "The Odds API",
+              "regions":
+                  REGIONS,
+              "markets":
+                  [MARKETS],
+              "lookahead_days":
+                  LOOKAHEAD_DAYS,
+              "coverage_mode":
+                  "core-plus-rotation",
+              "active_professional_leagues_found":
+                  len(active_with_events),
+              "leagues_refreshed_this_run":
+                  fetched_leagues,
+              "event_count":
+                  len(events),
+              "events":
+                  events,
+              "quota":
+                  quota,
+              "excluded_categories":
+                  list(EXCLUDED_TERMS),
+              "error":
+                  None,
+          }
+
+
+          live_path.parent.mkdir(
+              parents=True,
+              exist_ok=True,
+          )
+
+
+          live_path.write_text(
+              json.dumps(
+                  live,
+                  ensure_ascii=False,
+                  indent=2,
+              ),
+              encoding="utf-8",
+          )
+
+
+          # =====================================
+          # PART 2 — FOOTBALL DATA ENRICHMENT
+          # =====================================
+
+          if not FOOTBALL_KEY:
+              print(
+                  "API_FOOTBALL_KEY is missing. "
+                  "Odds updated, enrichment skipped."
+              )
+
+          else:
+              cache_path = Path(
+                  "data/team-history-cache.json"
+              )
+
+              enriched_path = Path(
+                  "data/enriched-matches.json"
+              )
+
+
+              if cache_path.exists():
+                  try:
+                      cache = json.loads(
+                          cache_path.read_text(
+                              encoding="utf-8"
+                          )
+                      )
+
+                  except Exception:
+                      cache = {}
+
+              else:
+                  cache = {}
+
+
+              def normalize_team(name):
+                  text = name.lower()
+
+                  text = re.sub(
+                      r"\b("
+                      r"fc|cf|sc|afc|fk|sk|"
+                      r"ac|cd|bk|if|aif"
+                      r")\b",
+                      " ",
+                      text,
+                  )
+
+                  text = re.sub(
+                      r"[^a-z0-9]+",
+                      " ",
+                      text,
+                  )
+
+                  return " ".join(
+                      text.split()
+                  )
+
+
+              def create_team_row(
+                  team_id,
+                  fixture,
+              ):
+                  is_home = (
+                      fixture[
+                          "teams"
+                      ][
+                          "home"
+                      ][
+                          "id"
+                      ]
+                      == team_id
+                  )
+
+
+                  home_goals = fixture[
+                      "goals"
+                  ][
+                      "home"
+                  ]
+
+                  away_goals = fixture[
+                      "goals"
+                  ][
+                      "away"
+                  ]
+
+
+                  if (
+                      home_goals is None
+                      or away_goals is None
+                  ):
+                      return None
+
+
+                  if is_home:
+                      goals_for = home_goals
+                      goals_against = away_goals
+
+                  else:
+                      goals_for = away_goals
+                      goals_against = home_goals
+
+
+                  if goals_for > goals_against:
+                      points = 3
+
+                  elif goals_for == goals_against:
+                      points = 1
+
+                  else:
+                      points = 0
+
+
+                  return {
+                      "home":
+                          is_home,
+                      "gf":
+                          goals_for,
+                      "ga":
+                          goals_against,
+                      "points":
+                          points,
+                      "date":
+                          fixture[
+                              "fixture"
+                          ][
+                              "date"
+                          ],
+                  }
+
+
+              def summarize(
+                  rows,
+                  venue=None,
+                  limit=20,
+              ):
+                  selected_rows = [
+                      row
+                      for row in rows
+                      if (
+                          venue is None
+                          or row["home"] == venue
+                      )
+                  ][:limit]
+
+
+                  if not selected_rows:
+                      return {
+                          "sample": 0,
+                      }
+
+
+                  games = len(
+                      selected_rows
+                  )
+
+                  wins = sum(
+                      row["points"] == 3
+                      for row in selected_rows
+                  )
+
+                  draws = sum(
+                      row["points"] == 1
+                      for row in selected_rows
+                  )
+
+                  losses = sum(
+                      row["points"] == 0
+                      for row in selected_rows
+                  )
+
+
+                  goals_for = sum(
+                      row["gf"]
+                      for row in selected_rows
+                  )
+
+                  goals_against = sum(
+                      row["ga"]
+                      for row in selected_rows
+                  )
+
+                  total_points = sum(
+                      row["points"]
+                      for row in selected_rows
+                  )
+
+
+                  return {
+                      "sample":
+                          games,
+                      "wins":
+                          wins,
+                      "draws":
+                          draws,
+                      "losses":
+                          losses,
+                      "win_rate":
+                          round(
+                              wins / games,
+                              4,
+                          ),
+                      "draw_rate":
+                          round(
+                              draws / games,
+                              4,
+                          ),
+                      "loss_rate":
+                          round(
+                              losses / games,
+                              4,
+                          ),
+                      "goals_for_pg":
+                          round(
+                              goals_for / games,
+                              3,
+                          ),
+                      "goals_against_pg":
+                          round(
+                              goals_against / games,
+                              3,
+                          ),
+                      "points_pg":
+                          round(
+                              total_points / games,
+                              3,
+                          ),
+                      "form":
+                          "".join(
+                              (
+                                  "W"
+                                  if row["points"] == 3
+                                  else "D"
+                                  if row["points"] == 1
+                                  else "L"
+                              )
+                              for row
+                              in selected_rows[:5]
+                          ),
+                  }
+
+
+              fixture_rows = []
+
+
+              dates = sorted({
+                  event["commence_time"][:10]
+                  for event in events
+              })
+
+
+              for date in dates:
+                  try:
+                      result = football_get(
+                          "/fixtures",
+                          {
+                              "date": date,
+                          },
+                      )
+
+                      fixture_rows.extend(
+                          result.get(
+                              "response",
+                              [],
+                          )
+                      )
+
+                  except Exception as error:
+                      print(
+                          "Fixture mapping failed:",
+                          date,
+                          error,
+                      )
+
+
+                  time.sleep(0.18)
+
+
+              fixture_index = {}
+
+
+              for row in fixture_rows:
+                  key = (
+                      row[
+                          "fixture"
+                      ][
+                          "date"
+                      ][:10],
+                      normalize_team(
+                          row[
+                              "teams"
+                          ][
+                              "home"
+                          ][
+                              "name"
+                          ]
+                      ),
+                      normalize_team(
+                          row[
+                              "teams"
+                          ][
+                              "away"
+                          ][
+                              "name"
+                          ]
+                      ),
+                  )
+
+                  fixture_index[key] = row
+
+
+              team_queue = []
+
+              matched = 0
+
+
+              for event in events:
+                  key = (
+                      event[
+                          "commence_time"
+                      ][:10],
+                      normalize_team(
+                          event[
+                              "home_team"
+                          ]
+                      ),
+                      normalize_team(
+                          event[
+                              "away_team"
+                          ]
+                      ),
+                  )
+
+
+                  fixture = fixture_index.get(
+                      key
+                  )
+
+
+                  if not fixture:
+                      for (
+                          candidate_key,
+                          candidate,
+                      ) in fixture_index.items():
+
+                          if (
+                              candidate_key[0]
+                              != key[0]
+                          ):
+                              continue
+
+
+                          home_match = (
+                              key[1]
+                              in candidate_key[1]
+                              or candidate_key[1]
+                              in key[1]
+                          )
+
+
+                          away_match = (
+                              key[2]
+                              in candidate_key[2]
+                              or candidate_key[2]
+                              in key[2]
+                          )
+
+
+                          if (
+                              home_match
+                              and away_match
+                          ):
+                              fixture = candidate
+                              break
+
+
+                  if not fixture:
+                      event[
+                          "football_data_status"
+                      ] = "unmatched"
+
+                      continue
+
+
+                  matched += 1
+
+
+                  event[
+                      "api_football_fixture_id"
+                  ] = fixture[
+                      "fixture"
+                  ][
+                      "id"
+                  ]
+
+
+                  event[
+                      "api_football_league_id"
+                  ] = fixture[
+                      "league"
+                  ][
+                      "id"
+                  ]
+
+
+                  event["season"] = fixture[
+                      "league"
+                  ][
+                      "season"
+                  ]
+
+
+                  event["team_ids"] = {
+                      "home":
+                          fixture[
+                              "teams"
+                          ][
+                              "home"
+                          ][
+                              "id"
+                          ],
+                      "away":
+                          fixture[
+                              "teams"
+                          ][
+                              "away"
+                          ][
+                              "id"
+                          ],
+                  }
+
+
+                  for team_id in event[
+                      "team_ids"
+                  ].values():
+
+                      if (
+                          str(team_id)
+                          not in cache
+                          and team_id
+                          not in team_queue
+                      ):
+                          team_queue.append(
+                              team_id
+                          )
+
+
+              for team_id in team_queue[
+                  :TEAM_LIMIT_PER_RUN
+              ]:
+                  try:
+                      result = football_get(
+                          "/fixtures",
+                          {
+                              "team":
+                                  team_id,
+                              "last":
+                                  40,
+                          },
+                      )
+
+
+                      recent = result.get(
+                          "response",
+                          [],
+                      )
+
+
+                      rows = []
+
+
+                      for fixture in recent:
+                          status = fixture[
+                              "fixture"
+                          ][
+                              "status"
+                          ][
+                              "short"
+                          ]
+
+
+                          if status not in {
+                              "FT",
+                              "AET",
+                              "PEN",
+                          }:
+                              continue
+
+
+                          item = create_team_row(
+                              team_id,
+                              fixture,
+                          )
+
+
+                          if item:
+                              rows.append(
+                                  item
+                              )
+
+
+                      cache[str(team_id)] = {
+                          "updated_at":
+                              now.isoformat(),
+                          "overall_20":
+                              summarize(
+                                  rows,
+                                  None,
+                                  20,
+                              ),
+                          "home_10":
+                              summarize(
+                                  rows,
+                                  True,
+                                  10,
+                              ),
+                          "away_10":
+                              summarize(
+                                  rows,
+                                  False,
+                                  10,
+                              ),
+                          "raw_sample":
+                              len(rows),
+                      }
+
+
+                  except Exception as error:
+                      print(
+                          "Team history failed:",
+                          team_id,
+                          error,
+                      )
+
+
+                  time.sleep(0.20)
+
+
+              injury_map = {}
+
+
+              fixture_ids = [
+                  event.get(
+                      "api_football_fixture_id"
+                  )
+                  for event in events
+                  if event.get(
+                      "api_football_fixture_id"
+                  )
+              ]
+
+
+              # Use one request per fixture.
+              # This is safer across API-Football plans.
+              for fixture_id in fixture_ids[:20]:
+                  try:
+                      result = football_get(
+                          "/injuries",
+                          {
+                              "fixture":
+                                  fixture_id,
+                          },
+                      )
+
+
+                      injuries = result.get(
+                          "response",
+                          [],
+                      )
+
+
+                      for row in injuries:
+                          injury_map.setdefault(
+                              fixture_id,
+                              [],
+                          ).append({
+                              "team_id":
+                                  row[
+                                      "team"
+                                  ][
+                                      "id"
+                                  ],
+                              "player":
+                                  row[
+                                      "player"
+                                  ][
+                                      "name"
+                                  ],
+                              "type":
+                                  row[
+                                      "player"
+                                  ].get(
+                                      "type"
+                                  ),
+                              "reason":
+                                  row[
+                                      "player"
+                                  ].get(
+                                      "reason"
+                                  ),
+                          })
+
+
+                  except Exception as error:
+                      print(
+                          "Injury request failed:",
+                          fixture_id,
+                          error,
+                      )
+
+
+                  time.sleep(0.20)
+
+
+              lineup_map = {}
+
+
+              near_fixtures = []
+
+
+              for event in events:
+                  try:
+                      kickoff = parse_iso(
+                          event[
+                              "commence_time"
+                          ]
+                      )
+
+                  except Exception:
+                      continue
+
+
+                  distance = (
+                      kickoff - now
+                  )
+
+
+                  if (
+                      timedelta(
+                          minutes=-15
+                      )
+                      <= distance
+                      <= timedelta(
+                          minutes=90
+                      )
+                      and event.get(
+                          "api_football_fixture_id"
+                      )
+                  ):
+                      near_fixtures.append(
+                          event[
+                              "api_football_fixture_id"
+                          ]
+                      )
+
+
+              for fixture_id in near_fixtures[
+                  :10
+              ]:
+                  try:
+                      result = football_get(
+                          "/fixtures/lineups",
+                          {
+                              "fixture":
+                                  fixture_id,
+                          },
+                      )
+
+
+                      lineups = result.get(
+                          "response",
+                          [],
+                      )
+
+
+                      lineup_map[
+                          fixture_id
+                      ] = [
+                          {
+                              "team_id":
+                                  row[
+                                      "team"
+                                  ][
+                                      "id"
+                                  ],
+                              "formation":
+                                  row.get(
+                                      "formation"
+                                  ),
+                              "start_xi_count":
+                                  len(
+                                      row.get(
+                                          "startXI",
+                                          [],
+                                      )
+                                  ),
+                              "coach":
+                                  (
+                                      row.get(
+                                          "coach"
+                                      )
+                                      or {}
+                                  ).get(
+                                      "name"
+                                  ),
+                          }
+                          for row in lineups
+                      ]
+
+
+                  except Exception as error:
+                      print(
+                          "Lineup request failed:",
+                          fixture_id,
+                          error,
+                      )
+
+
+                  time.sleep(0.20)
+
+
+              for event in events:
+                  team_ids = event.get(
+                      "team_ids",
+                      {},
+                  )
+
+
+                  home_history = cache.get(
+                      str(
+                          team_ids.get(
+                              "home"
+                          )
+                      )
+                  )
+
+
+                  away_history = cache.get(
+                      str(
+                          team_ids.get(
+                              "away"
+                          )
+                      )
+                  )
+
+
+                  fixture_id = event.get(
+                      "api_football_fixture_id"
+                  )
+
+
+                  event["football"] = {
+                      "home":
+                          home_history,
+                      "away":
+                          away_history,
+                      "injuries":
+                          injury_map.get(
+                              fixture_id,
+                              [],
+                          ),
+                      "lineups":
+                          lineup_map.get(
+                              fixture_id,
+                              [],
+                          ),
+                      "xg": {
+                          "status":
+                              "not_connected",
+                          "note":
+                              "True xG needs "
+                              "a dedicated xG provider.",
+                      },
+                      "motivation": {
+                          "status":
+                              "pending_standings_model",
+                          "note":
+                              "Standings and "
+                              "tie-context model "
+                              "comes next.",
+                      },
+                  }
+
+
+                  if (
+                      home_history
+                      and away_history
+                  ):
+                      event[
+                          "football_data_status"
+                      ] = "partial"
+
+                  else:
+                      event[
+                          "football_data_status"
+                      ] = event.get(
+                          "football_data_status",
+                          "missing",
+                      )
+
+
+              live[
+                  "football_enrichment"
+              ] = {
+                  "generated_at":
+                      now.isoformat(),
+                  "source":
+                      "API-Football",
+                  "matched_fixtures":
+                      matched,
+                  "team_histories_cached":
+                      len(cache),
+                  "form_window":
+                      20,
+                  "venue_window":
+                      10,
+                  "recency_weights": {
+                      "last_5":
+                          0.45,
+                      "matches_6_10":
+                          0.30,
+                      "matches_11_20":
+                          0.25,
+                  },
+                  "xg_status":
+                      "not_connected",
+                  "motivation_status":
+                      "pending_standings_model",
+              }
+
+
+              enriched_path.write_text(
+                  json.dumps(
+                      live,
+                      ensure_ascii=False,
+                      indent=2,
+                  ),
+                  encoding="utf-8",
+              )
+
+
+              cache_path.write_text(
+                  json.dumps(
+                      cache,
+                      ensure_ascii=False,
+                      indent=2,
+                  ),
+                  encoding="utf-8",
+              )
+
+
+          print(
+              "Events saved:",
+              len(events),
+          )
+          PY
+
+      - name: Commit updated football data
+        run: |
+          git config user.name "football-engine-bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add data/live-matches.json
+          git add data/enriched-matches.json 2>/dev/null || true
+          git add data/team-history-cache.json 2>/dev/null || true
+
+          git diff --cached --quiet && exit 0
+
+          git commit -m "Update and enrich football data"
+          git push
