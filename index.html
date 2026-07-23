@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Football Market Engine PRO v4</title>
+<style>
+:root{--bg:#07111f;--panel:#0e1c30;--panel2:#091526;--text:#edf4ff;--muted:#96a8c2;--green:#35dc84;--yellow:#ffd166;--red:#ff7b7b;--blue:#66a9ff;--border:rgba(255,255,255,.09)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+header,main{width:min(1450px,calc(100% - 1rem));margin:auto}header{padding:1.4rem .4rem .8rem;display:flex;justify-content:space-between;gap:1rem}
+h1{font-size:clamp(2rem,7vw,4rem);line-height:.95;margin:.3rem 0}.sub,.muted{color:var(--muted)}
+main{display:grid;gap:1rem;padding-bottom:2rem}.panel,.metric{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:1rem}
+.notice{background:var(--panel2);border:1px solid var(--border);border-radius:13px;padding:.85rem}.ok{color:#8ef0b8}.warn{color:#ffe39a;border-color:#665522}.error{color:#ffadb6}
+.tabs,.actions{display:flex;gap:.55rem;overflow:auto;flex-wrap:wrap}.tab,button{border:0;border-radius:11px;padding:.75rem .9rem;font-weight:800;cursor:pointer}
+.tab{background:#182a43;color:#c8d4e7;white-space:nowrap}.tab.active,.primary{background:var(--green);color:#06140d}.secondary{background:#1a2c48;color:white}.danger{background:#3b1f28;color:#ff9ca8}
+.view{display:none}.view.active{display:block}.controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.7rem}
+label{display:grid;gap:.35rem;color:var(--muted);font-size:.82rem}input,select,textarea{width:100%;padding:.72rem;border-radius:11px;border:1px solid var(--border);background:var(--panel2);color:white;font:inherit}
+.metrics{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:.7rem}.metric span{display:block;color:var(--muted);font-size:.75rem}.metric strong{font-size:1.25rem}
+.grid2{display:grid;grid-template-columns:1.5fr .75fr;gap:1rem}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:1080px}
+th,td{padding:.68rem .5rem;border-bottom:1px solid rgba(255,255,255,.07);font-size:.78rem;text-align:left}th{color:#8193ad;font-size:.65rem;text-transform:uppercase}
+.tag{display:inline-block;padding:.25rem .5rem;border-radius:999px;font-size:.64rem;font-weight:900}.candidate,.win{background:rgba(53,220,132,.12);color:#68e7a3}.watch{background:rgba(255,209,102,.12);color:var(--yellow)}.loss{background:rgba(255,123,123,.12);color:#ff9ca8}.pending{background:rgba(102,169,255,.12);color:#a9c9ff}
+.list{display:grid;gap:.6rem}.item{background:var(--panel2);border:1px solid var(--border);border-radius:12px;padding:.75rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{background:var(--panel2);border:1px solid var(--border);border-radius:14px;padding:1rem}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;padding:1rem;z-index:10}.modal.open{display:flex}.modal-card{width:min(650px,100%);background:var(--panel);padding:1rem;border-radius:18px;max-height:90vh;overflow:auto}
+@media(max-width:1050px){.controls{grid-template-columns:repeat(3,1fr)}.metrics{grid-template-columns:repeat(4,1fr)}.grid2{grid-template-columns:1fr}.cards{grid-template-columns:1fr}}
+@media(max-width:650px){header{flex-direction:column}.controls{grid-template-columns:repeat(2,1fr)}.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:450px){.controls,.metrics{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div><div style="color:#64e5a0;font-weight:900;font-size:.72rem">EXACT JSON FORMAT • TESTABLE OUTPUT</div>
+<h1>Football Market Engine PRO</h1>
+<p class="sub">Reads event.picks[] directly. Market candidates, ACCA and Backtesting.</p></div>
+<div class="panel">Engine: <strong id="state">LOADING</strong></div>
+</header>
+
+<main>
+<section id="msg" class="notice">Loading data/live-matches.json…</section>
+
+<section class="panel"><div class="tabs">
+<button class="tab active" data-v="dashboard">Dashboard</button>
+<button class="tab" data-v="fixtures">Fixtures</button>
+<button class="tab" data-v="picks">Market Picks</button>
+<button class="tab" data-v="acca">ACCA</button>
+<button class="tab" data-v="backtest">Backtesting</button>
+<button class="tab" data-v="quality">Data Quality</button>
+</div></section>
+
+<section id="dashboard" class="view active">
+<section class="panel"><h2>Settings</h2><div class="controls">
+<label>Time window<select id="window"><option value="all" selected>All loaded matches</option><option value="24">Next 24h</option><option value="48">Next 48h</option><option value="72">Next 72h</option><option value="168">Next 7 days</option><option value="336">Next 14 days</option><option value="720">Next 30 days</option></select></label>
+<label>ACCA legs<input id="legs" type="number" min="2" max="20" value="5"></label>
+<label>Min odds<input id="minOdds" type="number" step=".01" value="1.01"></label>
+<label>Max odds<input id="maxOdds" type="number" step=".01" value="30"></label>
+<label>Min bookmakers<input id="minBooks" type="number" value="1"></label>
+<label>Min Market Score<input id="minScore" type="number" value="0"></label>
+<label>Max picks per league<input id="maxLeague" type="number" value="3"></label>
+<label>Market<select id="market"><option value="all">All</option><option value="home">Home</option><option value="draw">Draw</option><option value="away">Away</option></select></label>
+<label>League<select id="league"><option value="all">All</option></select></label>
+<label>Search<input id="search" placeholder="Team / league"></label>
+</div>
+<div class="actions" style="margin-top:1rem">
+<button class="primary" onclick="buildAcca()">Build Market ACCA</button>
+<button class="secondary" onclick="loadData()">Refresh</button>
+<button class="secondary" onclick="exportHistory()">Export History</button>
+<button class="danger" onclick="clearAcca()">Clear</button>
+</div></section>
+
+<section class="metrics">
+<div class="metric"><span>Events loaded</span><strong id="mEvents">—</strong></div>
+<div class="metric"><span>Selections parsed</span><strong id="mParsed">—</strong></div>
+<div class="metric"><span>Leagues</span><strong id="mLeagues">—</strong></div>
+<div class="metric"><span>Visible candidates</span><strong id="mCandidates">—</strong></div>
+<div class="metric"><span>Selected</span><strong id="mSelected">—</strong></div>
+<div class="metric"><span>Combined odds</span><strong id="mOdds">—</strong></div>
+<div class="metric"><span>Saved bets</span><strong id="mSaved">—</strong></div>
+<div class="metric"><span>Weakest leg</span><strong id="mWeakest">—</strong></div>
+</section>
+
+<section class="grid2">
+<article class="panel"><h2>Selected Market Picks</h2><div class="tablewrap"><table>
+<thead><tr><th>#</th><th>Kickoff</th><th>Match</th><th>League</th><th>Pick</th><th>Odds</th><th>Median</th><th>Books</th><th>No-vig</th><th>Score</th></tr></thead>
+<tbody id="selectedRows"></tbody></table></div>
+<div class="actions" style="margin-top:1rem"><button class="primary" onclick="saveAcca()">Save ACCA for Backtesting</button></div></article>
+<aside class="panel"><h2>Warnings</h2><div id="warnings" class="list"></div></aside>
+</section>
+</section>
+
+<section id="fixtures" class="view"><section class="panel"><h2>All loaded fixtures</h2>
+<div class="tablewrap"><table><thead><tr><th>Kickoff</th><th>League</th><th>Match</th><th>Home</th><th>Draw</th><th>Away</th><th>Books</th></tr></thead><tbody id="fixtureRows"></tbody></table></div>
+</section></section>
+
+<section id="picks" class="view"><section class="panel"><h2>Market Candidates</h2>
+<div class="notice warn">⚠️ These are market signals from 1X2 odds only, not full football analysis.</div>
+<div class="tablewrap"><table><thead><tr><th>#</th><th>Kickoff</th><th>Match</th><th>League</th><th>Pick</th><th>Odds</th><th>Median</th><th>Books</th><th>Spread</th><th>No-vig</th><th>Score</th><th></th></tr></thead><tbody id="pickRows"></tbody></table></div>
+</section></section>
+
+<section id="acca" class="view"><section class="cards">
+<article class="card"><h2>Today</h2><div id="today"></div></article>
+<article class="card"><h2>Tomorrow</h2><div id="tomorrow"></div></article>
+<article class="card"><h2>Best loaded</h2><div id="multi"></div></article>
+</section></section>
+
+<section id="backtest" class="view">
+<section class="metrics">
+<div class="metric"><span>Settled</span><strong id="bSettled">0</strong></div>
+<div class="metric"><span>Wins</span><strong id="bWins">0</strong></div>
+<div class="metric"><span>Losses</span><strong id="bLosses">0</strong></div>
+<div class="metric"><span>Win rate</span><strong id="bRate">0%</strong></div>
+<div class="metric"><span>P/L</span><strong id="bPL">£0</strong></div>
+<div class="metric"><span>ROI</span><strong id="bROI">0%</strong></div>
+<div class="metric"><span>Pending</span><strong id="bPending">0</strong></div>
+</section>
+<section class="panel"><h2>Bet History</h2>
+<div class="actions"><button class="secondary" onclick="openBet()">Add previous bet</button><button class="secondary" onclick="document.getElementById('importFile').click()">Import</button><input id="importFile" type="file" accept=".json" hidden onchange="importHistory(event)"><button class="danger" onclick="wipeHistory()">Delete all</button></div>
+<div class="tablewrap"><table><thead><tr><th>Date</th><th>Saved bet</th><th>Legs</th><th>Combined odds</th><th>Total stake</th><th>Model</th><th>Result</th><th>P/L</th><th>Actions</th></tr></thead><tbody id="historyRows"></tbody></table></div>
+<div class="panel" style="margin-top:1rem;background:var(--panel2)">
+<h2>Post-Match Review</h2>
+<div id="reviewOutput" class="list"><div class="item">Select results for individual legs to generate a review.</div></div>
+</div>
+</section></section>
+
+<section id="quality" class="view"><section class="panel"><h2>Data Quality Gate</h2><div class="cards">
+<div class="card"><strong>✅ 1X2 Odds</strong><p class="muted">The Odds API</p></div>
+<div class="card"><strong id="qForm">❌ Form / venue</strong><p class="muted" id="qFormText">Waiting for enriched data</p></div>
+<div class="card"><strong id="qAvailability">❌ Injuries / lineups</strong><p class="muted" id="qAvailabilityText">Waiting for enriched data</p></div>
+<div class="card"><strong>❌ True xG</strong><p class="muted">Requires separate xG provider</p></div>
+<div class="card"><strong id="qMotivation">❌ Motivation</strong><p class="muted" id="qMotivationText">Standings model pending</p></div>
+<div class="card"><strong>✅ Backtesting</strong><p class="muted">Saved locally</p></div>
+</div>
+<div class="notice ok" style="margin-top:1rem"><strong>Selection policy:</strong> no fixed limit on home, draw or away picks. Every selection passes or fails on its own evidence.</div>
+<div id="diagnostic" class="notice" style="margin-top:1rem"></div>
+</section></section>
+</main>
+
+<div id="modal" class="modal"><div class="modal-card"><h2>Add / Edit Bet</h2><input id="editId" type="hidden">
+<div class="controls" style="grid-template-columns:repeat(2,1fr)">
+<label>Date<input id="bd" type="datetime-local"></label><label>Match<input id="bm"></label>
+<label>League<input id="bl"></label><label>Pick<input id="bp"></label>
+<label>Odds<input id="bo" type="number" step=".01"></label><label>Stake<input id="bs" type="number" step=".01" value="1"></label>
+<label>Market score<input id="bsc" type="number"></label><label>Model<select id="bmodel"><option>Market-only</option><option>Full analysis</option><option>Manual</option></select></label>
+<label>Result<select id="br"><option>PENDING</option><option>WIN</option><option>LOSS</option><option>VOID</option></select></label><label>Final score<input id="bfs"></label>
+</div><label>Notes<textarea id="bn"></textarea></label>
+<div class="actions" style="margin-top:1rem"><button class="primary" onclick="saveBet()">Save</button><button class="danger" onclick="closeBet()">Close</button></div>
+</div></div>
+
+<script>
+const DATA_URLS=["./data/enriched-matches.json","./data/live-matches.json"];
+const HISTORY_KEY="football_market_engine_v4_history";
+let DATA={events:[]},ALL_PICKS=[],CURRENT=[];
+
+const $=id=>document.getElementById(id);
+const n=v=>Number(v)||0;
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+const fmt=v=>{try{return new Intl.DateTimeFormat("uk-UA",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}).format(new Date(v))}catch{return"—"}};
+const pct=v=>`${(v*100).toFixed(1)}%`;
+
+function parseData(json){
+ const events=Array.isArray(json)?json:(json.events||[]);
+ const picks=[];
+ for(const event of events){
+  const home=event.home_team||"Home";
+  const away=event.away_team||"Away";
+  const raw=Array.isArray(event.picks)?event.picks:[];
+  const oddsBySide={};
+  for(const p of raw){
+   const side=String(p.selection_type||"").toLowerCase();
+   const odds=n(p.odds);
+   const median=n(p.median_odds)||odds;
+   const books=n(p.bookmaker_count);
+   const spread=n(p.consensus_spread);
+   if(!["home","away","draw"].includes(side)||odds<=1)continue;
+   oddsBySide[side]={odds,median,books,spread,selection:p.selection||side};
+  }
+  const invSum=Object.values(oddsBySide).reduce((sum,x)=>sum+(x.median?1/x.median:0),0);
+  for(const [side,x] of Object.entries(oddsBySide)){
+   const noVig=invSum?(1/x.median)/invSum:0;
+   const score=Math.max(0,Math.min(100,
+      Math.min(45,noVig*55)+
+      Math.min(25,x.books*1.4)+
+      Math.max(0,20-x.spread*70)+
+      Math.max(0,10-Math.abs(x.odds-x.median)/(x.median||x.odds)*100)
+   ));
+   picks.push({
+    id:`${event.id}-${side}`,eventId:event.id,side,
+    match:`${home} — ${away}`,home,away,
+    league:event.league||event.sport_key||"Unknown",
+    kickoff:event.commence_time,
+    pick:x.selection,odds:x.odds,median:x.median,
+    books:x.books,spread:x.spread,noVig,score
+   });
+  }
+ }
+ return {events,picks};
+}
+
+async function loadData(){
+ $("state").textContent="LOADING";
+ try{
+  let json=null,lastError=null,loadedUrl="";
+  for(const url of DATA_URLS){
+   try{
+    const res=await fetch(`${url}?v=${Date.now()}`,{cache:"no-store"});
+    if(!res.ok)throw new Error(`HTTP ${res.status}`);
+    json=await res.json();loadedUrl=url;break;
+   }catch(err){lastError=err}
+  }
+  if(!json)throw lastError||new Error("No data file available");
+  const parsed=parseData(json);
+  DATA={...json,events:parsed.events};
+  ALL_PICKS=parsed.picks.sort((a,b)=>b.score-a.score||b.noVig-a.noVig);
+  populateLeagues();
+  $("state").textContent="READY";
+  $("msg").className="notice ok";
+  $("msg").innerHTML=`Loaded <strong>${DATA.events.length}</strong> events and parsed <strong>${ALL_PICKS.length}</strong> market selections from ${loadedUrl}.`;
+  render();
+ }catch(err){
+  $("state").textContent="ERROR";
+  $("msg").className="notice error";
+  $("msg").textContent=`Data load failed: ${err.message}`;
+ }
+}
+
+function populateLeagues(){
+ const leagues=[...new Set(DATA.events.map(e=>e.league||e.sport_key||"Unknown"))].sort();
+ $("league").innerHTML='<option value="all">All</option>'+leagues.map(x=>`<option>${esc(x)}</option>`).join("");
+}
+
+function visiblePicks(){
+ const win=$("window").value;
+ const now=Date.now();
+ const max=win==="all"?Infinity:now+n(win)*3600000;
+ const q=$("search").value.trim().toLowerCase();
+ const league=$("league").value,market=$("market").value;
+ return ALL_PICKS.filter(p=>{
+  const t=new Date(p.kickoff).getTime();
+  const timeOK=win==="all"||(!Number.isNaN(t)&&t>=now&&t<=max);
+  return timeOK&&p.odds>=n($("minOdds").value)&&p.odds<=n($("maxOdds").value)&&
+   p.books>=n($("minBooks").value)&&p.score>=n($("minScore").value)&&
+   (market==="all"||p.side===market)&&(league==="all"||p.league===league)&&
+   (!q||`${p.match} ${p.league} ${p.pick}`.toLowerCase().includes(q));
+ });
+}
+
+function selectDiverse(list,count){
+ const result=[],events=new Set(),perLeague={};
+ const maxLeague=n($("maxLeague").value);
+ for(const p of list){
+  if(events.has(p.eventId)||(perLeague[p.league]||0)>=maxLeague)continue;
+  result.push(p);events.add(p.eventId);perLeague[p.league]=(perLeague[p.league]||0)+1;
+  if(result.length>=count)break;
+ }
+ return result;
+}
+
+function render(){
+ const visible=visiblePicks();
+ $("mEvents").textContent=DATA.events.length;
+ $("mParsed").textContent=ALL_PICKS.length;
+ $("mLeagues").textContent=new Set(DATA.events.map(e=>e.league||e.sport_key)).size;
+ $("mCandidates").textContent=visible.length;
+ $("mSelected").textContent=CURRENT.length;
+ $("mOdds").textContent=CURRENT.length?CURRENT.reduce((a,p)=>a*p.odds,1).toFixed(2):"—";
+ $("mSaved").textContent=history().length;
+ const weakest=CURRENT.length?[...CURRENT].sort((a,b)=>a.score-b.score)[0]:null;
+ $("mWeakest").textContent=weakest?`${weakest.pick} ${weakest.score.toFixed(0)}`:"—";
+ renderFixtures();renderPicks(visible);renderSelected();renderMini(visible);renderWarnings();renderHistory();
+ $("diagnostic").innerHTML=`Expected from current file: 175 events × about 3 picks = about 525 selections.<br>Actual parser output: <strong>${ALL_PICKS.length}</strong>.`;
+}
+
+function renderFixtures(){
+ $("fixtureRows").innerHTML=DATA.events.map(e=>{
+  const map={};for(const p of(e.picks||[]))map[p.selection_type]=p;
+  return `<tr><td>${fmt(e.commence_time)}</td><td>${esc(e.league)}</td><td><strong>${esc(e.home_team)} — ${esc(e.away_team)}</strong></td>
+  <td>${map.home?n(map.home.odds).toFixed(2):"—"}</td><td>${map.draw?n(map.draw.odds).toFixed(2):"—"}</td><td>${map.away?n(map.away.odds).toFixed(2):"—"}</td>
+  <td>${Math.max(n(map.home?.bookmaker_count),n(map.draw?.bookmaker_count),n(map.away?.bookmaker_count))}</td></tr>`;
+ }).join("")||'<tr><td colspan="7">No events.</td></tr>';
+}
+
+function renderPicks(list){
+ $("pickRows").innerHTML=list.slice(0,200).map((p,i)=>`<tr><td>${i+1}</td><td>${fmt(p.kickoff)}</td><td><strong>${esc(p.match)}</strong></td><td>${esc(p.league)}</td>
+ <td>${esc(p.pick)}</td><td>${p.odds.toFixed(2)}</td><td>${p.median.toFixed(2)}</td><td>${p.books}</td><td>${p.spread.toFixed(4)}</td><td>${pct(p.noVig)}</td><td>${p.score.toFixed(0)}</td>
+ <td><button class="secondary" onclick="addPick('${p.id}')">Add</button></td></tr>`).join("")||'<tr><td colspan="12">No picks match these filters.</td></tr>';
+}
+
+function renderSelected(){
+ $("selectedRows").innerHTML=CURRENT.map((p,i)=>`<tr><td>${i+1}</td><td>${fmt(p.kickoff)}</td><td><strong>${esc(p.match)}</strong></td><td>${esc(p.league)}</td><td>${esc(p.pick)}</td>
+ <td>${p.odds.toFixed(2)}</td><td>${p.median.toFixed(2)}</td><td>${p.books}</td><td>${pct(p.noVig)}</td><td>${p.score.toFixed(0)}</td></tr>`).join("")||'<tr><td colspan="10">No selection.</td></tr>';
+}
+
+function miniHTML(list){
+ return list.length?list.map(p=>`<div class="item"><strong>${esc(p.pick)} @${p.odds.toFixed(2)}</strong><br><span class="muted">${esc(p.match)} • Score ${p.score.toFixed(0)}</span></div>`).join(""):'<div class="item">No candidates.</div>';
+}
+
+function renderMini(visible){
+ const today=new Date().toDateString();
+ const tomorrow=new Date(Date.now()+86400000).toDateString();
+ $("today").innerHTML=miniHTML(selectDiverse(visible.filter(p=>new Date(p.kickoff).toDateString()===today),5));
+ $("tomorrow").innerHTML=miniHTML(selectDiverse(visible.filter(p=>new Date(p.kickoff).toDateString()===tomorrow),5));
+ $("multi").innerHTML=miniHTML(selectDiverse(visible,5));
+}
+
+function renderWarnings(){
+ const w=[
+  "Current JSON contains only h2h/1X2 odds.",
+  "Form, xG, injuries and lineups are not connected.",
+  "Away wins are not limited by quantity; every pick is judged on its own evidence."
+ ];
+ for(const p of CURRENT){
+  if(p.odds>=2.20)w.push(`${p.pick}: high odds ${p.odds.toFixed(2)} — full football verification required.`);
+  if(p.books<6)w.push(`${p.pick}: only ${p.books} bookmakers — weaker market evidence.`);
+  if(p.spread>=0.18)w.push(`${p.pick}: wide spread ${p.spread.toFixed(4)} — bookmaker disagreement.`);
+  if(p.noVig<0.45)w.push(`${p.pick}: low no-vig probability ${pct(p.noVig)}.`);
+  if(/qualification/i.test(p.league))w.push(`${p.match}: qualification match — lineup, motivation and two-leg context must be checked.`);
+ }
+ $("warnings").innerHTML=[...new Set(w)].map(x=>`<div class="item">${esc(x)}</div>`).join("");
+}
+
+function buildAcca(){CURRENT=selectDiverse(visiblePicks(),n($("legs").value));render()}
+function addPick(id){const p=ALL_PICKS.find(x=>x.id===id);if(p&&!CURRENT.some(x=>x.eventId===p.eventId)){CURRENT.push(p);render()}}
+function clearAcca(){CURRENT=[];render()}
+
+function history(){try{return JSON.parse(localStorage.getItem(HISTORY_KEY)||"[]")}catch{return[]}}
+function saveHistory(h){localStorage.setItem(HISTORY_KEY,JSON.stringify(h));render()}
+function saveAcca(){
+ if(!CURRENT.length)return alert("No ACCA selected.");
+ const stake=n(prompt("Total ACCA stake (£):","1"))||1;
+ const accaId=`acca-${Date.now()}`;
+ const combinedOdds=CURRENT.reduce((v,p)=>v*p.odds,1);
+ const h=history();
+ for(const p of CURRENT){
+  h.push({
+   id:`${accaId}-${p.id}`,
+   accaId,
+   betType:"ACCA",
+   date:new Date().toISOString(),
+   kickoff:p.kickoff,
+   match:p.match,
+   league:p.league,
+   pick:p.pick,
+   odds:p.odds,
+   stake,
+   score:p.score,
+   model:"Market-only",
+   result:"PENDING",
+   finalScore:"",
+   combinedOdds,
+   legCount:CURRENT.length,
+   notes:"1X2 odds only",
+   footballSnapshot:(DATA.events.find(e=>e.id===p.eventId)||{}).football||null,
+   footballDataStatus:(DATA.events.find(e=>e.id===p.eventId)||{}).football_data_status||"missing"
+  });
+ }
+ saveHistory(h);
+ alert(`ACCA saved: ${CURRENT.length} legs, combined odds ${combinedOdds.toFixed(2)}.`);
+}
+function profit(b){return b.result==="WIN"?n(b.stake)*(n(b.odds)-1):b.result==="LOSS"?-n(b.stake):0}
+
+function accaKey(b){
+ if(b.accaId)return b.accaId;
+ const m=String(b.id||"").match(/^(acca-\d+)/);
+ return m?m[1]:`single-${b.id}`;
+}
+function groupedHistory(){
+ const groups=new Map();
+ for(const b of history()){
+  const key=accaKey(b);
+  if(!groups.has(key))groups.set(key,{key,legs:[],date:b.date,betType:key.startsWith("acca-")?"ACCA":"SINGLE"});
+  groups.get(key).legs.push(b);
+ }
+ return [...groups.values()].sort((a,b)=>new Date(b.date)-new Date(a.date));
+}
+function groupResult(g){
+ if(g.legs.some(x=>x.result==="LOSS"))return"LOSS";
+ if(g.legs.length&&g.legs.every(x=>x.result==="WIN"||x.result==="VOID"))return"WIN";
+ if(g.legs.every(x=>x.result==="VOID"))return"VOID";
+ return"PENDING";
+}
+function groupStake(g){
+ const values=g.legs.map(x=>n(x.stake)).filter(x=>x>0);
+ if(!values.length)return 0;
+ // New format stores total stake on every leg; old format stored stake divided per leg.
+ const same=values.every(x=>Math.abs(x-values[0])<0.0001);
+ return same&&g.legs[0].accaId?values[0]:values.reduce((a,b)=>a+b,0);
+}
+function groupOdds(g){return g.legs.reduce((v,x)=>v*n(x.odds),1)}
+function groupPL(g){
+ const result=groupResult(g),stake=groupStake(g),odds=groupOdds(g);
+ return result==="WIN"?stake*(odds-1):result==="LOSS"?-stake:0;
+}
+function legReason(b){
+ const reasons=[];
+ if(n(b.odds)>=2.2)reasons.push("high odds");
+ if(n(b.score)<75)reasons.push("market score below 75");
+ if((b.footballDataStatus||"missing")!=="partial"&&(b.footballDataStatus||"missing")!=="complete")reasons.push("football data missing");
+ const f=b.footballSnapshot;
+ if(f){
+  const side=String(b.pick||"").toLowerCase()==="draw"?"draw":
+   String(b.pick||"").toLowerCase().includes(String(b.match||"").split("—")[0].trim().toLowerCase())?"home":"away";
+  const hist=side==="home"?f.home:f.away;
+  const venue=side==="home"?hist?.home_10:hist?.away_10;
+  if(venue?.sample>=5&&venue.win_rate<0.4)reasons.push("weak venue win rate");
+  if(hist?.overall_20?.sample>=10&&hist.overall_20.points_pg<1.4)reasons.push("weak 20-match form");
+  const missing=(f.injuries||[]).filter(x=>x.team_id===(side==="home"?f.home?.team_id:f.away?.team_id)).length;
+  if(missing>=3)reasons.push(`${missing} listed absences`);
+  if(!(f.lineups||[]).length)reasons.push("lineup unconfirmed");
+ }
+ return reasons;
+}
+function reviewGroup(g){
+ const lost=g.legs.filter(x=>x.result==="LOSS");
+ const won=g.legs.filter(x=>x.result==="WIN");
+ const pending=g.legs.filter(x=>x.result==="PENDING");
+ if(!lost.length)return `<div class="item"><strong>${g.betType} ${esc(g.key)}</strong><br>Won: ${won.length} • Pending: ${pending.length}. No losing leg recorded yet.</div>`;
+ const details=lost.map(b=>{
+  const reasons=legReason(b);
+  const alt=n(b.odds)>=2.2?"Consider DNB/Double Chance/PASS after full verification.":"Check whether another market was stronger than 1X2.";
+  return `<div class="item"><strong>❌ ${esc(b.pick)} @${n(b.odds).toFixed(2)}</strong><br><span class="muted">${esc(b.match)}</span><br>
+  Failure signals: ${reasons.length?reasons.map(esc).join(", "):"no clear pre-match warning stored"}<br>
+  Suggested action: ${alt}</div>`;
+ }).join("");
+ return `<div class="item"><strong>ACCA review</strong><br>Legs: ${g.legs.length} • Won: ${won.length} • Lost: ${lost.length} • Pending: ${pending.length}<br>
+ Primary failure: ${lost.length>1?"multiple vulnerable legs in one ACCA":"one losing leg broke the ACCA"}.</div>${details}`;
+}
+function renderHistory(){
+ const groups=groupedHistory();
+ $("historyRows").innerHTML=groups.map(g=>{
+  const result=groupResult(g),stake=groupStake(g),odds=groupOdds(g);
+  const legs=g.legs.map((b,i)=>`<div style="margin-bottom:.65rem">
+   <strong>${i+1}. ${esc(b.pick)} @${n(b.odds).toFixed(2)}</strong><br>
+   <span class="muted">${esc(b.match)}</span><br>
+   <span class="tag ${String(b.result).toLowerCase()}">${esc(b.result)}</span>
+   <button class="secondary" onclick="settleLeg('${b.id}','WIN')">W</button>
+   <button class="danger" onclick="settleLeg('${b.id}','LOSS')">L</button>
+   <button class="secondary" onclick="settleLeg('${b.id}','PENDING')">P</button>
+  </div>`).join("");
+  const title=g.betType==="ACCA"?`ACCA • ${g.legs.length} legs`:`Single bet`;
+  return `<tr>
+   <td>${fmt(g.date)}</td>
+   <td><strong>${title}</strong><br><span class="muted">${esc(g.key)}</span></td>
+   <td>${legs}</td>
+   <td><strong>${odds.toFixed(2)}</strong></td>
+   <td>£${stake.toFixed(2)}</td>
+   <td>${esc(g.legs[0]?.model||"")}</td>
+   <td><span class="tag ${result.toLowerCase()}">${result}</span></td>
+   <td>£${groupPL(g).toFixed(2)}</td>
+   <td><button class="secondary" onclick="showReview('${g.key}')">Review</button>
+   <button class="danger" onclick="deleteGroup('${g.key}')">Delete</button></td>
+  </tr>`;
+ }).join("")||'<tr><td colspan="9">No saved bets.</td></tr>';
+
+ const settled=groups.filter(g=>["WIN","LOSS"].includes(groupResult(g)));
+ const wins=settled.filter(g=>groupResult(g)==="WIN").length;
+ const totalStake=settled.reduce((s,g)=>s+groupStake(g),0);
+ const pl=settled.reduce((s,g)=>s+groupPL(g),0);
+ $("bSettled").textContent=settled.length;
+ $("bWins").textContent=wins;
+ $("bLosses").textContent=settled.length-wins;
+ $("bRate").textContent=settled.length?`${(wins/settled.length*100).toFixed(1)}%`:"0%";
+ $("bPL").textContent=`£${pl.toFixed(2)}`;
+ $("bROI").textContent=totalStake?`${(pl/totalStake*100).toFixed(1)}%`:"0%";
+ $("bPending").textContent=groups.filter(g=>groupResult(g)==="PENDING").length;
+ if($("qForm")){
+  const enriched=DATA.events.filter(e=>e.football?.home&&e.football?.away).length;
+  $("qForm").textContent=enriched?"✅ Form / venue":"❌ Form / venue";
+  $("qFormText").textContent=enriched?`${enriched} fixtures enriched; 20 overall + 10 venue`:"Run enrichment workflow";
+  const available=DATA.events.filter(e=>(e.football?.injuries||[]).length||(e.football?.lineups||[]).length).length;
+  $("qAvailability").textContent=available?"✅ Injuries / lineups":"❌ Injuries / lineups";
+  $("qAvailabilityText").textContent=available?`${available} fixtures have availability data`:"Run enrichment workflow";
+ }
+}
+function settleLeg(id,result){
+ const h=history(),b=h.find(x=>x.id===id);if(b)b.result=result;saveHistory(h);
+}
+function showReview(key){
+ const g=groupedHistory().find(x=>x.key===key);
+ $("reviewOutput").innerHTML=g?reviewGroup(g):'<div class="item">Saved ACCA not found.</div>';
+}
+function deleteGroup(key){
+ if(!confirm("Delete this saved ACCA/bet?"))return;
+ saveHistory(history().filter(b=>accaKey(b)!==key));
+}
+function openBet(){$("editId").value="";$("bd").value=new Date().toISOString().slice(0,16);for(const id of["bm","bl","bp","bo","bsc","bfs","bn"])$(id).value="";$("bs").value="1";$("bmodel").value="Manual";$("br").value="PENDING";$("modal").classList.add("open")}
+function closeBet(){$("modal").classList.remove("open")}
+function editBet(id){const b=history().find(x=>x.id===id);if(!b)return;$("editId").value=b.id;$("bd").value=new Date(b.date).toISOString().slice(0,16);$("bm").value=b.match;$("bl").value=b.league;$("bp").value=b.pick;$("bo").value=b.odds;$("bs").value=b.stake;$("bsc").value=b.score;$("bmodel").value=b.model;$("br").value=b.result;$("bfs").value=b.finalScore;$("bn").value=b.notes;$("modal").classList.add("open")}
+function saveBet(){const id=$("editId").value||`manual-${Date.now()}`,b={id,date:new Date($("bd").value||Date.now()).toISOString(),match:$("bm").value,league:$("bl").value,pick:$("bp").value,odds:n($("bo").value),stake:n($("bs").value),score:n($("bsc").value),model:$("bmodel").value,result:$("br").value,finalScore:$("bfs").value,notes:$("bn").value};if(!b.match||!b.pick||b.odds<=1)return alert("Enter valid data.");const h=history(),i=h.findIndex(x=>x.id===id);i>=0?h[i]=b:h.push(b);saveHistory(h);closeBet()}
+function deleteBet(id){if(confirm("Delete?"))saveHistory(history().filter(x=>x.id!==id))}
+function wipeHistory(){if(confirm("Delete all history?"))saveHistory([])}
+function exportHistory(){const a=document.createElement("a"),blob=new Blob([JSON.stringify(history(),null,2)],{type:"application/json"});a.href=URL.createObjectURL(blob);a.download="football-history.json";a.click()}
+function importHistory(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const h=JSON.parse(r.result);if(!Array.isArray(h))throw 0;saveHistory(h)}catch{alert("Invalid file")}};r.readAsText(f)}
+
+document.querySelectorAll(".tab").forEach(btn=>btn.onclick=()=>{
+ document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active",v.id===btn.dataset.v));
+ document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===btn));
+});
+["window","minOdds","maxOdds","minBooks","minScore","market","league","search"].forEach(id=>$(id).addEventListener("input",render));
+loadData();
+</script>
+</body>
+</html>
