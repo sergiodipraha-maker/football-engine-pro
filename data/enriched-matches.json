@@ -125,7 +125,53 @@
           "consensus_spread": 0.1194
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1553105,
+      "api_football_league_id": 106,
+      "season": 2026,
+      "team_ids": {
+        "home": 4248,
+        "away": 17115
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "0f38f26a1a53728519bdfdbc65c3264e",
@@ -160,7 +206,53 @@
           "consensus_spread": 0.1714
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1495739,
+      "api_football_league_id": 244,
+      "season": 2026,
+      "team_ids": {
+        "home": 2075,
+        "away": 689
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "ca31bdd5793c2da6a331604146878c2e",
@@ -195,7 +287,102 @@
           "consensus_spread": 0.1216
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1548974,
+      "api_football_league_id": 119,
+      "season": 2026,
+      "team_ids": {
+        "home": 2070,
+        "away": 405
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [
+          {
+            "team_id": 2070,
+            "player": "T. Freriks",
+            "type": "Missing Fixture",
+            "reason": "Inactive"
+          },
+          {
+            "team_id": 2070,
+            "player": "Y. Njoh",
+            "type": "Missing Fixture",
+            "reason": "Injury"
+          },
+          {
+            "team_id": 405,
+            "player": "J. Grot",
+            "type": "Missing Fixture",
+            "reason": "Inactive"
+          },
+          {
+            "team_id": 405,
+            "player": "W. Martin",
+            "type": "Questionable",
+            "reason": "Injury"
+          },
+          {
+            "team_id": 2070,
+            "player": "T. Freriks",
+            "type": "Missing Fixture",
+            "reason": "Inactive"
+          },
+          {
+            "team_id": 2070,
+            "player": "Y. Njoh",
+            "type": "Missing Fixture",
+            "reason": "Injury"
+          },
+          {
+            "team_id": 405,
+            "player": "J. Grot",
+            "type": "Missing Fixture",
+            "reason": "Inactive"
+          },
+          {
+            "team_id": 405,
+            "player": "W. Martin",
+            "type": "Questionable",
+            "reason": "Injury"
+          }
+        ],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "80dbae8461497b97aa471f4d7a4c17a2",
@@ -230,7 +417,22 @@
           "consensus_spread": 0.1647
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b9adf11268557ff688c88db3c7cf03d1",
@@ -265,7 +467,22 @@
           "consensus_spread": 0.125
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "df63f77fd4c6f805519952afd1ce609a",
@@ -300,7 +517,22 @@
           "consensus_spread": 0.1625
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "82132c1764937494ad3f92fe93329fe6",
@@ -335,7 +567,22 @@
           "consensus_spread": 0.064
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a780aadef9712643274b5be39d9ef098",
@@ -370,7 +617,22 @@
           "consensus_spread": 0.0769
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "9628401b7d00130e5b6e6cab15959c04",
@@ -405,7 +667,22 @@
           "consensus_spread": 0.0576
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "8e214c11344257acad0aee498894c0b6",
@@ -440,7 +717,22 @@
           "consensus_spread": 0.0733
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "40c8ae2b4ebc393c954f62a3621ea377",
@@ -475,7 +767,53 @@
           "consensus_spread": 0.0786
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1493012,
+      "api_football_league_id": 128,
+      "season": 2026,
+      "team_ids": {
+        "home": 1064,
+        "away": 441
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "7400688202f939d3c6bd54e0243e85a4",
@@ -510,7 +848,53 @@
           "consensus_spread": 0.1267
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "api_football_fixture_id": 1505468,
+      "api_football_league_id": 265,
+      "season": 2026,
+      "team_ids": {
+        "home": 2315,
+        "away": 16730
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "ce98719a96856625554c0cb8e22eddec",
@@ -545,7 +929,22 @@
           "consensus_spread": 0.1622
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "7e73990b89d55272c9943ad1fad72b36",
@@ -580,7 +979,22 @@
           "consensus_spread": 0.1233
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b38d8ecec25f9c8a6da23fe7ca64f37f",
@@ -615,7 +1029,22 @@
           "consensus_spread": 0.1231
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "f90a8ffe1c0b997f6af36d7d6d5ee3e4",
@@ -650,7 +1079,22 @@
           "consensus_spread": 0.1085
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "7fcf5a6357984236e88fd7f60ac9bce1",
@@ -685,7 +1129,22 @@
           "consensus_spread": 0.0667
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "82b0fdbfbaa18193200ade14973bd208",
@@ -720,7 +1179,22 @@
           "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "2cfc5f9dfe94ee29edfb2732a7b2e915",
@@ -755,7 +1229,53 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "api_football_fixture_id": 1523213,
+      "api_football_league_id": 169,
+      "season": 2026,
+      "team_ids": {
+        "home": 836,
+        "away": 833
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "d5e0333a9423ddedc76bbbf26a080ada",
@@ -790,7 +1310,22 @@
           "consensus_spread": 0.0923
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "c47434b1db9669d529abf029a61ca8b6",
@@ -825,7 +1360,53 @@
           "consensus_spread": 0.0735
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1553102,
+      "api_football_league_id": 106,
+      "season": 2026,
+      "team_ids": {
+        "home": 336,
+        "away": 346
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "2f04a67783c8dbaa97f0e391f71db684",
@@ -860,7 +1441,78 @@
           "consensus_spread": 0.16
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1494218,
+      "api_football_league_id": 113,
+      "season": 2026,
+      "team_ids": {
+        "home": 2172,
+        "away": 364
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [
+          {
+            "team_id": 2172,
+            "player": "J. Pikkarainen",
+            "type": "Missing Fixture",
+            "reason": "Inactive"
+          },
+          {
+            "team_id": 2172,
+            "player": "D. Sundgren",
+            "type": "Missing Fixture",
+            "reason": "Injury"
+          },
+          {
+            "team_id": 2172,
+            "player": "J. Pikkarainen",
+            "type": "Missing Fixture",
+            "reason": "Inactive"
+          },
+          {
+            "team_id": 2172,
+            "player": "D. Sundgren",
+            "type": "Missing Fixture",
+            "reason": "Injury"
+          }
+        ],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "c249bb7cb07dc80c2968d2d06f590ee6",
@@ -895,7 +1547,22 @@
           "consensus_spread": 0.1549
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "51fe310c7841e15219321a7b670cad69",
@@ -930,7 +1597,53 @@
           "consensus_spread": 0.1169
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1495740,
+      "api_football_league_id": 244,
+      "season": 2026,
+      "team_ids": {
+        "home": 587,
+        "away": 2077
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "e79e7b872a3d50b36ba5d9674ec9e19f",
@@ -965,7 +1678,53 @@
           "consensus_spread": 0.1304
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1494712,
+      "api_football_league_id": 103,
+      "season": 2026,
+      "team_ids": {
+        "home": 320,
+        "away": 334
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "a2dc662704a8e4c6f3fcccbe50f083d6",
@@ -1000,7 +1759,53 @@
           "consensus_spread": 0.1143
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1495741,
+      "api_football_league_id": 244,
+      "season": 2026,
+      "team_ids": {
+        "home": 1165,
+        "away": 650
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "fe13d0efe9e5969044656039ea124f4d",
@@ -1035,7 +1840,22 @@
           "consensus_spread": 0.1471
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "50a5b31709bc8c3754a5f138d759c15d",
@@ -1070,7 +1890,22 @@
           "consensus_spread": 0.0972
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "f2db41d940dd008bd6b76f0c758c7fba",
@@ -1105,7 +1940,53 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1492738,
+      "api_football_league_id": 357,
+      "season": 2026,
+      "team_ids": {
+        "home": 3851,
+        "away": 3845
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "86867dca7b9b803fe664681be0a00b01",
@@ -1140,7 +2021,53 @@
           "consensus_spread": 0.1286
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1548975,
+      "api_football_league_id": 119,
+      "season": 2026,
+      "team_ids": {
+        "home": 406,
+        "away": 407
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "ae0fa84044b18819fd1bd22f708f651d",
@@ -1175,7 +2102,53 @@
           "consensus_spread": 0.1644
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1555348,
+      "api_football_league_id": 207,
+      "season": 2026,
+      "team_ids": {
+        "home": 2184,
+        "away": 551
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "7c80d07c72b6905f359ab637b313b120",
@@ -1210,7 +2183,22 @@
           "consensus_spread": 0.1351
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "14d541b1fe6b71b99254037172ba461e",
@@ -1245,7 +2233,22 @@
           "consensus_spread": 0.0786
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "4601942d0ddf15ef733303ade4b28efd",
@@ -1280,7 +2283,22 @@
           "consensus_spread": 0.119
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "5b93a87a89559b47c82d146bd93bbfed",
@@ -1315,7 +2333,53 @@
           "consensus_spread": 0.1579
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1555349,
+      "api_football_league_id": 207,
+      "season": 2026,
+      "team_ids": {
+        "home": 644,
+        "away": 1012
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "13815a9f86118ad93643600c56739d87",
@@ -1350,7 +2414,53 @@
           "consensus_spread": 0.0923
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1492740,
+      "api_football_league_id": 357,
+      "season": 2026,
+      "team_ids": {
+        "home": 3842,
+        "away": 3850
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "56014b92a6ff7b352dabb179d9db1ea4",
@@ -1385,7 +2495,22 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "2c4fe97ca7225792318c1df8578a0821",
@@ -1420,7 +2545,53 @@
           "consensus_spread": 0.1228
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1493011,
+      "api_football_league_id": 128,
+      "season": 2026,
+      "team_ids": {
+        "home": 457,
+        "away": 456
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "c3d3d5022656c380fff749e85ea8d62f",
@@ -1455,7 +2626,53 @@
           "consensus_spread": 0.1307
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "api_football_fixture_id": 1505470,
+      "api_football_league_id": 265,
+      "season": 2026,
+      "team_ids": {
+        "home": 2328,
+        "away": 2331
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "7cd00c0a66e3927513670c87e3389471",
@@ -1490,7 +2707,53 @@
           "consensus_spread": 0.1077
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1492300,
+      "api_football_league_id": 71,
+      "season": 2026,
+      "team_ids": {
+        "home": 134,
+        "away": 119
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "14d2db5f981081ec6d0541ee47bbbabb",
@@ -1525,7 +2788,53 @@
           "consensus_spread": 0.1522
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1492308,
+      "api_football_league_id": 71,
+      "season": 2026,
+      "team_ids": {
+        "home": 128,
+        "away": 132
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "fc75af22ab986f3c515b9462745a1135",
@@ -1560,7 +2869,53 @@
           "consensus_spread": 0.1166
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1493014,
+      "api_football_league_id": 128,
+      "season": 2026,
+      "team_ids": {
+        "home": 435,
+        "away": 2432
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "58579f47c46b44d5baef9dd961b78d3f",
@@ -1595,7 +2950,53 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1490352,
+      "api_football_league_id": 253,
+      "season": 2026,
+      "team_ids": {
+        "home": 1602,
+        "away": 18310
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "3e291f2777b2fb12abacf8b3dbe3c981",
@@ -1630,7 +3031,22 @@
           "consensus_spread": 0.1778
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "fabf7995a0be90edd0e8a5db4ed9e94f",
@@ -1665,7 +3081,53 @@
           "consensus_spread": 0.1667
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1490346,
+      "api_football_league_id": 253,
+      "season": 2026,
+      "team_ids": {
+        "home": 1613,
+        "away": 2242
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "804d263820352f697b38f35c8c9286d0",
@@ -1700,7 +3162,53 @@
           "consensus_spread": 0.1212
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1492309,
+      "api_football_league_id": 71,
+      "season": 2026,
+      "team_ids": {
+        "home": 133,
+        "away": 7848
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "9ecd14ec9b83dfd4e0e6e2d18e88e1f8",
@@ -1735,7 +3243,53 @@
           "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1490351,
+      "api_football_league_id": 253,
+      "season": 2026,
+      "team_ids": {
+        "home": 1609,
+        "away": 1608
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "b7738cc4de1ac068864d1c3091aac8a6",
@@ -1770,7 +3324,53 @@
           "consensus_spread": 0.1299
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1490347,
+      "api_football_league_id": 253,
+      "season": 2026,
+      "team_ids": {
+        "home": 1614,
+        "away": 9568
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "adcaf9aca5c21e35cc10e87edaa670c6",
@@ -1805,7 +3405,53 @@
           "consensus_spread": 0.125
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1490350,
+      "api_football_league_id": 253,
+      "season": 2026,
+      "team_ids": {
+        "home": 1604,
+        "away": 1607
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "e42d0064f1184cf7b6fb023420e6d6ef",
@@ -1840,7 +3486,22 @@
           "consensus_spread": 0.1571
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "30205c4070997541340bcb1cf407d90f",
@@ -1875,7 +3536,53 @@
           "consensus_spread": 0.1486
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1490349,
+      "api_football_league_id": 253,
+      "season": 2026,
+      "team_ids": {
+        "home": 1598,
+        "away": 9569
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "a461507fd4059bf3dfbf17a17728c8ab",
@@ -1910,7 +3617,53 @@
           "consensus_spread": 0.1389
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "api_football_fixture_id": 1490348,
+      "api_football_league_id": 253,
+      "season": 2026,
+      "team_ids": {
+        "home": 1599,
+        "away": 1595
+      },
+      "football": {
+        "home": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "away": {
+          "updated_at": "2026-07-24T06:17:56.300746+00:00",
+          "overall_20": {
+            "sample": 0
+          },
+          "home_10": {
+            "sample": 0
+          },
+          "away_10": {
+            "sample": 0
+          },
+          "raw_sample": 0
+        },
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      },
+      "football_data_status": "partial"
     },
     {
       "id": "b9fe00438a6b095c30c26b8ca882f9eb",
@@ -1945,7 +3698,22 @@
           "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "548228868edea882febc372bf2906a7d",
@@ -1980,7 +3748,22 @@
           "consensus_spread": 0.0486
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e0e1e45371a0635e6da904554043eaed",
@@ -2015,7 +3798,22 @@
           "consensus_spread": 0.1039
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "5758151189675892207fb9eda1f5eea0",
@@ -2050,7 +3848,22 @@
           "consensus_spread": 0.1351
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "03ebfb01dd29de67db39a5f05669cb32",
@@ -2085,7 +3898,22 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "c2a65b891ad25522b6ddb9de1805f623",
@@ -2120,7 +3948,22 @@
           "consensus_spread": 0.0897
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "931f88cfa0011414d79e8b8650c5a6cd",
@@ -2155,7 +3998,22 @@
           "consensus_spread": 0.1375
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "f9ea52ac17cc20c4cfc387a17d007331",
@@ -2190,7 +4048,22 @@
           "consensus_spread": 0.1846
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b70bcc6c53a4d635cd0b419d4699a649",
@@ -2225,7 +4098,22 @@
           "consensus_spread": 0.1053
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "eea306786d5de484f74b922fb511a042",
@@ -2260,7 +4148,22 @@
           "consensus_spread": 0.1692
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "5face1910d3fd9df29cbf7616c3c7d11",
@@ -2295,7 +4198,22 @@
           "consensus_spread": 0.2326
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "8503e331e9f90c710b5700d8800be8bb",
@@ -2330,7 +4248,22 @@
           "consensus_spread": 0.0455
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "d11addc08acaef5cdbf9c494366f9ed6",
@@ -2365,7 +4298,22 @@
           "consensus_spread": 0.0871
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a80feb3f1859ce2cb21f19a0b3fc3328",
@@ -2400,7 +4348,22 @@
           "consensus_spread": 0.0857
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a6085b49ad989742f4a1c8782523a613",
@@ -2435,7 +4398,22 @@
           "consensus_spread": 0.0794
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "4a30ff683e400a1559b6c80e8eee9aa2",
@@ -2470,7 +4448,22 @@
           "consensus_spread": 0.1266
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "79b872089c527297cba2f368e53d5f66",
@@ -2505,7 +4498,22 @@
           "consensus_spread": 0.1286
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "d010a40219f8686887964dfddefd9e08",
@@ -2540,7 +4548,22 @@
           "consensus_spread": 0.1067
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a7f00cc64f5bc888a30615d1eea9e41f",
@@ -2575,7 +4598,22 @@
           "consensus_spread": 0.12
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "20e991dc3fcbd43781dd25de5a920798",
@@ -2610,7 +4648,22 @@
           "consensus_spread": 0.5605
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "28acd824b3948ef8e0c130967d0bf3c3",
@@ -2645,7 +4698,22 @@
           "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "3188c1f26adf0f064976fc766e3922d3",
@@ -2680,7 +4748,22 @@
           "consensus_spread": 0.1522
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "9a15519b05f7ec514d35ca4677815355",
@@ -2715,7 +4798,22 @@
           "consensus_spread": 0.1674
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "2fc44001bdc29ab13a5763f88eb89043",
@@ -2750,7 +4848,22 @@
           "consensus_spread": 0.1282
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e0849aa475b6a85b53431dcc6d9bd4bf",
@@ -2785,7 +4898,22 @@
           "consensus_spread": 0.125
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "48caf88ee3194e479dcb867e1af80004",
@@ -2820,7 +4948,22 @@
           "consensus_spread": 0.1143
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b47cf822e1c8db4bdc8fa30352303f76",
@@ -2855,7 +4998,22 @@
           "consensus_spread": 0.1625
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "99bbeeaaac7f1975b9ce36be8cea5b96",
@@ -2890,7 +5048,22 @@
           "consensus_spread": 0.1333
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "50d5b7167268186e8ab0b1bbae40a2a8",
@@ -2925,7 +5098,22 @@
           "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "dc215efeff9db813ba8f8d11159d3ea8",
@@ -2960,7 +5148,22 @@
           "consensus_spread": 0.1875
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b39e59c7c62c8fb8681aa810182fdfc5",
@@ -2995,7 +5198,22 @@
           "consensus_spread": 0.1149
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "224bc92fe86ad8067517f264c3773ad5",
@@ -3030,7 +5248,22 @@
           "consensus_spread": 0.1875
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "ec5608b8d60dcae86a5b1bf36aea2acd",
@@ -3065,7 +5298,22 @@
           "consensus_spread": 0.1667
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "48c3e84a5db7053d3afdfc4dc75940dd",
@@ -3100,7 +5348,22 @@
           "consensus_spread": 0.1778
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b22cc136768a48957b7fe3819a40d0c6",
@@ -3135,7 +5398,22 @@
           "consensus_spread": 0.122
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "4bf1c419efdf3bdf04dee0b85381957b",
@@ -3170,7 +5448,22 @@
           "consensus_spread": 0.1212
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "902d11044a9ae03d6301dde7c4886d5f",
@@ -3205,7 +5498,22 @@
           "consensus_spread": 0.16
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a7d222492041d1b3793328aa919fcd9b",
@@ -3240,7 +5548,22 @@
           "consensus_spread": 0.1053
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e3d09c1e4d1ae587b400b1e42aa80a2e",
@@ -3275,7 +5598,22 @@
           "consensus_spread": 0.1143
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "919761958d8832cadc2def6f25bb3294",
@@ -3310,7 +5648,22 @@
           "consensus_spread": 0.1081
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "6c19a93fdd28dadb649474ee55d807ae",
@@ -3345,7 +5698,22 @@
           "consensus_spread": 0.125
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "29b77c1ae7595af1187647542f384b23",
@@ -3380,7 +5748,22 @@
           "consensus_spread": 0.1222
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "406cf355ea6f8b55927d829e8dffc622",
@@ -3415,7 +5798,22 @@
           "consensus_spread": 0.0787
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "862dd9c7ae3fd990780936b8c1e2ade9",
@@ -3450,7 +5848,22 @@
           "consensus_spread": 0.0896
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e5fd8b6164731da6e7f3a1f252673e29",
@@ -3485,7 +5898,22 @@
           "consensus_spread": 0.1344
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b903ef5fcbe8814d380f20f4b02a14f2",
@@ -3520,7 +5948,22 @@
           "consensus_spread": 0.0606
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "6fa9d933a99ec76e420b435e1c7ae86b",
@@ -3555,7 +5998,22 @@
           "consensus_spread": 0.0972
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "8f3c01ba922c61e86421261b940ea949",
@@ -3590,7 +6048,22 @@
           "consensus_spread": 0.0873
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "ffa775c13bd1fc1e79040c61f2969d6e",
@@ -3625,7 +6098,22 @@
           "consensus_spread": 0.1912
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "53848ad999255023d153784e0a936f3b",
@@ -3660,7 +6148,22 @@
           "consensus_spread": 0.069
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e8eba7fd4f171ac5ee39d426c1b762d2",
@@ -3695,7 +6198,22 @@
           "consensus_spread": 0.1129
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "d9d1726d183975de80ce176cd8e4a6ab",
@@ -3730,7 +6248,22 @@
           "consensus_spread": 0.1184
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "19fc51f8fad955615b5d08db4ec89e1f",
@@ -3765,7 +6298,22 @@
           "consensus_spread": 0.1262
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b2ae0c5388431d8a811f3ead9312fed1",
@@ -3800,7 +6348,22 @@
           "consensus_spread": 0.0758
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "599e46b4b9f36136b2723c825e0fc82f",
@@ -3835,7 +6398,22 @@
           "consensus_spread": 0.1964
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "2dae7a8cf20814f1e7b206f5e44b7751",
@@ -3870,7 +6448,22 @@
           "consensus_spread": 0.1161
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "67c7319c34b7d0b5c96e4d6613321d0d",
@@ -3905,7 +6498,22 @@
           "consensus_spread": 0.0694
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "51474caaaca9d0664acc4c445caf0c64",
@@ -3940,7 +6548,22 @@
           "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "810fefc2bf0eca7d894291b573377b4e",
@@ -3975,7 +6598,22 @@
           "consensus_spread": 0.1061
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "6c4afed1c376e65b1551ccff489c3574",
@@ -4010,7 +6648,22 @@
           "consensus_spread": 0.1389
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "160af72d7901238f2537eb6c08cd5cbd",
@@ -4045,7 +6698,22 @@
           "consensus_spread": 0.0923
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "84cfc92f937672371f54a59d970e6295",
@@ -4080,7 +6748,22 @@
           "consensus_spread": 0.1677
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "838b226546560d6500f71ead42a26c72",
@@ -4115,7 +6798,22 @@
           "consensus_spread": 0.1316
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "35e5441b0004bc8a8b8eb128c0d54996",
@@ -4150,7 +6848,22 @@
           "consensus_spread": 0.1316
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "71c22903218a4dd0f1939615b93c6705",
@@ -4185,7 +6898,22 @@
           "consensus_spread": 0.7559
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "421873ca92aa69cf48d234352f40f7a5",
@@ -4220,7 +6948,22 @@
           "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "8f397399f10216bc9a1d9831a54550ad",
@@ -4255,7 +6998,22 @@
           "consensus_spread": 0.718
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "18f1c54fb917081f98c14e910081bc78",
@@ -4290,7 +7048,22 @@
           "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e51972466047219c9d643949ee0c5a2c",
@@ -4325,7 +7098,22 @@
           "consensus_spread": 0.1419
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "849046b2ceb8f919b038362706280ddb",
@@ -4360,7 +7148,22 @@
           "consensus_spread": 0.0909
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "6ba941f951c71b5e0530f92fc18c48b3",
@@ -4395,7 +7198,22 @@
           "consensus_spread": 0.082
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e14d44c14afe0d36b259682b81716231",
@@ -4430,7 +7248,22 @@
           "consensus_spread": 0.1433
         }
       ],
-      "fetched_at": "2026-07-23T12:12:20.326337+00:00"
+      "fetched_at": "2026-07-23T12:12:20.326337+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "16da0ac17df035ef762b98ba1a3b3bf9",
@@ -4465,7 +7298,22 @@
           "consensus_spread": 0.1176
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "e2c5099df1e9688c5ff6b99ae4077f6c",
@@ -4500,7 +7348,22 @@
           "consensus_spread": 0.1429
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a756fd3428cce929df84907b6c8417a0",
@@ -4535,7 +7398,22 @@
           "consensus_spread": 0.8159
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "36f40944588afcc3779e3498b7ff4959",
@@ -4570,7 +7448,22 @@
           "consensus_spread": 0.813
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "48f1d2e089027c2692091c9d322ac7eb",
@@ -4605,7 +7498,22 @@
           "consensus_spread": 0.7915
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "1fd6cc9bf9409f76d065bd414aefdf26",
@@ -4640,7 +7548,22 @@
           "consensus_spread": 0.0923
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "5746af78ef429ff259802e90e744590b",
@@ -4675,7 +7598,22 @@
           "consensus_spread": 0.6862
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "7f97e1ad452a6c39dab72ee7a0c99130",
@@ -4710,7 +7648,22 @@
           "consensus_spread": 0.1129
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "d0ca4f99112815692d640d0e30b15331",
@@ -4745,7 +7698,22 @@
           "consensus_spread": 0.1571
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "c4b8a047d67a1eeb3d99a2074755de53",
@@ -4780,7 +7748,22 @@
           "consensus_spread": 0.1379
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "64e7056726d64e1e5acc3e2d2a654678",
@@ -4815,7 +7798,22 @@
           "consensus_spread": 0.0937
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "c1f9244cffaf20099df91a637da5f744",
@@ -4850,7 +7848,22 @@
           "consensus_spread": 0.81
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a3e52d844b8ee93cb2fbaac1d2bdb966",
@@ -4885,7 +7898,22 @@
           "consensus_spread": 0.6862
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "3f85f2fb6ebdec0986b515d32b8f30cd",
@@ -4920,7 +7948,22 @@
           "consensus_spread": 0.1689
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "00f0f6a84cc40dfe5b1f42285ec4875f",
@@ -4955,7 +7998,22 @@
           "consensus_spread": 0.1061
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "0506b4013ba38a55326f6eb05eaa1acf",
@@ -4990,7 +8048,22 @@
           "consensus_spread": 0.0912
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "4e3e1685317d5e99b4551c16848d126e",
@@ -5025,7 +8098,22 @@
           "consensus_spread": 0.0917
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "d76fbce4908a1f1eb91618c8895b43a2",
@@ -5060,7 +8148,22 @@
           "consensus_spread": 0.0702
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "96a729391b41e774f84f701ed4419c0f",
@@ -5095,7 +8198,22 @@
           "consensus_spread": 0.1389
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "45031d060fac9fea2ac8b49457a6b298",
@@ -5130,7 +8248,22 @@
           "consensus_spread": 0.1067
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b819c817f44cbe053c1de60d0a53ee3a",
@@ -5165,7 +8298,22 @@
           "consensus_spread": 0.0896
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "7f3c84d26ae6c82bb6c33c5f161185cb",
@@ -5200,7 +8348,22 @@
           "consensus_spread": 0.1
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "8bf7e0a05cf190a5039f2482c21438d9",
@@ -5235,7 +8398,22 @@
           "consensus_spread": 0.1111
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "3aef7977971f3066facea8834b337990",
@@ -5270,7 +8448,22 @@
           "consensus_spread": 0.1493
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "b2d74f84da79d6faacbaab1776eb39c1",
@@ -5305,7 +8498,22 @@
           "consensus_spread": 0.1
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "0c616d7c1ac3c60aa0d87b53ecdb76eb",
@@ -5340,7 +8548,22 @@
           "consensus_spread": 0.1259
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "ec1db1ae59afdc3fb045803d003445c5",
@@ -5375,7 +8598,22 @@
           "consensus_spread": 0.1061
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "a57e80904cde269d54010df4ed7fc9f4",
@@ -5410,7 +8648,22 @@
           "consensus_spread": 0.0857
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "605f4ec390b2ef0687e4732e14b75a13",
@@ -5445,7 +8698,22 @@
           "consensus_spread": 0.0982
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "4f68110ae33722f386ddcd2aa17cc01c",
@@ -5480,7 +8748,22 @@
           "consensus_spread": 0.0806
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "7dfcff5d0f15654cdf2c8af007091a70",
@@ -5515,7 +8798,22 @@
           "consensus_spread": 0.1045
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "21dd1ea643412d74fa5a6c051ddc0bc1",
@@ -5550,7 +8848,22 @@
           "consensus_spread": 0.0909
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "778e839e022a74281964ba60cb664d06",
@@ -5585,7 +8898,22 @@
           "consensus_spread": 0.0985
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "5cbad3a33c6ca6e8e943b42326028478",
@@ -5620,7 +8948,22 @@
           "consensus_spread": 0.1216
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     },
     {
       "id": "8ce2195530798c1a52f648b890c3c75e",
@@ -5655,7 +8998,22 @@
           "consensus_spread": 0.0922
         }
       ],
-      "fetched_at": "2026-07-24T06:17:56.300746+00:00"
+      "fetched_at": "2026-07-24T06:17:56.300746+00:00",
+      "football_data_status": "unmatched",
+      "football": {
+        "home": null,
+        "away": null,
+        "injuries": [],
+        "lineups": [],
+        "xg": {
+          "status": "not_connected",
+          "note": "True xG needs a dedicated xG provider."
+        },
+        "motivation": {
+          "status": "pending_standings_model",
+          "note": "Standings and tie-context model comes next."
+        }
+      }
     }
   ],
   "quota": {
@@ -5688,5 +9046,20 @@
     "outright",
     "futures"
   ],
-  "error": null
+  "error": null,
+  "football_enrichment": {
+    "generated_at": "2026-07-24T06:17:56.300746+00:00",
+    "source": "API-Football",
+    "matched_fixtures": 29,
+    "team_histories_cached": 58,
+    "form_window": 20,
+    "venue_window": 10,
+    "recency_weights": {
+      "last_5": 0.45,
+      "matches_6_10": 0.3,
+      "matches_11_20": 0.25
+    },
+    "xg_status": "not_connected",
+    "motivation_status": "pending_standings_model"
+  }
 }
